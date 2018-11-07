@@ -19,12 +19,13 @@ public class PlayerBehaviour : MonoBehaviour {
 	private bool can_move;
 	
 	//Variables
+	public int item_equip { private get; set; }
 	private Vector2 velocity;
-	
 	
 	//Init Player
 	void Awake()
 	{
+		item_equip = 0;
 		gameObject.tag = "Player";
 	}
 	
@@ -106,6 +107,14 @@ public class PlayerBehaviour : MonoBehaviour {
 	}
 
 	//Getter & Setters
+	public int equip
+	{
+		get
+		{
+			return gm.inventory[item_equip];
+		}
+	}
+	
 	public bool canmove
 	{
 		set
