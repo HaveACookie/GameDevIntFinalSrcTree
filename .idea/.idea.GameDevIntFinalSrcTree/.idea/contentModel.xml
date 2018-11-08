@@ -26,6 +26,7 @@
             <e p="CameraManager.cs" t="Include" />
             <e p="CameraProximityTrigger.cs" t="Include" />
             <e p="CameraTrigger.cs" t="Include" />
+            <e p="CameraTriggerEZ.cs" t="Include" />
           </e>
           <e p="EnemyBehaviour.cs" t="Include" />
           <e p="InputHandling.cs" t="Include" />

@@ -62,5 +62,17 @@ public class CameraManager : MonoBehaviour {
 		cameras[camera_id].SetActive(true);
 		set_pixilate = true;
 	}
+
+	public int getCameraNum(GameObject camera)
+	{
+		for (int i = 0; i < cameras.Length; i++)
+		{
+			if (camera == cameras[i])
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
 	
 }
