@@ -28,7 +28,6 @@
             <e p="CameraTrigger.cs" t="Include" />
           </e>
           <e p="EnemyBehaviour.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
           <e p="InputHandling.cs" t="Include" />
           <e p="KnifeHitBox.cs" t="Include" />
           <e p="Pathfinding" t="Include">
@@ -38,6 +37,11 @@
             <e p="Pathfinding.cs" t="Include" />
           </e>
           <e p="PlayerBehaviour.cs" t="Include" />
+          <e p="Systems" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="InventoryManager.cs" t="Include" />
+            <e p="InventoryMenu.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="GameDevIntFinalSrcTree.sln" t="IncludeFlat" />

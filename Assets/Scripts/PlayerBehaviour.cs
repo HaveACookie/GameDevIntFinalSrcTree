@@ -111,7 +111,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	{
 		get
 		{
-			return gm.inventory[item_equip];
+			return gm.inventory.inventory[item_equip];
 		}
 	}
 	
