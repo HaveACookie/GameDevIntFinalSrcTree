@@ -79,6 +79,14 @@ public class PlayerBehaviour : MonoBehaviour {
 				angle_spd = turn_spd;
 			}
 			
+			//Inventory Menu
+			if (gm.getKey("inventory"))
+			{
+				CameraManager.instance.createInventoryCanvas();
+				can_move = false;
+			}
+			
+			//Set Movement Physics
 			transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + angle_spd, transform.eulerAngles.z);
 			float facing_angle = (-transform.eulerAngles.y + 90) * Mathf.Deg2Rad;
 			velocity = new Vector2(Mathf.Cos(facing_angle), Mathf.Sin(facing_angle)) * move_spd;

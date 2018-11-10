@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraManager : MonoBehaviour {
 
@@ -61,6 +62,19 @@ public class CameraManager : MonoBehaviour {
 		cameras[camera_id].tag = "MainCamera";
 		cameras[camera_id].SetActive(true);
 		set_pixilate = true;
+	}
+
+	public void createInventoryCanvas()
+	{
+		GameObject inventory_canvas = new GameObject("Inventory", typeof(Canvas));
+		inventory_canvas.transform.SetParent(cameras[cam_active].transform);
+		inventory_canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+		inventory_canvas.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+		inventory_canvas.GetComponent<CanvasScaler>().referenceResolution = new Vector2(1920, 1080);
+		inventory_canvas.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+		inventory_canvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 1;
+		inventory_canvas.GetComponent<RectTransform>().transform.localPosition = new Vector3(0, 0, 0);
+		inventory_canvas.AddComponent<InventoryTransition>().setTrans();
 	}
 
 	public int getCameraNum(GameObject camera)
