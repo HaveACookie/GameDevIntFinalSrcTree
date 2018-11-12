@@ -32,6 +32,7 @@ public class InventoryManager : MonoBehaviour {
 		for (int i = 0; i < 6; i++)
 		{
 			inventory[i] = Random.Range(0, 72);
+			inventory_stock[i] = Random.Range(0, 50);
 		}
 	}
 	

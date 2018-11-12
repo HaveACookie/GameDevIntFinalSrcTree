@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class InventorySlotScript : MonoBehaviour
 {
 
-	public int index;
 	//Components
 	private Animator anim;
 	private SpriteRenderer sr;
 	private Image img;
 	private Image clone;
+	private Text stock;
 	
 	//Settings
 	private bool hovered;
@@ -42,6 +42,17 @@ public class InventorySlotScript : MonoBehaviour
 		clone.enabled = false;
 		sr.enabled = false;
 		
+		GameObject text_obj = new GameObject("map_button", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(0, 0, 0);
+		text_obj.transform.localScale = new Vector3(0.06896551724f, 0.06896551724f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(880, 660);
+		stock = text_obj.GetComponent<Text>();
+		stock.alignment = TextAnchor.LowerRight;
+		stock.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		stock.fontSize = 300;
+		stock.text = "";
+		
 		//Settings
 		hovered = false;
 		selected = false;
@@ -54,7 +65,7 @@ public class InventorySlotScript : MonoBehaviour
 		sin_val = 0;
 		temp_sin = 0;
 		
-		setItemValue(0);
+		setItemValue(0, 0);
 	}
 
 	void Start()
@@ -98,17 +109,12 @@ public class InventorySlotScript : MonoBehaviour
 		setClonePositionLerp(sin_val);
 		img.color = new Color(1, 1, 1, clone_alpha);
 		clone.color = new Color(1, 1, 1, alpha);
-		
-		//Debug
-		if (index != 0)
-		{
-			setItemValue(index);
-		}
 	}
 
 	private void setPositionLerp(float t)
 	{
 		transform.localPosition = new Vector2(position.x + (offset * t), position.y - (offset * t));
+		stock.transform.localPosition = new Vector2(-(offset * t) / 2f, (offset * t) / 2f);
 	}
 	
 	private void setClonePositionLerp(float t)
@@ -117,7 +123,7 @@ public class InventorySlotScript : MonoBehaviour
 	}
 
 	//Public Methods
-	public void setItemValue(int item)
+	public void setItemValue(int item, int num)
 	{
 		if (item <= 0)
 		{
@@ -135,6 +141,12 @@ public class InventorySlotScript : MonoBehaviour
 		sr.enabled = false;
 		img.enabled = true;
 		clone.enabled = true;
+
+		stock.text = "";
+		if (num != 0)
+		{
+			stock.text = num.ToString();
+		}
 	}
 	
 	public bool hover

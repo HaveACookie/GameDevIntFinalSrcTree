@@ -13,6 +13,8 @@ public class InventoryMenu : MonoBehaviour {
 	private Text file_button;
 	private Text exit_button;
 	
+	private Text display_text;
+	
 	private Image select_menu;
 	private Text[] select_buttons;
 
@@ -25,12 +27,21 @@ public class InventoryMenu : MonoBehaviour {
 	//Settings
 	private bool can_move;
 	private float offset;
+	private float text_spd;
 	//private bool show_cursor;
 	
 	//Variables
 	private float map_alpha;
 	private float file_alpha;
 	private float exit_alpha;
+
+	private bool draw_ui_text;
+	private float ui_text_timer;
+	private string ui_text;
+
+	private bool combine;
+	private int combine_index;
+	private int combine_select_index;
 
 	private int select_menu_index;
 	
@@ -65,7 +76,7 @@ public class InventoryMenu : MonoBehaviour {
 		//Equip Slot
 		equip_slot = Instantiate(Resources.Load<GameObject>("System/GUI/InventorySlot")).GetComponent<InventorySlotScript>();
 		equip_slot.transform.SetParent(transform);
-		equip_slot.transform.localPosition = new Vector3(60, -190);
+		equip_slot.transform.localPosition = new Vector3(55, -190);
 		equip_slot.transform.localScale = new Vector3(2.9f, 2.9f, 1);
 		
 		//Select Cursor
@@ -84,10 +95,15 @@ public class InventoryMenu : MonoBehaviour {
 		//Settings
 		can_move = true;
 		offset = 15f;
+		text_spd = 12f;
 		
 		//Variables
 		sin_val = 0f;
 		select = 0;
+
+		draw_ui_text = false;
+		ui_text_timer = 0;
+		ui_text = "";
 
 		select_menu_index = -1;
 	}
@@ -150,6 +166,7 @@ public class InventoryMenu : MonoBehaviour {
 				if (gm.getKeyDown("down"))
 				{
 					select = 4;
+					setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 				}
 				else if (gm.getKeyDown("right"))
 				{
@@ -182,6 +199,7 @@ public class InventoryMenu : MonoBehaviour {
 				if (gm.getKeyDown("down"))
 				{
 					select = 5;
+					setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 				}
 				else if (gm.getKeyDown("up"))
 				{
@@ -230,14 +248,17 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 0;
+							setText("");
 						}
 						else if (gm.getKeyDown("down"))
 						{
 							select = 6;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("right"))
 						{
 							select = 5;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
 					else if (select == 5)
@@ -245,14 +266,17 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 2;
+							setText("");
 						}
 						else if (gm.getKeyDown("down"))
 						{
 							select = 7;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("left"))
 						{
 							select = 4;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
 					else if (select == 6)
@@ -260,14 +284,17 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 4;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("down"))
 						{
 							select = 8;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("right"))
 						{
 							select = 7;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
 					else if (select == 7)
@@ -275,14 +302,17 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 5;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("down"))
 						{
 							select = 9;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("left"))
 						{
 							select = 6;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
 					else if (select == 8)
@@ -290,10 +320,12 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 6;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("right"))
 						{
 							select = 9;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
 					else if (select == 9)
@@ -301,12 +333,18 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.getKeyDown("up"))
 						{
 							select = 7;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 						else if (gm.getKeyDown("left"))
 						{
 							select = 8;
+							setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
 						}
 					}
+				}
+				else if (combine)
+				{
+					
 				}
 				else
 				{
@@ -328,11 +366,13 @@ public class InventoryMenu : MonoBehaviour {
 					}
 					else if (select_menu_index == 0)
 					{
+						//Use or Equip
 						if (gm.getKeyDown("interact"))
 						{
 							if (select_buttons[0].text == "Equip")
 							{
 								gm.inventory.changeEquip(inven_select_num);
+								select_menu_index = -1;
 							}
 						}
 						else if (gm.getKeyDown("down"))
@@ -342,6 +382,7 @@ public class InventoryMenu : MonoBehaviour {
 					}
 					else if (select_menu_index == 1)
 					{
+						//Check
 						if (gm.getKeyDown("up"))
 						{
 							select_menu_index = 0;
@@ -353,7 +394,14 @@ public class InventoryMenu : MonoBehaviour {
 					}
 					else if (select_menu_index == 2)
 					{
-						if (gm.getKeyDown("up"))
+						//Combine
+						if (gm.getKeyDown("interact"))
+						{
+							combine = true;
+							combine_index = inven_select_num;
+							combine_select_index = inven_select_num;
+						}	
+						else if (gm.getKeyDown("up"))
 						{
 							select_menu_index = 1;
 						}
@@ -366,6 +414,7 @@ public class InventoryMenu : MonoBehaviour {
 		}
 
 		//Set Menu Traits
+		drawText();
 		resetInventoryValues();
 		map_button.color = new Color(1, 1, 1, map_alpha);
 		file_button.color = new Color(1, 1, 1, file_alpha);
@@ -374,16 +423,46 @@ public class InventoryMenu : MonoBehaviour {
 	}
 	
 	//Methods
+	private void drawText()
+	{
+		if (draw_ui_text)
+		{
+			if (display_text.text != ui_text)
+			{
+				ui_text_timer += Time.deltaTime * text_spd;
+				display_text.text = ui_text.Substring(0, Mathf.RoundToInt(Mathf.Clamp(ui_text_timer, 0, ui_text.Length)));
+			}
+		}
+	}
+	
+	private void setText(string text)
+	{
+		if (text == "")
+		{
+			draw_ui_text = false;
+			ui_text_timer = 0;
+			ui_text = "";
+			display_text.text = "";
+		}
+		else
+		{
+			draw_ui_text = true;
+			ui_text_timer = 0;
+			ui_text = text;
+			display_text.text = "";
+		}
+	}
+	
 	private void resetInventoryValues()
 	{
 		if (gm.inventory.player_equip != -1)
 		{
-			equip_slot.setItemValue(gm.inventory.inventory[gm.inventory.player_equip]);
+			equip_slot.setItemValue(gm.inventory.inventory[gm.inventory.player_equip], gm.inventory.inventory_stock[gm.inventory.player_equip]);
 		}
 
 		for (int i = 0; i < 6; i++)
 		{
-			slots[i].setItemValue(gm.inventory.inventory[i]);
+			slots[i].setItemValue(gm.inventory.inventory[i], gm.inventory.inventory_stock[i]);
 		}
 	}
 	
@@ -433,6 +512,18 @@ public class InventoryMenu : MonoBehaviour {
 		exit_button.font = Resources.Load<Font>("System/GUI/ResTextFont");
 		exit_button.fontSize = 300;
 		exit_button.text = "Exit";
+		
+		//Display Text
+		text_obj = new GameObject("display_text", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(0, -380, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(6000, 650);
+		display_text = text_obj.GetComponent<Text>();
+		display_text.alignment = TextAnchor.UpperLeft;
+		display_text.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		display_text.fontSize = 300;
+		display_text.text = "";
 		
 		//Jill Portrait
 		text_obj = new GameObject("jill_portrait", typeof(RectTransform), typeof(Image));
