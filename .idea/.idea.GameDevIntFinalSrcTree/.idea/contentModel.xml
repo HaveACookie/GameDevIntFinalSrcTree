@@ -42,6 +42,7 @@
             <e p="GameManager.cs" t="Include" />
             <e p="InventoryManager.cs" t="Include" />
             <e p="InventoryMenu.cs" t="Include" />
+            <e p="InventorySlotScript.cs" t="Include" />
           </e>
         </e>
       </e>

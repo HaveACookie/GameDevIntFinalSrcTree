@@ -105,4 +105,73 @@ public class GameManager : MonoBehaviour {
 		return false;
 	}
 	
+	public bool getKeyDown(string input)
+	{
+		if (input == "up")
+		{
+			if (Input.GetKeyDown(KeyCode.W))
+			{
+				return true;
+			}
+		}
+		else if (input == "down")
+		{
+			if (Input.GetKeyDown(KeyCode.S))
+			{
+				return true;
+			}
+		}
+		else if (input == "left")
+		{
+			if (Input.GetKeyDown(KeyCode.A))
+			{
+				return true;
+			}
+		}
+		else if (input == "right")
+		{
+			if (Input.GetKeyDown(KeyCode.D))
+			{
+				return true;
+			}
+		}
+		else if (input == "interact")
+		{
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				return true;
+			}
+		}
+		else if (input == "inventory")
+		{
+			if (Input.GetKeyDown(KeyCode.Q))
+			{
+				return true;
+			}
+		}
+		else if (input == "aim")
+		{
+			if (Input.GetMouseButtonDown(1))
+			{
+				return true;
+			}
+		}
+		else if (input == "attack")
+		{
+			if (Input.GetMouseButtonDown(0))
+			{
+				return true;
+			}
+		}
+		else if (input == "run")
+		{
+			if (Input.GetKeyDown(KeyCode.LeftShift))
+			{
+				return true;
+			}
+		}
+			
+		return false;
+	}
+	
 }

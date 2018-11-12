@@ -74,7 +74,7 @@ public class CameraManager : MonoBehaviour {
 		inventory_canvas.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
 		inventory_canvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 1;
 		inventory_canvas.GetComponent<RectTransform>().transform.localPosition = new Vector3(0, 0, 0);
-		inventory_canvas.AddComponent<InventoryTransition>().setTrans();
+		inventory_canvas.AddComponent<InventoryTransition>();
 	}
 
 	public int getCameraNum(GameObject camera)

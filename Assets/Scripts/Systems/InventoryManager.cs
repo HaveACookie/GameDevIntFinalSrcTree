@@ -13,6 +13,28 @@ public class InventoryManager : MonoBehaviour {
 	public int[] storage { get; private set; }
 	public int[] storage_stock { get; private set; }
 	
+	//Initialization
+	void Awake()
+	{
+		player_equip = -1;
+		
+		inventory = new int[6];
+		inventory_stock = new int[6];
+
+		storage = new int[64];
+		storage_stock = new int[64];
+	}
+	
+	//Debug
+	public void debugScramble()
+	{
+		player_equip = Random.Range(0, 5);
+		for (int i = 0; i < 6; i++)
+		{
+			inventory[i] = Random.Range(0, 72);
+		}
+	}
+	
 	//Inventory Methods
 	public void changeEquip(int inventory_slot)
 	{

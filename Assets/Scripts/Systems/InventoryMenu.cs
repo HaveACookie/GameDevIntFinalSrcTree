@@ -2,22 +2,473 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class InventoryMenu : MonoBehaviour {
 
-	//Settings
+	//Components
+	private GameManager gm;
 	private InventoryTransition transition;
 
-	// Use this for initialization
+	private Text map_button;
+	private Text file_button;
+	private Text exit_button;
+	
+	private Image select_menu;
+	private Text[] select_buttons;
+
+	private Image jill_portrait;
+	private InventorySlotScript equip_slot;
+	private InventorySlotScript[] slots;
+
+	private Image[] select_cursor;
+	
+	//Settings
+	private bool can_move;
+	private float offset;
+	//private bool show_cursor;
+	
+	//Variables
+	private float map_alpha;
+	private float file_alpha;
+	private float exit_alpha;
+
+	private int select_menu_index;
+	
+	private float sin_val;
+	private int select;
+	private Vector2 cursor_a;
+	private Vector2 cursor_b;
+	
+
+	//Initialization
 	void Awake () {
 		//Transition
-		transition = gameObject.AddComponent<InventoryTransition>();
+		gm = GameManager.instance;
+		transition = GetComponent<InventoryTransition>();
+		createMenu();
+
+		//Inventory Slots
+		slots = new InventorySlotScript[6];
+		int i = 0;
+		for (int h = 0; h < 3; h++)
+		{
+			for (int w = 0; w < 2; w++)
+			{
+				slots[i] = Instantiate(Resources.Load<GameObject>("System/GUI/InventorySlot")).GetComponent<InventorySlotScript>();
+				slots[i].transform.SetParent(transform);
+				slots[i].transform.localPosition = new Vector3(314 + (w * 224), 176 + (h * -172), 0);
+				slots[i].transform.localScale = new Vector3(2.9f, 2.9f, 1);
+				i++;
+			}
+		}
+		
+		//Equip Slot
+		equip_slot = Instantiate(Resources.Load<GameObject>("System/GUI/InventorySlot")).GetComponent<InventorySlotScript>();
+		equip_slot.transform.SetParent(transform);
+		equip_slot.transform.localPosition = new Vector3(60, -190);
+		equip_slot.transform.localScale = new Vector3(2.9f, 2.9f, 1);
+		
+		//Select Cursor
+		select_cursor = new Image[4];
+		for (i = 0; i < 4; i++)
+		{
+			GameObject cursor_obj = new GameObject("cursor_corner" + i, typeof(RectTransform), typeof(Image));
+			cursor_obj.transform.SetParent(transform);
+			cursor_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(10, 10);
+			cursor_obj.transform.localPosition = new Vector3(0, 0, 0);
+			cursor_obj.transform.localScale = new Vector3(3, 3, 1);
+			select_cursor[i] = cursor_obj.GetComponent<Image>();
+			select_cursor[i].sprite = Resources.Load<Sprite>("System/GUI/Cursor/sInventorySelect" + (i + 1));
+		}
+		
+		//Settings
+		can_move = true;
+		offset = 15f;
+		
+		//Variables
+		sin_val = 0f;
+		select = 0;
+
+		select_menu_index = -1;
 	}
 	
-	// Update is called once per frame
+	//Update Event
 	void Update () {
+		//Draw Sin
+		sin_val += Time.deltaTime * 0.7f;
+		if (sin_val >= 1)
+		{
+			sin_val = 0f;
+		}
+		float draw_sin = (Mathf.Sin(sin_val * 2 * Mathf.PI) + 1) / 2f;
 		
+		//Debug
+		if (Input.GetKeyDown(KeyCode.K))
+		{
+			gm.inventory.debugScramble();
+		}
+
+		//Set Select Position
+		map_alpha = 0.6f;
+		file_alpha = 0.6f;
+		exit_alpha = 0.6f;
+		for (int i = 0; i < 6; i++)
+		{
+			slots[i].hover = false;
+			slots[i].select = false;
+		}
+		select_menu.color = Color.clear;
+		for (int q = 0; q < 3; q++)
+		{
+			select_buttons[q].color = Color.clear;
+		}
+		
+		if (can_move)
+		{
+			//Exit Inventory
+			if (gm.getKeyDown("inventory"))
+			{
+				if (select_menu_index == -1)
+				{
+					can_move = false;
+					transition.switchTrans();
+				}
+				else
+				{
+					select_menu_index = -1;
+				}
+			}
+			
+			//Interface
+			if (select == 0)
+			{
+				//Map
+				map_alpha = 1f;
+				cursor_a = new Vector2(320, 430) + new Vector2(-80, 10);
+				cursor_b = new Vector2(320, 430) + new Vector2(80, -10);
+
+				if (gm.getKeyDown("down"))
+				{
+					select = 4;
+				}
+				else if (gm.getKeyDown("right"))
+				{
+					select = 1;
+				}
+			}
+			else if (select == 1)
+			{
+				//File
+				file_alpha = 1f;
+				cursor_a = new Vector2(550, 430) + new Vector2(-80, 10);
+				cursor_b = new Vector2(550, 430) + new Vector2(80, -10);
+
+				if (gm.getKeyDown("down"))
+				{
+					select = 2;
+				}
+				else if (gm.getKeyDown("left"))
+				{
+					select = 0;
+				}
+			}
+			else if (select == 2)
+			{
+				//Exit
+				exit_alpha = 1f;
+				cursor_a = new Vector2(550, 340) + new Vector2(-80, 10);
+				cursor_b = new Vector2(550, 340) + new Vector2(80, -10);
+
+				if (gm.getKeyDown("down"))
+				{
+					select = 5;
+				}
+				else if (gm.getKeyDown("up"))
+				{
+					select = 1;
+				}
+				else if (gm.getKeyDown("interact"))
+				{
+					can_move = false;
+					transition.switchTrans();
+				}
+			}
+			else if (select == 3)
+			{
+				//Storage
+			}
+			else if (select > 3)
+			{
+				//Inventory
+				int inven_select_num = select - 4;
+				Vector2 draw_pos = slots[inven_select_num].static_position;
+				draw_pos += new Vector2(5, 2);
+				cursor_a = draw_pos + new Vector2(-72, 45);
+				cursor_b = draw_pos + new Vector2(72, -45);
+
+				if (select_menu_index == -1)
+				{
+					//Moving around Inventory Slots
+					if (gm.getKeyDown("interact"))
+					{
+						if (gm.inventory.inventory[inven_select_num] != 0)
+						{
+							select_menu_index = 0;
+							if (gm.inventory.inventory[inven_select_num] > 0 &&
+							    gm.inventory.inventory[inven_select_num] < 9)
+							{
+								select_buttons[0].text = "Equip";
+							}
+							else
+							{
+								select_buttons[0].text = "Use";
+							}
+						}
+					}
+					else if (select == 4)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 0;
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select = 6;
+						}
+						else if (gm.getKeyDown("right"))
+						{
+							select = 5;
+						}
+					}
+					else if (select == 5)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 2;
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select = 7;
+						}
+						else if (gm.getKeyDown("left"))
+						{
+							select = 4;
+						}
+					}
+					else if (select == 6)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 4;
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select = 8;
+						}
+						else if (gm.getKeyDown("right"))
+						{
+							select = 7;
+						}
+					}
+					else if (select == 7)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 5;
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select = 9;
+						}
+						else if (gm.getKeyDown("left"))
+						{
+							select = 6;
+						}
+					}
+					else if (select == 8)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 6;
+						}
+						else if (gm.getKeyDown("right"))
+						{
+							select = 9;
+						}
+					}
+					else if (select == 9)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select = 7;
+						}
+						else if (gm.getKeyDown("left"))
+						{
+							select = 8;
+						}
+					}
+				}
+				else
+				{
+					//Tab Menu Traits
+					select_menu.color = Color.white;
+					for (int l = 0; l < 3; l++)
+					{
+						select_buttons[l].color = new Color(1, 1, 1, 0.6f);
+					}
+					select_buttons[select_menu_index].color = new Color(1, 1, 1, 1f);
+					slots[inven_select_num].select = true;
+					cursor_a = new Vector2(select_buttons[select_menu_index].transform.localPosition.x, select_buttons[select_menu_index].transform.localPosition.y) + new Vector2(-80, 10);
+					cursor_b = new Vector2(select_buttons[select_menu_index].transform.localPosition.x, select_buttons[select_menu_index].transform.localPosition.y) + new Vector2(80, -10);
+					
+					//Tab Menu
+					if (gm.getKeyDown("right"))
+					{
+						select_menu_index = -1;
+					}
+					else if (select_menu_index == 0)
+					{
+						if (gm.getKeyDown("interact"))
+						{
+							if (select_buttons[0].text == "Equip")
+							{
+								gm.inventory.changeEquip(inven_select_num);
+							}
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select_menu_index = 1;
+						}
+					}
+					else if (select_menu_index == 1)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select_menu_index = 0;
+						}
+						else if (gm.getKeyDown("down"))
+						{
+							select_menu_index = 2;
+						}
+					}
+					else if (select_menu_index == 2)
+					{
+						if (gm.getKeyDown("up"))
+						{
+							select_menu_index = 1;
+						}
+					}
+				}
+
+				//Set Select
+				slots[inven_select_num].hover = true;
+			}
+		}
+
+		//Set Menu Traits
+		resetInventoryValues();
+		map_button.color = new Color(1, 1, 1, map_alpha);
+		file_button.color = new Color(1, 1, 1, file_alpha);
+		exit_button.color = new Color(1, 1, 1, exit_alpha);
+		setCursor(cursor_a, cursor_b, draw_sin);
+	}
+	
+	//Methods
+	private void resetInventoryValues()
+	{
+		if (gm.inventory.player_equip != -1)
+		{
+			equip_slot.setItemValue(gm.inventory.inventory[gm.inventory.player_equip]);
+		}
+
+		for (int i = 0; i < 6; i++)
+		{
+			slots[i].setItemValue(gm.inventory.inventory[i]);
+		}
+	}
+	
+	private void setCursor(Vector2 position_a, Vector2 position_b, float sin)
+	{
+		float lerp_dis = Time.deltaTime * 5f;
+		select_cursor[0].transform.localPosition = Vector2.Lerp(select_cursor[0].transform.localPosition, new Vector2(position_a.x - (sin * offset), position_a.y + (sin * offset)), lerp_dis);
+		select_cursor[1].transform.localPosition = Vector2.Lerp(select_cursor[1].transform.localPosition, new Vector2(position_b.x + (sin * offset), position_a.y + (sin * offset)), lerp_dis);
+		select_cursor[2].transform.localPosition = Vector2.Lerp(select_cursor[2].transform.localPosition, new Vector2(position_b.x + (sin * offset), position_b.y - (sin * offset)), lerp_dis);
+		select_cursor[3].transform.localPosition = Vector2.Lerp(select_cursor[3].transform.localPosition, new Vector2(position_a.x - (sin * offset), position_b.y - (sin * offset)), lerp_dis);
+	}
+
+	private void createMenu()
+	{
+		//Map Button
+		GameObject text_obj = new GameObject("map_button", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(320, 430, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(5000, 2000);
+		map_button = text_obj.GetComponent<Text>();
+		map_button.alignment = TextAnchor.MiddleCenter;
+		map_button.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		map_button.fontSize = 300;
+		map_button.text = "Map";
+		
+		//File Button
+		text_obj = new GameObject("file_button", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(548, 430, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(5000, 2000);
+		file_button = text_obj.GetComponent<Text>();
+		file_button.alignment = TextAnchor.MiddleCenter;
+		file_button.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		file_button.fontSize = 300;
+		file_button.text = "File";
+		
+		//Exit Button
+		text_obj = new GameObject("exit_button", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(548, 340, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(5000, 2000);
+		exit_button = text_obj.GetComponent<Text>();
+		exit_button.alignment = TextAnchor.MiddleCenter;
+		exit_button.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		exit_button.fontSize = 300;
+		exit_button.text = "Exit";
+		
+		//Jill Portrait
+		text_obj = new GameObject("jill_portrait", typeof(RectTransform), typeof(Image));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(-555, -174, 0);
+		text_obj.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
+		jill_portrait = text_obj.GetComponent<Image>();
+		jill_portrait.sprite = Resources.Load<Sprite>("System/GUI/sJillPortraitLR");
+		
+		//Select Menu
+		text_obj = new GameObject("select_menu", typeof(RectTransform), typeof(Image));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(12, 290, 0);
+		text_obj.transform.localScale = new Vector3(3f, 3f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(80, 96);
+		select_menu = text_obj.GetComponent<Image>();
+		select_menu.sprite = Resources.Load<Sprite>("System/GUI/sTabMenu");
+		select_menu.color = Color.clear;
+
+		select_buttons = new Text[3];
+		for (int i = 0; i < 3; i++)
+		{
+			text_obj = new GameObject("select_button", typeof(RectTransform), typeof(Text));
+			text_obj.transform.SetParent(transform);
+			text_obj.transform.localPosition = new Vector3(12, 385 - (i * 95), 0);
+			text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+			text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(5000, 2000);
+			select_buttons[i] = text_obj.GetComponent<Text>();
+			select_buttons[i].alignment = TextAnchor.MiddleCenter;
+			select_buttons[i].font = Resources.Load<Font>("System/GUI/ResTextFont");
+			select_buttons[i].fontSize = 300;
+			select_buttons[i].color = Color.clear;
+		}
+		select_buttons[0].text = "Use";
+		select_buttons[1].text = "Check";
+		select_buttons[2].text = "Combine";
 	}
 }
 
@@ -46,13 +497,12 @@ public class InventoryTransition : MonoBehaviour
 		
 		Texture2D tex = Resources.Load<Texture2D>("texture2") as Texture2D;
 		black_screen.sprite = Sprite.Create(tex, new Rect(64, 0, 64, 64), new Vector2(0.5f, 0.5f));
+		
+		trans = true;
 		startflip = true;
-		black_screen.color = new Color(0, 0, 0, 1);
-		if (trans)
-		{
-			transflip = false;
-			black_screen.color = new Color(0, 0, 0, 0);
-		}
+		transflip = false;
+		
+		black_screen.color = new Color(0, 0, 0, 0);
 		black_screen.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
 		black_screen.GetComponent<RectTransform>().localScale = new Vector3(10000, 10000, 1);
 		
@@ -72,7 +522,37 @@ public class InventoryTransition : MonoBehaviour
 		{
 			if (transflip)
 			{
-				
+				if (trans)
+				{
+					alpha = Mathf.Lerp(alpha, 0, Time.deltaTime * 5f);
+					if (alpha <= 0.05f)
+					{
+						foreach (GameObject enemy in enemies)
+						{
+							enemy.GetComponent<EnemyBehaviour>().enabled = true;
+						}
+						GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().canmove = true;
+						Destroy(gameObject);
+					}
+				}
+				else
+				{
+					alpha = Mathf.Lerp(alpha, 1, Time.deltaTime * 5f);
+					if (alpha >= 0.95f)
+					{
+						Destroy(menu);
+						foreach (Transform child in transform)
+						{
+							if (child != black_screen.transform)
+							{
+								Destroy(child.gameObject);
+							}
+						}
+
+						trans = true;
+						alpha = 1;
+					}
+				}
 			}
 			else
 			{
@@ -81,10 +561,6 @@ public class InventoryTransition : MonoBehaviour
 					alpha = Mathf.Lerp(alpha, 1, Time.deltaTime * 5f);
 					if (alpha >= 0.95f)
 					{
-						trans = false;
-						alpha = 1;
-						menu = gameObject.AddComponent<InventoryMenu>();
-						
 						GameObject background_obj = new GameObject("background", typeof(RectTransform));
 						background_obj.transform.SetParent(gameObject.transform);
 						background = background_obj.AddComponent<Image>();
@@ -99,6 +575,10 @@ public class InventoryTransition : MonoBehaviour
 						inventory_image.GetComponent<RectTransform>().sizeDelta = new Vector2(480, 360);
 						inventory_image.GetComponent<RectTransform>().localScale = new Vector3(3, 3, 1);
 						inventory_image.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+						
+						trans = false;
+						alpha = 1;
+						menu = gameObject.AddComponent<InventoryMenu>();
 					}
 				}
 				else
@@ -116,8 +596,10 @@ public class InventoryTransition : MonoBehaviour
 		black_screen.transform.SetAsLastSibling();
 	}
 
-	public void setTrans()
+	public void switchTrans()
 	{
-		trans = true;
+		transflip = true;
+		startflip = true;
 	}
+	
 }
