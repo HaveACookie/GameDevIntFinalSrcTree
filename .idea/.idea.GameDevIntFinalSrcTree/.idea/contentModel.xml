@@ -41,6 +41,7 @@
           <e p="Systems" t="Include">
             <e p="GameManager.cs" t="Include" />
             <e p="InventoryData.cs" t="Include" />
+            <e p="InventoryHealth.cs" t="Include" />
             <e p="InventoryManager.cs" t="Include" />
             <e p="InventoryMenu.cs" t="Include" />
             <e p="InventorySlotScript.cs" t="Include" />

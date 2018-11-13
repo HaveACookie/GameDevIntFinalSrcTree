@@ -14,11 +14,14 @@ public class InventoryMenu : MonoBehaviour {
 	private Text exit_button;
 	
 	private Text display_text;
+	private Text yes_text;
+	private Text no_text;
 	
 	private Image select_menu;
 	private Text[] select_buttons;
 
 	private Image jill_portrait;
+	private InventoryHealth health_portrait;
 	private InventorySlotScript equip_slot;
 	private InventorySlotScript[] slots;
 
@@ -28,9 +31,14 @@ public class InventoryMenu : MonoBehaviour {
 	private bool can_move;
 	private float offset;
 	private float text_spd;
-	//private bool show_cursor;
 	
 	//Variables
+	private bool pick_up;
+	private bool picked;
+	private int pick_up_item;
+	private int pick_up_stock;
+	private GameObject destroy_pickup;
+	
 	private float map_alpha;
 	private float file_alpha;
 	private float exit_alpha;
@@ -65,7 +73,7 @@ public class InventoryMenu : MonoBehaviour {
 		{
 			for (int w = 0; w < 2; w++)
 			{
-				slots[i] = Instantiate(Resources.Load<GameObject>("System/GUI/InventorySlot")).GetComponent<InventorySlotScript>();
+				slots[i] = Instantiate(Resources.Load<GameObject>("System/GUI/inventory_slot")).GetComponent<InventorySlotScript>();
 				slots[i].transform.SetParent(transform);
 				slots[i].transform.localPosition = new Vector3(314 + (w * 224), 176 + (h * -172), 0);
 				slots[i].transform.localScale = new Vector3(2.9f, 2.9f, 1);
@@ -74,7 +82,7 @@ public class InventoryMenu : MonoBehaviour {
 		}
 		
 		//Equip Slot
-		equip_slot = Instantiate(Resources.Load<GameObject>("System/GUI/InventorySlot")).GetComponent<InventorySlotScript>();
+		equip_slot = Instantiate(Resources.Load<GameObject>("System/GUI/inventory_slot")).GetComponent<InventorySlotScript>();
 		equip_slot.transform.SetParent(transform);
 		equip_slot.transform.localPosition = new Vector3(55, -190);
 		equip_slot.transform.localScale = new Vector3(2.9f, 2.9f, 1);
@@ -98,6 +106,7 @@ public class InventoryMenu : MonoBehaviour {
 		text_spd = 12f;
 		
 		//Variables
+		picked = false;
 		sin_val = 0f;
 		select = 0;
 
@@ -106,6 +115,7 @@ public class InventoryMenu : MonoBehaviour {
 		ui_text = "";
 
 		select_menu_index = -1;
+		resetHealthValues();
 	}
 	
 	//Update Event
@@ -117,12 +127,6 @@ public class InventoryMenu : MonoBehaviour {
 			sin_val = 0f;
 		}
 		float draw_sin = (Mathf.Sin(sin_val * 2 * Mathf.PI) + 1) / 2f;
-		
-		//Debug
-		if (Input.GetKeyDown(KeyCode.K))
-		{
-			gm.inventory.debugScramble();
-		}
 
 		//Set Select Position
 		map_alpha = 0.6f;
@@ -144,7 +148,12 @@ public class InventoryMenu : MonoBehaviour {
 			//Exit Inventory
 			if (gm.getKeyDown("inventory"))
 			{
-				if (select_menu_index == -1)
+				if (combine)
+				{
+					combine = false;
+					setText(InventoryData.itemName(gm.inventory.inventory[select - 4]));
+				}
+				else if (select_menu_index == -1)
 				{
 					can_move = false;
 					transition.switchTrans();
@@ -232,8 +241,7 @@ public class InventoryMenu : MonoBehaviour {
 						if (gm.inventory.inventory[inven_select_num] != 0)
 						{
 							select_menu_index = 0;
-							if (gm.inventory.inventory[inven_select_num] > 0 &&
-							    gm.inventory.inventory[inven_select_num] < 9)
+							if (gm.inventory.inventory[inven_select_num] > 0 && gm.inventory.inventory[inven_select_num] < 9)
 							{
 								select_buttons[0].text = "Equip";
 							}
@@ -344,7 +352,53 @@ public class InventoryMenu : MonoBehaviour {
 				}
 				else if (combine)
 				{
+					//Tab Menu
+					select_menu.color = Color.white;
+					for (int l = 0; l < 3; l++)
+					{
+						select_buttons[l].color = new Color(1, 1, 1, 0.6f);
+					}
+					select_buttons[2].color = new Color(1, 1, 1, 1f);
 					
+					//Move Cursor
+					if (gm.getKeyDown("up"))
+					{
+						if (combine_select_index > 1)
+						{
+							combine_select_index -= 2;
+						}
+					}
+					else if (gm.getKeyDown("down"))
+					{
+						if (combine_select_index < 4)
+						{
+							combine_select_index += 2;
+						}
+					}
+					else if (gm.getKeyDown("left"))
+					{
+						if (combine_select_index % 2 != 0)
+						{
+							combine_select_index--;
+						}
+					}
+					else if (gm.getKeyDown("right"))
+					{
+						if (combine_select_index % 2 == 0)
+						{
+							combine_select_index++;
+						}
+					}
+					else if (gm.getKeyDown("interact"))
+					{
+						combineAction(combine_index, combine_select_index);
+					}
+					
+					//Combine Cursor
+					slots[combine_index].select = true;
+					slots[combine_select_index].hover = true;
+					cursor_a = new Vector2(slots[combine_select_index].transform.localPosition.x, slots[combine_select_index].transform.localPosition.y) + new Vector2(-72, 45);
+					cursor_b = new Vector2(slots[combine_select_index].transform.localPosition.x, slots[combine_select_index].transform.localPosition.y) + new Vector2(72, -45);
 				}
 				else
 				{
@@ -374,6 +428,12 @@ public class InventoryMenu : MonoBehaviour {
 								gm.inventory.changeEquip(inven_select_num);
 								select_menu_index = -1;
 							}
+							else
+							{
+								//Use
+								useAction(inven_select_num);
+								resetHealthValues();
+							}
 						}
 						else if (gm.getKeyDown("down"))
 						{
@@ -400,6 +460,7 @@ public class InventoryMenu : MonoBehaviour {
 							combine = true;
 							combine_index = inven_select_num;
 							combine_select_index = inven_select_num;
+							setText("Combine " + InventoryData.itemName(gm.inventory.inventory[inven_select_num]) + " with?");
 						}	
 						else if (gm.getKeyDown("up"))
 						{
@@ -410,6 +471,83 @@ public class InventoryMenu : MonoBehaviour {
 
 				//Set Select
 				slots[inven_select_num].hover = true;
+			}
+		}
+		else
+		{
+			//Take Items
+			if (pick_up)
+			{
+				yes_text.color = new Color(1, 1, 1, 0.6f);
+				no_text.color = new Color(1, 1, 1, 0.6f);
+				if (select == 0)
+				{
+					cursor_a = new Vector2(266, -400) + new Vector2(-40, 10);
+					cursor_b = new Vector2(266, -400) + new Vector2(40, -10);
+					yes_text.color = Color.white;
+				}
+				else if (select == 1)
+				{
+					cursor_a = new Vector2(480, -400) + new Vector2(-30, 10);
+					cursor_b = new Vector2(480, -400) + new Vector2(30, -10);
+					no_text.color = Color.white;
+				}
+				
+				if (gm.getKeyDown("inventory"))
+				{
+					can_move = false;
+					transition.switchTrans();
+				}
+				
+				if (picked)
+				{
+					if (gm.getKeyDown("interact"))
+					{
+						can_move = false;
+						transition.switchTrans();
+					}
+				}
+				else
+				{
+					display_text.text = "Will you take the \n" + InventoryData.itemName(pick_up_item) + "?";
+					
+					if (gm.getKeyDown("interact"))
+					{
+						if (select == 1)
+						{
+							can_move = false;
+							transition.switchTrans();
+						}
+						else
+						{
+							gm.inventory.addItem(pick_up_item, pick_up_stock);
+							Destroy(destroy_pickup);
+							
+							setText("You took the " + InventoryData.itemName(pick_up_item) + ".");
+							picked = true;
+							for (int i = 0; i < 4; i++)
+							{
+								select_cursor[i].enabled = false;
+							}
+							yes_text.enabled = false;
+							no_text.enabled = false;
+						}
+					}
+					else if (gm.getKeyDown("left"))
+					{
+						if (select == 1)
+						{
+							select = 0;
+						}
+					}
+					else if (gm.getKeyDown("right"))
+					{
+						if (select == 0)
+						{
+							select = 1;
+						}
+					}
+				}
 			}
 		}
 
@@ -423,6 +561,253 @@ public class InventoryMenu : MonoBehaviour {
 	}
 	
 	//Methods
+	private void useAction(int index)
+	{
+		//Health Items
+		if (gm.inventory.inventory[index] > 60 && gm.inventory.inventory[index] < 72)
+		{
+			switch (gm.inventory.inventory[index])
+			{
+				case 61 :
+					//Green Herb
+					if (gm.inventory.health == 3)
+					{
+						gm.inventory.heal(4);
+						gm.inventory.removeItemAtIndex(index);
+						return;
+					}
+					break;
+				case 62 :
+					//Red Herb
+					break;
+				case 63 :
+					//Blue Herb
+					if (gm.inventory.poison)
+					{
+						gm.inventory.cure();
+					}
+					break;
+				case 64 :
+					//First Aid Spray
+					if (gm.inventory.health != 4)
+					{
+						gm.inventory.heal(4);
+						gm.inventory.removeItemAtIndex(index);
+						return;
+					}
+					break;
+				case 65 :
+					//Serum
+					break;
+				case 66 :
+					//Mix GG
+					if (gm.inventory.health != 4)
+					{
+						if (gm.inventory.health >= 2)
+						{
+							gm.inventory.heal(4);
+							gm.inventory.removeItemAtIndex(index);
+							return;
+						}
+					}
+					break;
+				case 67 :
+					//Mix GR
+					if (gm.inventory.health != 4)
+					{
+						gm.inventory.heal(4);
+						gm.inventory.removeItemAtIndex(index);
+						return;
+					}
+					break;
+				case 68 :
+					//Mix GB
+					if (gm.inventory.health != 4 || gm.inventory.poison)
+					{
+						gm.inventory.cure();
+						if (gm.inventory.health >= 1)
+						{
+							gm.inventory.heal(gm.inventory.health + 1);
+							gm.inventory.removeItemAtIndex(index);
+						}
+						return;
+					}
+					break;
+				case 69 :
+					//Mix GGB
+					if (gm.inventory.health != 4 || gm.inventory.poison)
+					{
+						gm.inventory.cure();
+						if (gm.inventory.health >= 2)
+						{
+							gm.inventory.heal(4);
+							gm.inventory.removeItemAtIndex(index);
+						}
+						return;
+					}
+					break;
+				case 70 :
+					//Mix GGG
+					if (gm.inventory.health != 4)
+					{
+						gm.inventory.heal(4);
+						gm.inventory.removeItemAtIndex(index);
+						return;
+					}
+					break;
+				case 71 :
+					//Mix GRB
+					if (gm.inventory.health != 4 || gm.inventory.poison)
+					{
+						gm.inventory.cure();
+						gm.inventory.heal(4);
+						return;
+					}
+					break;
+				default:
+					setText("You can't use that right now.");
+					return;
+			}
+			
+			setText("It doesn't work...");
+			return;
+		}
+		
+		setText("You can't use that right now.");
+	}
+	
+	private void combineAction(int index_a, int index_b)
+	{
+		//Combine and item with itself
+		if (index_a == index_b)
+		{
+			combine = false;
+			setText("You can't combine an item with itself.");
+			return;
+		}
+		
+		//Combining Actions
+		if (gm.inventory.craftHealing(index_a, index_b))
+		{
+			//Craft Healing Items
+			select = index_b + 4;
+			setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+			combine = false;
+			return;
+		}
+		if (Mathf.Min(gm.inventory.inventory[index_a], gm.inventory.inventory[index_b]) == 31 && Mathf.Max(gm.inventory.inventory[index_a], gm.inventory.inventory[index_b]) == 32)
+		{
+			//Moon Crest
+			gm.inventory.removeItemAtIndex(index_a);
+			gm.inventory.removeItemAtIndex(index_b);
+			gm.inventory.addItemAtIndex(30, index_b);
+			
+			select = index_b + 4;
+			setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+			combine = false;
+			return;
+		}
+		if (gm.inventory.inventory[index_a] == gm.inventory.inventory[index_b])
+		{
+			if ((gm.inventory.inventory[index_a] > 8 && gm.inventory.inventory[index_a] < 15))
+			{
+				//Combine Ammo
+				gm.inventory.inventory_stock[index_b] += gm.inventory.inventory_stock[index_a];
+				gm.inventory.inventory[index_a] = 0;
+				gm.inventory.inventory_stock[index_a] = 0;
+				select = index_b + 4;
+				setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+				combine = false;
+				return;
+			}
+			if (gm.inventory.inventory[index_a] == 38)
+			{
+				if (gm.inventory.inventory_stock[index_a] == 0)
+				{
+					gm.inventory.inventory_stock[index_a] = 1;
+				}
+				if (gm.inventory.inventory_stock[index_b] == 0)
+				{
+					gm.inventory.inventory_stock[index_b] = 1;
+				}
+				gm.inventory.inventory_stock[index_b] += gm.inventory.inventory_stock[index_a];
+				gm.inventory.inventory[index_a] = 0;
+				gm.inventory.inventory_stock[index_a] = 0;
+				select = index_b + 4;
+				setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+				combine = false;
+				return;
+			}
+		}
+		else
+		{
+			if (gm.inventory.inventory[index_b] == 0)
+			{
+				//Combine with empty slot
+				gm.inventory.inventory[index_b] = gm.inventory.inventory[index_a];
+				gm.inventory.inventory_stock[index_b] = gm.inventory.inventory_stock[index_a];
+				gm.inventory.inventory[index_a] = 0;
+				gm.inventory.inventory_stock[index_a] = 0;
+				select = index_b + 4;
+				setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+				combine = false;
+
+				if (gm.inventory.player_equip == index_a)
+				{
+					gm.inventory.changeEquip(index_b);
+				}
+				
+				if (gm.inventory.inventory[index_b] > 0 && gm.inventory.inventory[index_b] < 9)
+				{
+					select_buttons[0].text = "Equip";
+				}
+				else
+				{
+					select_buttons[0].text = "Use";
+				}
+				
+				return;
+			}
+			if ((gm.inventory.inventory[index_a] > 38 && gm.inventory.inventory[index_a] < 46) && (gm.inventory.inventory[index_b] > 38 && gm.inventory.inventory[index_b] < 46))
+			{
+				//Combine Chemicals
+				int combine_result = gm.inventory.combineChemicals(index_a, index_b);
+
+				if (combine_result == 1)
+				{
+					select = index_b + 4;
+					setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+					combine = false;
+					return;
+				}
+				if (combine_result == -1)
+				{
+					setText("That Chemical doesn't mix with that.");
+					return;
+				}
+			}
+			else if ((gm.inventory.inventory[index_a] > 8 && gm.inventory.inventory[index_a] < 15))
+			{
+				int combine_result = gm.inventory.reloadItem(index_b, index_a);
+				if (combine_result == 1)
+				{
+					combine = false;
+					select = index_b + 4;
+					setText(InventoryData.itemName(gm.inventory.inventory[index_b]));
+					select_buttons[0].text = "Equip";
+					return;
+				}
+				if (combine_result == 0)
+				{
+					return;
+				}
+			}
+		}
+		
+		setText("You can't do that...");
+		combine = false;
+	}
+	
 	private void drawText()
 	{
 		if (draw_ui_text)
@@ -452,6 +837,12 @@ public class InventoryMenu : MonoBehaviour {
 			display_text.text = "";
 		}
 	}
+
+	private void resetHealthValues()
+	{
+		health_portrait.health = gm.inventory.health;
+		health_portrait.poison = gm.inventory.poison;
+	}
 	
 	private void resetInventoryValues()
 	{
@@ -463,6 +854,27 @@ public class InventoryMenu : MonoBehaviour {
 		for (int i = 0; i < 6; i++)
 		{
 			slots[i].setItemValue(gm.inventory.inventory[i], gm.inventory.inventory_stock[i]);
+		}
+	}
+
+	public void setPickUp(int item_num, int stock_num, GameObject destroy_num)
+	{
+		pick_up = true;
+		can_move = false;
+		pick_up_item = item_num;
+		pick_up_stock = stock_num;
+		destroy_pickup = destroy_num;
+
+		if (!gm.inventory.checkItem(0))
+		{
+			picked = true;
+			setText("There's no room to take the " + InventoryData.itemName(pick_up_item) + ".");
+			for (int i = 0; i < 4; i++)
+			{
+				select_cursor[i].enabled = false;
+			}
+			yes_text.enabled = false;
+			no_text.enabled = false;
 		}
 	}
 	
@@ -525,6 +937,32 @@ public class InventoryMenu : MonoBehaviour {
 		display_text.fontSize = 300;
 		display_text.text = "";
 		
+		//Display Text
+		text_obj = new GameObject("yes_text", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(0, -380, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(6000, 650);
+		yes_text = text_obj.GetComponent<Text>();
+		yes_text.alignment = TextAnchor.UpperLeft;
+		yes_text.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		yes_text.fontSize = 300;
+		yes_text.color = Color.clear;
+		yes_text.text = "\n 											Yes";
+		
+		//Display Text
+		text_obj = new GameObject("no_text", typeof(RectTransform), typeof(Text));
+		text_obj.transform.SetParent(transform);
+		text_obj.transform.localPosition = new Vector3(0, -380, 0);
+		text_obj.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+		text_obj.GetComponent<RectTransform>().sizeDelta = new Vector2(6000, 650);
+		no_text = text_obj.GetComponent<Text>();
+		no_text.alignment = TextAnchor.UpperLeft;
+		no_text.font = Resources.Load<Font>("System/GUI/ResTextFont");
+		no_text.fontSize = 300;
+		no_text.color = Color.clear;
+		no_text.text = "\n														No";
+		
 		//Jill Portrait
 		text_obj = new GameObject("jill_portrait", typeof(RectTransform), typeof(Image));
 		text_obj.transform.SetParent(transform);
@@ -532,6 +970,12 @@ public class InventoryMenu : MonoBehaviour {
 		text_obj.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
 		jill_portrait = text_obj.GetComponent<Image>();
 		jill_portrait.sprite = Resources.Load<Sprite>("System/GUI/sJillPortraitLR");
+		
+		//Health Portrait
+		health_portrait = Instantiate(Resources.Load<GameObject>("System/GUI/health_portrait")).GetComponent<InventoryHealth>();
+		health_portrait.transform.SetParent(transform);
+		health_portrait.transform.localPosition = new Vector2(-255, -174);
+		health_portrait.transform.localScale = new Vector3(3f, 3f, 1);
 		
 		//Select Menu
 		text_obj = new GameObject("select_menu", typeof(RectTransform), typeof(Image));
@@ -574,11 +1018,17 @@ public class InventoryTransition : MonoBehaviour
 	private Image black_screen;
 	private Image background;
 	private Image inventory_image;
+	
+	//Menu Functions
+	private bool pickup;
+	private int pick_up_item;
+	private int pick_up_stock;
+	private GameObject destroy_pickup;
 
 	private InventoryMenu menu;
 	private List<GameObject> enemies;
 
-	void Start()
+	void Awake()
 	{
 		//Settings
 		alpha = 0;
@@ -670,6 +1120,10 @@ public class InventoryTransition : MonoBehaviour
 						trans = false;
 						alpha = 1;
 						menu = gameObject.AddComponent<InventoryMenu>();
+						if (pickup)
+						{
+							menu.setPickUp(pick_up_item, pick_up_stock, destroy_pickup);
+						}
 					}
 				}
 				else
@@ -691,6 +1145,14 @@ public class InventoryTransition : MonoBehaviour
 	{
 		transflip = true;
 		startflip = true;
+	}
+	
+	public void setPickUp(int item_num, int stock_num, GameObject destroy_num)
+	{
+		pickup = true;
+		pick_up_item = item_num;
+		pick_up_stock = stock_num;
+		destroy_pickup = destroy_num;
 	}
 	
 }

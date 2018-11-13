@@ -14,6 +14,7 @@ public class InventorySlotScript : MonoBehaviour
 	private Text stock;
 	
 	//Settings
+	private bool equipped;
 	private bool hovered;
 	private bool selected;
 	
@@ -42,7 +43,7 @@ public class InventorySlotScript : MonoBehaviour
 		clone.enabled = false;
 		sr.enabled = false;
 		
-		GameObject text_obj = new GameObject("map_button", typeof(RectTransform), typeof(Text));
+		GameObject text_obj = new GameObject("stock_text", typeof(RectTransform), typeof(Text));
 		text_obj.transform.SetParent(transform);
 		text_obj.transform.localPosition = new Vector3(0, 0, 0);
 		text_obj.transform.localScale = new Vector3(0.06896551724f, 0.06896551724f, 1f);
@@ -86,7 +87,13 @@ public class InventorySlotScript : MonoBehaviour
 		float draw_sin = (Mathf.Sin(temp_sin * 2 * Mathf.PI) + 1) / 2f;
 		
 		//Select Screen
-		if (selected)
+		if (equipped)
+		{
+			alpha = 1f;
+			sin_val = 0;
+			clone_alpha = 0f;
+		}
+		else if (selected)
 		{
 			sin_val = (draw_sin * 0.2f) + 0.4f;
 			alpha = 1f;
@@ -125,6 +132,7 @@ public class InventorySlotScript : MonoBehaviour
 	//Public Methods
 	public void setItemValue(int item, int num)
 	{
+		stock.text = "";
 		if (item <= 0)
 		{
 			img.enabled = false;
@@ -142,10 +150,17 @@ public class InventorySlotScript : MonoBehaviour
 		img.enabled = true;
 		clone.enabled = true;
 
-		stock.text = "";
 		if (num != 0)
 		{
 			stock.text = num.ToString();
+		}
+	}
+	
+	public bool equip
+	{
+		set
+		{
+			equipped = value;
 		}
 	}
 	

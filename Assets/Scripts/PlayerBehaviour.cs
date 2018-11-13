@@ -19,13 +19,11 @@ public class PlayerBehaviour : MonoBehaviour {
 	private bool can_move;
 	
 	//Variables
-	public int item_equip { private get; set; }
 	private Vector2 velocity;
 	
 	//Init Player
 	void Awake()
 	{
-		item_equip = 0;
 		gameObject.tag = "Player";
 	}
 	
@@ -49,6 +47,12 @@ public class PlayerBehaviour : MonoBehaviour {
 		velocity = Vector2.zero;
 		if (can_move)
 		{
+			//Debug
+			if (Input.GetKeyDown(KeyCode.K))
+			{
+				pickupItem(30, 0, new GameObject("This is a test"));
+			}
+			
 			//Variables
 			float angle_spd = 0f;
 			float move_spd = 0f;
@@ -113,13 +117,41 @@ public class PlayerBehaviour : MonoBehaviour {
 			}
 		}
 	}
+	
+	//Methods
+	public void pickupItem(int item, int stock, GameObject item_object)
+	{
+		CameraManager.instance.createInventoryCanvas();
+		CameraManager.instance.setInventoryPickUp(item, stock, item_object);
+		can_move = false;
+	}
 
 	//Getter & Setters
 	public int equip
 	{
 		get
 		{
-			return gm.inventory.inventory[item_equip];
+			if (gm.inventory.player_equip == -1)
+			{
+				return -1;
+			}
+			return gm.inventory.inventory[gm.inventory.player_equip];
+		}
+	}
+	
+	public int ammo
+	{
+		get
+		{
+			if (equip == -1)
+			{
+				return 0;
+			}
+			if (equip == 1)
+			{
+				return 1;
+			}
+			return gm.inventory.inventory_stock[gm.inventory.player_equip];
 		}
 	}
 	

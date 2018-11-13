@@ -77,6 +77,12 @@ public class CameraManager : MonoBehaviour {
 		inventory_canvas.AddComponent<InventoryTransition>();
 	}
 
+	public void setInventoryPickUp(int item, int stock, GameObject item_obj)
+	{
+		InventoryTransition menu = cameras[cam_active].transform.GetChild(0).GetComponent<InventoryTransition>();
+		menu.setPickUp(item, stock, item_obj);
+	}
+
 	public int getCameraNum(GameObject camera)
 	{
 		for (int i = 0; i < cameras.Length; i++)
