@@ -33,7 +33,11 @@ public class InputHandling : MonoBehaviour {
         Debug.DrawLine(shootMidTopStart.position, shootDownMidEnd.position, Color.yellow);
         shotgunShot4 = Physics.Linecast(shootMidTopStart.position, shootDownMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
     }
-
+    void bazookaCasting()
+    {
+        Debug.DrawLine(shootMidTopStart.position, shootMidTopEnd.position, Color.cyan);
+        shotgunShot1 = Physics.Linecast(shootMidTopStart.position, shootMidTopEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
+    }
 
     // Update is called once per frame
     void Update()
@@ -93,6 +97,8 @@ public class InputHandling : MonoBehaviour {
     }
 
 
+
+
     void shotCasting()
     {
         //Define Ray
@@ -142,6 +148,12 @@ public class InputHandling : MonoBehaviour {
                         Debug.Log("ItemHit");
                         itemSurfaceHit = true;
 
+                        break;
+                    }
+                case "SaveSurface":
+                    {
+                        Debug.Log("SaveHit");
+                        // we can add a reference to saving management here
                         break;
                     }
                 default:
