@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This is a script that is added to the player object to allow shooting to take place
+
 
 public class InputHandling : MonoBehaviour {
 
     private RaycastHit hit;
+
+    //Surface Hit Bools
     public bool doorHit = false;
     public bool itemSurfaceHit = false;
     public bool shotHit = true;
-    public bool shooting = true;
+    //Variables for Which weapon is being used
+    public bool shooting = false;
+    public bool shootingPistol = false;
     public bool isKnifing = false;
+    public bool isShotGunning = false;
+
     public bool shootStance = true;
+    //Ray/LineCast Bools and Transform Holders
     public bool shotgunShot1 = false;
     public bool shotgunShot2 = false;
     public bool shotgunShot3 = false;
@@ -25,7 +34,7 @@ public class InputHandling : MonoBehaviour {
 
     void shotgunCasting()
     {
-        //LineCasting for shotgun
+        //LineCasting for shotgun, Debug line for visibility 
         Debug.DrawLine(shootMidTopStart.position, shootMidTopEnd.position, Color.cyan);
         shotgunShot1 = Physics.Linecast(shootMidTopStart.position, shootMidTopEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
         Debug.DrawLine(shootMidTopStart.position, shootLeftMidEnd.position, Color.magenta);
@@ -39,6 +48,7 @@ public class InputHandling : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //Refrences to Raycasting Methods
         interactionCasting();
         shotgunCasting();
         shotCasting();
@@ -63,33 +73,40 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
-        //Logic For Shootstance and shooting (needs inventory integration)
-        if (shootStance = true && Input.GetKey(KeyCode.R))
+        //Puts Player in Shootstance   
+        if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R))
         {
-            shooting = true;
+            shootingPistol = true;
+            //we can put the animations and sound effects around here later
+        }
+        if (shootingPistol == true && shotHit.Equals(true))
+        {
+            //Deal Damage here
         }
 
-        if (shooting == true && shotHit.Equals(true))
+        if(shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R ))
         {
-            Debug.Log("ShotWorked");
+            isShotGunning = true; 
+            //we can put the animations and sound effects around here later
         }
-        if(shooting == true && shotgunShot1 == true)
-        {
-            //Should Deal Damage Here
-        }
-        if (shooting == true && shotgunShot2 == true)
+        //Hit Checkers for each bullet in the spread
+        if(isShotGunning == true && shotgunShot1 == true)
         {
             //Should Deal Damage Here
         }
-        if (shooting == true && shotgunShot3 == true)
+        if (isShotGunning == true && shotgunShot2 == true)
         {
             //Should Deal Damage Here
         }
-        if (shooting == true && shotgunShot4 == true)
+        if (isShotGunning == true && shotgunShot3 == true)
         {
             //Should Deal Damage Here
         }
-
+        if (isShotGunning == true && shotgunShot4 == true)
+        {
+            //Should Deal Damage Here
+        }
+       
 
 
     }
