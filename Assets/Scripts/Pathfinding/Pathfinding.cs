@@ -9,7 +9,7 @@ public class Pathfinding : MonoBehaviour
 	//Initialize Singleton Grid
 	void Start()
 	{
-		grid = GridBehaviour.instance;;
+		grid = GridBehaviour.instance;
 	}
 	
 	//Path Finding Methods
