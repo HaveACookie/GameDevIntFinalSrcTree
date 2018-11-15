@@ -9,6 +9,7 @@ public class InputHandling : MonoBehaviour {
     public bool itemSurfaceHit = false;
     public bool shotHit = true;
     public bool shooting = true;
+    public bool isKnifing = false;
     public bool shootStance = true;
     public bool shotgunShot1 = false;
     public bool shotgunShot2 = false;
@@ -24,6 +25,7 @@ public class InputHandling : MonoBehaviour {
 
     void shotgunCasting()
     {
+        //LineCasting for shotgun
         Debug.DrawLine(shootMidTopStart.position, shootMidTopEnd.position, Color.cyan);
         shotgunShot1 = Physics.Linecast(shootMidTopStart.position, shootMidTopEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
         Debug.DrawLine(shootMidTopStart.position, shootLeftMidEnd.position, Color.magenta);
@@ -32,11 +34,6 @@ public class InputHandling : MonoBehaviour {
         shotgunShot3 = Physics.Linecast(shootMidTopStart.position, shootRightMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
         Debug.DrawLine(shootMidTopStart.position, shootDownMidEnd.position, Color.yellow);
         shotgunShot4 = Physics.Linecast(shootMidTopStart.position, shootDownMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
-    }
-    void bazookaCasting()
-    {
-        Debug.DrawLine(shootMidTopStart.position, shootMidTopEnd.position, Color.cyan);
-        shotgunShot1 = Physics.Linecast(shootMidTopStart.position, shootMidTopEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
     }
 
     // Update is called once per frame
@@ -48,7 +45,7 @@ public class InputHandling : MonoBehaviour {
         //Checks to see if the raycast is in range and if the player is pressing the desired button
         if (Input.GetKey(KeyCode.E) && doorHit.Equals(true))
         {
-            Debug.Log("weMadeit");
+            Debug.Log("DoorHitIsWorking");
             //Scene Management Stuff Involving Doors goes here
         }
 
@@ -56,6 +53,7 @@ public class InputHandling : MonoBehaviour {
         {
             //Stuff involving adding items to your inventory
         }
+
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -65,7 +63,7 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
-
+        //Logic For Shootstance and shooting (needs inventory integration)
         if (shootStance = true && Input.GetKey(KeyCode.R))
         {
             shooting = true;
@@ -119,6 +117,18 @@ public class InputHandling : MonoBehaviour {
 
     }
 
+    void knifeCasting()
+    {   
+        //Ask About spherecasting
+        //DefineSphere
+        RaycastHit sphereHit;
+       Ray ray = new Ray(transform.position, transform.forward);
+        Physics.SphereCast(ray, 1.5f, out sphereHit, 2);
+        if (sphereHit.collider.tag.Equals("Enemy"))
+        {
+
+        }
+    }
 
     void interactionCasting()
     {
