@@ -33,6 +33,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	//Init Enemy
 	void Start () {
 		//Components
+		gameObject.tag = "Enemy";
 		rb = gameObject.GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		path = gameObject.AddComponent<Pathfinding>();
