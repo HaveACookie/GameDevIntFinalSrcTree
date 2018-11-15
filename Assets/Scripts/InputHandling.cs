@@ -10,15 +10,36 @@ public class InputHandling : MonoBehaviour {
     public bool shotHit = true;
     public bool shooting = true;
     public bool shootStance = true;
+    public bool shotgunShot1 = false;
+    public bool shotgunShot2 = false;
+    public bool shotgunShot3 = false;
+    public bool shotgunShot4 = false; 
+    public Transform shootMidTopStart, shootMidTopEnd;
+    public Transform  shootLeftMidEnd;
+    public Transform  shootRightMidEnd;
+    public Transform  shootDownMidEnd;
+
+
     // Use this for initialization
 
-
+    void shotgunCasting()
+    {
+        Debug.DrawLine(shootMidTopStart.position, shootMidTopEnd.position, Color.cyan);
+        shotgunShot1 = Physics.Linecast(shootMidTopStart.position, shootMidTopEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
+        Debug.DrawLine(shootMidTopStart.position, shootLeftMidEnd.position, Color.magenta);
+        shotgunShot2 = Physics.Linecast(shootMidTopStart.position, shootLeftMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
+        Debug.DrawLine(shootMidTopStart.position, shootRightMidEnd.position, Color.yellow);
+        shotgunShot3 = Physics.Linecast(shootMidTopStart.position, shootRightMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
+        Debug.DrawLine(shootMidTopStart.position, shootDownMidEnd.position, Color.yellow);
+        shotgunShot4 = Physics.Linecast(shootMidTopStart.position, shootDownMidEnd.position, 1 << LayerMask.NameToLayer("Zombie"));
+    }
 
 
     // Update is called once per frame
     void Update()
     {
         interactionCasting();
+        shotgunCasting();
         shotCasting();
         //Checks to see if the raycast is in range and if the player is pressing the desired button
         if (Input.GetKey(KeyCode.E) && doorHit.Equals(true))
@@ -31,10 +52,6 @@ public class InputHandling : MonoBehaviour {
         {
             //Stuff involving adding items to your inventory
         }
-
-    
-
-  
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -50,12 +67,26 @@ public class InputHandling : MonoBehaviour {
             shooting = true;
         }
 
-        if (shooting == true & shotHit.Equals(true))
+        if (shooting == true && shotHit.Equals(true))
         {
             Debug.Log("ShotWorked");
         }
-        
-
+        if(shooting == true && shotgunShot1 == true)
+        {
+            //Should Deal Damage Here
+        }
+        if (shooting == true && shotgunShot2 == true)
+        {
+            //Should Deal Damage Here
+        }
+        if (shooting == true && shotgunShot3 == true)
+        {
+            //Should Deal Damage Here
+        }
+        if (shooting == true && shotgunShot4 == true)
+        {
+            //Should Deal Damage Here
+        }
 
 
 
@@ -81,7 +112,6 @@ public class InputHandling : MonoBehaviour {
 
 
     }
-
 
 
     void interactionCasting()
