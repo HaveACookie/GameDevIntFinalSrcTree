@@ -33,19 +33,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="27416" />
+          <entry key="cs" value="27989" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="27416" />
+          <entry key="C#" value="27989" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1104">
@@ -238,24 +238,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Transitions/TransitionDoor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="976">
-              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
               <folding>
-                <marker date="1542240421048" expanded="false" signature="6:78" ph="..." />
-                <marker date="1542240421048" expanded="true" signature="124:1527" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="341:761" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="381:414" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="796:1446" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="871:1018" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1044:1265" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1272:1302" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1340:1443" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1364:1439" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1483:1525" ph="{...}" />
-                <marker date="1542240421048" expanded="true" signature="1492:1522" ph="{...}" />
+                <marker date="1542317030431" expanded="false" signature="6:78" ph="..." />
+                <marker date="1542317030431" expanded="true" signature="124:2124" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="327:406" ph="/* Intent: Create the Door and set all the variables for the animation ... */" />
+                <marker date="1542317030431" expanded="true" signature="422:890" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="467:500" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="910:1009" ph="/* Intent: Turns the door around an axis at certain periods of time for the door animation ... */" />
+                <marker date="1542317030431" expanded="true" signature="1026:1973" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1106:1351" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1114:1208" ph="/* Turns the Door around the axis for a second ... */" />
+                <marker date="1542317030431" expanded="true" signature="1377:1731" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1385:1514" ph="/* Turns the Door around the axis for a second again but after 1.45 seconds ... */" />
+                <marker date="1542317030431" expanded="true" signature="1738:1801" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1867:1970" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1891:1966" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="1988:2056" ph="/* Intent: Sets the door asset used in the Transition scene ... */" />
+                <marker date="1542317030431" expanded="true" signature="2080:2122" ph="{...}" />
+                <marker date="1542317030431" expanded="true" signature="2089:2119" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -309,7 +314,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraTriggerEZ.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraProximityTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Transitions/TransitionDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinding.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transitions/SceneTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interact/InteractInterface.cs" />
@@ -321,6 +325,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Inventory/InventoryData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Inventory/InventoryHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Inventory/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Transitions/TransitionDoor.cs" />
       </list>
     </option>
   </component>
@@ -330,7 +335,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="249" />
     <option name="y" value="2" />
     <option name="width" value="1440" />
@@ -406,12 +411,12 @@
       <workItem from="1542223556590" duration="11192000" />
       <workItem from="1542253504168" duration="8867000" />
       <workItem from="1542305600483" duration="2696000" />
-      <workItem from="1542314522733" duration="1316000" />
+      <workItem from="1542314522733" duration="1732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108259000" />
+    <option name="totallyTimeSpent" value="108675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,27 +638,6 @@
             <marker date="1542306327085" expanded="true" signature="624:633" ph="{...}" />
             <marker date="1542306327085" expanded="true" signature="670:743" ph="{...}" />
             <marker date="1542306327085" expanded="true" signature="700:724" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Transitions/TransitionDoor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <marker date="1542240421048" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542240421048" expanded="true" signature="124:1527" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="341:761" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="381:414" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="796:1446" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="871:1018" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1044:1265" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1272:1302" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1340:1443" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1364:1439" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1483:1525" ph="{...}" />
-            <marker date="1542240421048" expanded="true" signature="1492:1522" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -912,6 +896,32 @@
             <marker date="1542306640691" expanded="true" signature="5367:5394" ph="{...}" />
             <marker date="1542306640691" expanded="true" signature="5425:5504" ph="{...}" />
             <marker date="1542306640691" expanded="true" signature="5473:5500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Transitions/TransitionDoor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding>
+            <marker date="1542317030431" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542317030431" expanded="true" signature="124:2124" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="327:406" ph="/* Intent: Create the Door and set all the variables for the animation ... */" />
+            <marker date="1542317030431" expanded="true" signature="422:890" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="467:500" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="910:1009" ph="/* Intent: Turns the door around an axis at certain periods of time for the door animation ... */" />
+            <marker date="1542317030431" expanded="true" signature="1026:1973" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1106:1351" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1114:1208" ph="/* Turns the Door around the axis for a second ... */" />
+            <marker date="1542317030431" expanded="true" signature="1377:1731" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1385:1514" ph="/* Turns the Door around the axis for a second again but after 1.45 seconds ... */" />
+            <marker date="1542317030431" expanded="true" signature="1738:1801" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1867:1970" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1891:1966" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="1988:2056" ph="/* Intent: Sets the door asset used in the Transition scene ... */" />
+            <marker date="1542317030431" expanded="true" signature="2080:2122" ph="{...}" />
+            <marker date="1542317030431" expanded="true" signature="2089:2119" ph="{...}" />
           </folding>
         </state>
       </provider>
