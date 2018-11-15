@@ -106,6 +106,28 @@ public class GameManager : MonoBehaviour {
 			GameObject.FindWithTag("MainCamera").AddComponent<TransitionDoor>().doortype = door_type_index;
 			door_type_index = null;
 		}
+		else if (scene.name == scene_load)
+		{
+			scene_load = null;
+
+			List<DoorScript> doors = new List<DoorScript>();
+			GameObject[] interact = GameObject.FindGameObjectsWithTag("Interact");
+			foreach (GameObject act in interact)
+			{
+				if (act.GetComponent<InteractScript>().compareTag("Door"))
+				{
+					doors.Add(act.GetComponent<DoorScript>());
+				}
+			}
+
+			foreach (DoorScript door in doors)
+			{
+				if (door.id == door_index)
+				{
+					
+				}
+			}
+		}
 	}
 	
 	//Getter & Setters

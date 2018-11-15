@@ -30,6 +30,12 @@
           </e>
           <e p="EnemyBehaviour.cs" t="Include" />
           <e p="InputHandling.cs" t="Include" />
+          <e p="Interact" t="Include">
+            <e p="DoorScript.cs" t="Include" />
+            <e p="InteractInterface.cs" t="Include" />
+            <e p="InteractScript.cs" t="Include" />
+            <e p="ItemScript.cs" t="Include" />
+          </e>
           <e p="KnifeHitBox.cs" t="Include" />
           <e p="Pathfinding" t="Include">
             <e p="GridBehaviour.cs" t="Include" />

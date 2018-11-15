@@ -43,7 +43,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	
 	//Update Event
 	void Update () {
-		//Movement
+		//Player Action
 		velocity = Vector2.zero;
 		if (can_move)
 		{
@@ -53,35 +53,53 @@ public class PlayerBehaviour : MonoBehaviour {
 				//pickupItem(30, 0, new GameObject("This is a test"));
 				gm.switchScene("map - Copy", "uwu");
 			}
-			
-			//Variables
-			float angle_spd = 0f;
-			float move_spd = 0f;
-			
-			//Move forwards and backwards
-			float walk_run_spd = spd;
-			if (gm.getKey("run"))
-			{
-				walk_run_spd = run_spd;
-			}
 
-			if (gm.getKey("up"))
+			if (gm.getKey("aim"))
 			{
-				move_spd = walk_run_spd;
+				
 			}
-			else if (gm.getKey("down"))
+			else
 			{
-				move_spd = -back_spd;
-			}
-			
-			//Turning left and right
-			if (gm.getKey("left"))
-			{
-				angle_spd = -turn_spd;
-			}
-			else if (gm.getKey("right"))
-			{
-				angle_spd = turn_spd;
+				//Variables
+				float angle_spd = 0f;
+				float move_spd = 0f;
+
+				//Move forwards and backwards
+				float walk_run_spd = spd;
+				if (gm.getKey("run"))
+				{
+					walk_run_spd = run_spd;
+				}
+
+				if (gm.getKey("up"))
+				{
+					move_spd = walk_run_spd;
+				}
+				else if (gm.getKey("down"))
+				{
+					move_spd = -back_spd;
+				}
+
+				//Turning left and right
+				if (gm.getKey("left"))
+				{
+					angle_spd = -turn_spd;
+				}
+				else if (gm.getKey("right"))
+				{
+					angle_spd = turn_spd;
+				}
+				
+				//Interact
+				if (gm.getKeyDown("interact"))
+				{
+					checkInteract();
+				}
+				
+				//Set Movement Physics
+				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + angle_spd, transform.eulerAngles.z);
+				float facing_angle = (-transform.eulerAngles.y + 90) * Mathf.Deg2Rad;
+				velocity = new Vector2(Mathf.Cos(facing_angle), Mathf.Sin(facing_angle)) * move_spd;
 			}
 			
 			//Inventory Menu
@@ -90,11 +108,6 @@ public class PlayerBehaviour : MonoBehaviour {
 				CameraManager.instance.createInventoryCanvas();
 				can_move = false;
 			}
-			
-			//Set Movement Physics
-			transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + angle_spd, transform.eulerAngles.z);
-			float facing_angle = (-transform.eulerAngles.y + 90) * Mathf.Deg2Rad;
-			velocity = new Vector2(Mathf.Cos(facing_angle), Mathf.Sin(facing_angle)) * move_spd;
 		}
 	}
 
@@ -115,6 +128,26 @@ public class PlayerBehaviour : MonoBehaviour {
 			if (collision.GetComponent<CameraTrigger>() != null)
 			{
 				collision.GetComponent<CameraTrigger>().switchCamera();
+			}
+		}
+	}
+	
+	//Interact
+	private void checkInteract()
+	{
+		Collider[] hits;
+		
+		//Check Forwards
+		float facing_angle = (-transform.eulerAngles.y + 90) * Mathf.Deg2Rad;
+		Vector3 check_offset = new Vector3(Mathf.Cos(facing_angle), 0, Mathf.Sin(facing_angle)) * 0.8f;
+		hits = Physics.OverlapSphere(transform.position + check_offset, 0.5f);
+
+		foreach (Collider hit in hits)
+		{
+			if (hit.gameObject.CompareTag("Interact"))
+			{
+				hit.GetComponent<InteractInterface>().action();
+				return;
 			}
 		}
 	}
@@ -164,4 +197,10 @@ public class PlayerBehaviour : MonoBehaviour {
 		}
 	}
 	
+	//Debug
+	void OnDrawGizmos()
+	{
+		Gizmos.color = Color.green;
+		Gizmos.DrawCube(transform.position - new Vector3(0, 0.8f, 0), new Vector3(2, 0.4f, 2));
+	}
 }
