@@ -50,7 +50,8 @@ public class PlayerBehaviour : MonoBehaviour {
 			//Debug
 			if (Input.GetKeyDown(KeyCode.K))
 			{
-				pickupItem(30, 0, new GameObject("This is a test"));
+				//pickupItem(30, 0, new GameObject("This is a test"));
+				gm.switchScene("map - Copy", "uwu");
 			}
 			
 			//Variables

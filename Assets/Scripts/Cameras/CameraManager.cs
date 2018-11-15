@@ -36,12 +36,15 @@ public class CameraManager : MonoBehaviour {
 	
 	//Update Event
 	void FixedUpdate () {
-		if (set_pixilate)
+		if (GameManager.instance.pixel_effect)
 		{
-			cameras[cam_active].AddComponent<InnoPixelCamera>();
-			cameras[cam_active].GetComponent<InnoPixelCamera>().referenceHeight = 270;
-			cameras[cam_active].GetComponent<InnoPixelCamera>().pixelsPerUnit = 32;
-			set_pixilate = false;
+			if (set_pixilate)
+			{
+				cameras[cam_active].AddComponent<InnoPixelCamera>();
+				cameras[cam_active].GetComponent<InnoPixelCamera>().referenceHeight = 270;
+				cameras[cam_active].GetComponent<InnoPixelCamera>().pixelsPerUnit = 32;
+				set_pixilate = false;
+			}
 		}
 	}
 	
