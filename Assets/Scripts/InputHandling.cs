@@ -7,6 +7,7 @@ using UnityEngine;
 public class InputHandling : MonoBehaviour {
 
     private RaycastHit hit;
+    private PlayerBehaviour player;
 
     //Surface Hit Bools
     public bool doorHit = false;
@@ -31,6 +32,10 @@ public class InputHandling : MonoBehaviour {
 
 
     // Use this for initialization
+    void Start()
+    {
+        player = GetComponent<PlayerBehaviour>();
+    }
 
     void shotgunCasting()
     {
@@ -74,7 +79,7 @@ public class InputHandling : MonoBehaviour {
             shootStance = false;
         }
         //Puts Player in Shootstance   
-        if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R))
+        if (shootStance == true && player.equip == 2 && Input.GetKeyDown(KeyCode.R))
         {
             shootingPistol = true;
             //we can put the animations and sound effects around here later
@@ -84,7 +89,7 @@ public class InputHandling : MonoBehaviour {
             //Deal Damage here
         }
 
-        if(shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R ))
+        if(shootStance == true && player.equip == 2 && Input.GetKeyDown(KeyCode.R ))
         {
             isShotGunning = true; 
             //we can put the animations and sound effects around here later
