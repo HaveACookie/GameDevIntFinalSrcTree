@@ -120,11 +120,14 @@ public class GameManager : MonoBehaviour {
 				}
 			}
 
+			GameObject player = GameObject.FindWithTag("Player");
+
 			foreach (DoorScript door in doors)
 			{
 				if (door.id == door_index)
 				{
-					
+					player.transform.position = door.position;
+					break;
 				}
 			}
 		}

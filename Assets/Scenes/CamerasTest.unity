@@ -419,8 +419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door_id: hey
   door_position: {x: 0, y: -1.33}
-  trans_scene_name: 
-  trans_door_id: 
+  trans_scene_name: map - Copy
+  trans_door_id: hey
   trans_door_type: 
 --- !u!1 &348883178
 GameObject:

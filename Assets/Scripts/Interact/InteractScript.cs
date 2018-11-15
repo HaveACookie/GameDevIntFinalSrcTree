@@ -13,7 +13,7 @@ public class InteractScript : InteractInterface {
 	//Variables
 	
 	//Initialization
-	void Start()
+	void Awake()
 	{
 		init();
 	}

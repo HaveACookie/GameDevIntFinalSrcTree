@@ -33,7 +33,7 @@ public class DoorScript : InteractScript {
 		}
 	}
 
-	public Vector2 position
+	public Vector3 position
 	{
 		get
 		{
