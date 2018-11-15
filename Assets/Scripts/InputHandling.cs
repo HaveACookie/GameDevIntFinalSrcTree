@@ -64,7 +64,7 @@ public class InputHandling : MonoBehaviour {
             //Stuff involving adding items to your inventory
         }
 
-
+        //Puts Player in Shootstance 
         if (Input.GetKey(KeyCode.LeftShift))
         {
             shootStance = true;
@@ -73,7 +73,7 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
-        //Puts Player in Shootstance   
+         //Checks what weapon is being used by the inventory and shoots if its the pistol
         if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R))
         {
             shootingPistol = true;
@@ -83,8 +83,8 @@ public class InputHandling : MonoBehaviour {
         {
             //Deal Damage here
         }
-
-        if(shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R ))
+        //Checks what weapon is being used by the inventory and shoots if its the shotgun 
+        if (shootStance == true && PlayerBehaviour.equip == 3 && Input.GetKeyDown(KeyCode.R ))
         {
             isShotGunning = true; 
             //we can put the animations and sound effects around here later
