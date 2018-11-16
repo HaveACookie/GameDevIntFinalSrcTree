@@ -26,8 +26,16 @@ public class InventoryHealth : MonoBehaviour {
 		img.sprite = sr.sprite;
 	}
 
+	//Public Methods
 	public int health
 	{
+		//Sets the Player's Health in the GUI Menu in the Inventory Canvas
+		//If you set the health to 4 the Health GUI will be "Fine" and Green
+		//If you set the health to 3 the Health GUI will be "Caution" and Yellow
+		//If you set the health to 2 the Health GUI will be "Caution" and Orange
+		//If you set the health to 1 the Health GUI will be "Danger" and Red
+		//If you set the health to 0 the Health GUI will be turned off because you are dead UwU
+		//The Health is clamped between 0 and 4
 		set
 		{
 			int health_val = value;
@@ -64,6 +72,8 @@ public class InventoryHealth : MonoBehaviour {
 
 	public bool poison
 	{
+		//Sets the Player's Health GUI in the Inventory to "Poisoned" and turns it purple
+		//Turn this effect on and off by setting it to true or false
 		set
 		{
 			if (value == true)

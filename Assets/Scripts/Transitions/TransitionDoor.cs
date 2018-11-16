@@ -16,8 +16,11 @@ public class TransitionDoor : MonoBehaviour {
 	private float timer;
 	
 	//Initialization
+	/*
+	 * Intent: Create the Door and set all the variables for the animation
+	 */
 	void Start () {
-		//Create Door
+		//Creates the Door
 		if (door_type == "")
 		{
 			door_type = "pDoorA";
@@ -25,6 +28,8 @@ public class TransitionDoor : MonoBehaviour {
 
 		door = Instantiate(Resources.Load<GameObject>("System/Transitions/" + door_type));
 		door.transform.position = Vector3.zero;
+		
+		//Gets the Most Left Axis of the Door
 		axis = door.GetComponent<MeshFilter>().mesh.bounds.ClosestPoint(new Vector3(-Mathf.Infinity, 0, 0));
 		axis = new Vector3(axis.x, 0, axis.z);
 
@@ -35,28 +40,36 @@ public class TransitionDoor : MonoBehaviour {
 	}
 	
 	//Update Event
+	/*
+	 * Intent: Turns the door around an axis at certain periods of time for the door animation
+	 */
 	void Update () {
 		//Timer
 		timer += Time.deltaTime;
 		
-		//Rotate Door
+		//Rotates the Door
 		if (timer < 1f)
 		{
+			//Turns the Door around the axis for a second
+			//And makes the speed the door turning slower
 			door_angle = Mathf.Lerp(door_angle, 0, 0.35f * Time.deltaTime);
 			door.transform.RotateAround(axis, new Vector3(0, 1, 0), door_angle);
 		}
 		else if (timer > 1.45f)
 		{
+			//Turns the Door around the axis for a second again but after 1.45 seconds
+			//And makes the speed the door turning slower again
 			door_angle = Mathf.Lerp(door_angle, 0.5f, 0.1f * Time.deltaTime);
 			door.transform.RotateAround(axis, new Vector3(0, 1, 0), door_angle);
 			transform.position = transform.position + new Vector3(0, 0, 0.025f);
 		}
 		else
 		{
+			//Resets the Door angle speed
 			door_angle = 1.2f;
 		}
 		
-		//Transition
+		//Transitions the Door after 3.2 Seconds
 		if (timer > 3.2f)
 		{
 			if (!transition)
@@ -68,6 +81,9 @@ public class TransitionDoor : MonoBehaviour {
 	}
 	
 	//Setters
+	/*
+	 * Intent: Sets the door asset used in the Transition scene
+	 */
 	public string doortype
 	{
 		set

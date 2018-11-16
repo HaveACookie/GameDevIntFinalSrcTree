@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InventoryData : MonoBehaviour {
 
+    //Static Method that returns the name of a item based on the index of the item value
 	public static string itemName(int index)
 	{
 		switch (index)

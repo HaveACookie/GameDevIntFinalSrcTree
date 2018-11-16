@@ -5,8 +5,8 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour {
 
 	//Health
-	public int health { get; private set; }
-	public bool poison { get; private set; }
+	public int health { get; private set; } //The health of the player between 0 and 4
+	public bool poison { get; private set; } //The poison of the
 	
     //Inventory
 	public int player_equip { get; private set; }
@@ -33,7 +33,7 @@ public class InventoryManager : MonoBehaviour {
 		storage = new int[64];
 		storage_stock = new int[64];
 		
-		//Debug
+		//Debug (Remove Later)
 		//Guns
 		inventory[0] = 2;
 		inventory[1] = 9;
