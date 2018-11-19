@@ -9,6 +9,7 @@ public class InventoryHealth : MonoBehaviour {
 	private SpriteRenderer sr;
 	private Image img;
 	private Image health_text;
+	public Sprite[] health_icons;
 
 	//Initialization
 	void Awake ()
@@ -42,22 +43,22 @@ public class InventoryHealth : MonoBehaviour {
 			
 			if (health_val == 4)
 			{
-				health_text.sprite = Resources.Load<Sprite>("System/GUI/HealthStatus/sHealthFine");
+				health_text.sprite = health_icons[0];
 				img.color = new Color(56 / 255f, 163 / 255f, 21 / 255f, 0.8f);
 			}
 			else if (health_val == 3)
 			{
-				health_text.sprite = Resources.Load<Sprite>("System/GUI/HealthStatus/sHealthCaution");
+				health_text.sprite = health_icons[1];
 				img.color = new Color(204 / 255f, 204 / 255f, 67 / 255f, 0.8f);
 			}
 			else if (health_val == 2)
 			{
-				health_text.sprite = Resources.Load<Sprite>("System/GUI/HealthStatus/sHealthCaution");
+				health_text.sprite = health_icons[1];
 				img.color = new Color(246 / 255f, 141 / 255f, 43 / 255f, 0.8f);
 			}
 			else if (health_val == 1)
 			{
-				health_text.sprite = Resources.Load<Sprite>("System/GUI/HealthStatus/sHealthDanger");
+				health_text.sprite = health_icons[2];
 				img.color = new Color(188 / 255f, 31 / 255f, 31 / 255f, 0.8f);
 			}
 			else if (health_val <= 0)
@@ -78,7 +79,7 @@ public class InventoryHealth : MonoBehaviour {
 		{
 			if (value == true)
 			{
-				health_text.sprite = Resources.Load<Sprite>("System/GUI/HealthStatus/sHealthPoison");
+				health_text.sprite = health_icons[3];
 				img.color = new Color(125 / 255f, 23 / 255f, 193 / 255f, 0.8f);
 				health_text.color = img.color;
 			}

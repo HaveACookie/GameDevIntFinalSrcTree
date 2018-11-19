@@ -73,6 +73,18 @@ public class InventoryManager : MonoBehaviour {
 		}
 	}
 	
+	//Saving & Loading
+	public void loadData(int load_health, bool load_poison, int load_equip, int[] load_inventory, int[] load_inventory_stock, int[] load_storage, int[] load_storage_stock)
+	{
+		health = load_health;
+		poison = load_poison;
+		player_equip = load_equip;
+		inventory = load_inventory;
+		inventory_stock = load_inventory_stock;
+		storage = load_storage;
+		storage_stock = load_storage_stock;
+	}
+	
 	//Health Methods
 	public void heal(int heal_amount)
 	{

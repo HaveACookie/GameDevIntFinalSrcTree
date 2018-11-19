@@ -11,6 +11,7 @@ public class InteractScript : InteractInterface {
 	protected string interact_tag;
 	
 	//Variables
+	[SerializeField] protected bool persistent;
 	
 	//Initialization
 	void Awake()
@@ -41,13 +42,21 @@ public class InteractScript : InteractInterface {
 		
 	}
 
-	public bool compareTag(string tag)
+	public bool compareInteractTag(string tag)
 	{
 		if (tag == interact_tag)
 		{
 			return true;
 		}
 		return false;
+	}
+
+	public bool index
+	{
+		get
+		{
+			return !persistent;
+		}
 	}
 	
 }

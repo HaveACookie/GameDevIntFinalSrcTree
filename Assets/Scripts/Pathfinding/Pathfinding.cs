@@ -7,7 +7,7 @@ public class Pathfinding : MonoBehaviour
 	private GridBehaviour grid;
 	
 	//Initialize Singleton Grid
-	void Start()
+	void Awake()
 	{
 		grid = GridBehaviour.instance;
 	}
@@ -53,7 +53,7 @@ public class Pathfinding : MonoBehaviour
 					if (!open_set.Contains(neighbour))
 						open_set.Add(neighbour);
 					else {
-						//open_set.UpdateItem(neighbour);
+						open_set.UpdateItem(neighbour);
 					}
 				}
 			}

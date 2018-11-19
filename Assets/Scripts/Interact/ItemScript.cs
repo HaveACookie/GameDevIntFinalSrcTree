@@ -18,5 +18,11 @@ public class ItemScript : InteractScript {
 	{
 		GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().pickupItem(item_id, item_stock, gameObject);
 	}
+
+	public void pickupObject()
+	{
+		GameManager.instance.events.saveItem(gameObject, true);
+		Destroy(gameObject);
+	}
 	
 }
