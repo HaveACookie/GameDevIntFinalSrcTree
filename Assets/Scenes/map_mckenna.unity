@@ -113,55 +113,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &23924862
-=======
 --- !u!1 &5718164
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 23924863}
-  m_Layer: 0
-  m_Name: cameratriggers
-=======
   - component: {fileID: 5718165}
   - component: {fileID: 5718168}
   - component: {fileID: 5718167}
   - component: {fileID: 5718166}
   m_Layer: 0
   m_Name: door (8)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &23924863
-=======
 --- !u!4 &5718165
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 23924862}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: -0.95, z: -31.14}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
-  m_Children:
-  - {fileID: 1425102174}
-  - {fileID: 161633440}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 5718164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.7001324, y: 15.210372, z: -2.2762928}
@@ -394,7 +368,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45710578}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 --- !u!1 &47664612
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +379,7 @@ GameObject:
   - component: {fileID: 47664616}
   - component: {fileID: 47664615}
   - component: {fileID: 47664614}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +502,7 @@ GameObject:
   - component: {fileID: 93548180}
   - component: {fileID: 93548179}
   - component: {fileID: 93548178}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,12 +684,6 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 146556305}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.22, y: 3.1249998, z: -31.14}
-  m_LocalScale: {x: 1, y: 0.7934121, z: 0.70658785}
-=======
   m_GameObject: {fileID: 121698607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.7001324, y: 16.210373, z: -1.7162914}
@@ -841,62 +808,33 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 8.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Children: []
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &161633439
-=======
 --- !u!1 &170810035
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 161633440}
-  m_Layer: 0
-  m_Name: RoomB
-=======
   - component: {fileID: 170810036}
   - component: {fileID: 170810039}
   - component: {fileID: 170810038}
   - component: {fileID: 170810037}
   m_Layer: 0
   m_Name: Cube (5)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &161633440
-=======
 --- !u!4 &170810036
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 161633439}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1774234506}
-  - {fileID: 860917879}
-  - {fileID: 203202795}
-  - {fileID: 1149538511}
-  m_Father: {fileID: 23924863}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 170810035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 3, z: 0}
@@ -959,7 +897,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170810035}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 --- !u!1 &173983792
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +908,7 @@ GameObject:
   - component: {fileID: 173983796}
   - component: {fileID: 173983795}
   - component: {fileID: 173983794}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,24 +982,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173983792}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &190077603
-=======
 --- !u!1 &174613385
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 190077604}
-  - component: {fileID: 190077606}
-  - component: {fileID: 190077605}
-  m_Layer: 0
-  m_Name: RoomA (2)
-=======
   - component: {fileID: 174613386}
   - component: {fileID: 174613390}
   - component: {fileID: 174613389}
@@ -1070,156 +996,11 @@ GameObject:
   - component: {fileID: 174613387}
   m_Layer: 0
   m_Name: TextMeshPro
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &190077604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190077603}
-  m_LocalRotation: {x: 0, y: -0.6940304, z: 0, w: 0.7199457}
-  m_LocalPosition: {x: 20.52, y: 2.49, z: -9.58}
-  m_LocalScale: {x: 1.0000006, y: 1, z: 1.0000006}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -87.9, z: 0}
---- !u!81 &190077605
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190077603}
-  m_Enabled: 1
---- !u!20 &190077606
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190077603}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &195243793
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 195243794}
-  m_Layer: 9
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &195243794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 195243793}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 805922494}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &203202794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 203202795}
-  - component: {fileID: 203202797}
-  - component: {fileID: 203202796}
-  m_Layer: 0
-  m_Name: trigger (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &203202795
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 203202794}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.57, y: 0, z: 34.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 161633440}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &203202796
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 203202794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.9, y: 1, z: 6.9}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &203202797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 203202794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe9d1eb2e943c64fb683c2b93c5d306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 7
-=======
 --- !u!224 &174613386
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1400,7 +1181,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 174613385}
   m_Mesh: {fileID: 0}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 --- !u!1 &203976105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,14 +1287,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 211469013}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: -0.95, z: -31.14}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1652678412}
-  - {fileID: 264164091}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &226537774
 GameObject:
@@ -1527,7 +1306,7 @@ GameObject:
   - component: {fileID: 226537778}
   - component: {fileID: 226537777}
   - component: {fileID: 226537776}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1391,7 @@ GameObject:
   - component: {fileID: 228808331}
   - component: {fileID: 228808330}
   - component: {fileID: 228808329}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1561,7 @@ GameObject:
   - component: {fileID: 257707880}
   - component: {fileID: 257707879}
   - component: {fileID: 257707878}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,57 +1635,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 257707876}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &264164090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 264164091}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &264164091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 264164090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 211469014}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &281714046
-=======
 --- !u!1 &266317905
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 281714050}
-  - component: {fileID: 281714049}
-  - component: {fileID: 281714048}
-  - component: {fileID: 281714047}
-  - component: {fileID: 281714051}
-=======
   - component: {fileID: 266317909}
   - component: {fileID: 266317908}
   - component: {fileID: 266317907}
   - component: {fileID: 266317906}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Layer: 0
   m_Name: dresser (movable)
   m_TagString: Untagged
@@ -2147,39 +1886,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281714046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_LocalPosition: {x: -26.119999, y: -0.95, z: -30.539999}
-  m_LocalScale: {x: 10, y: 0.5, z: 15}
-  m_Children:
-  - {fileID: 1727312172}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 1
-=======
   m_LocalPosition: {x: -25.03, y: 0, z: 0.66}
   m_LocalScale: {x: 10, y: 1, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281714051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 281714046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 277b60600007c8844afed658b89ef9c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  show_debug: 0
-  solids_mask:
-    serializedVersion: 2
-    m_Bits: 512
-  grid_size: {x: 107.38, y: 166.4}
-  node_radius: 0.25
-  node_outline: 2
 --- !u!1 &290346717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +1988,7 @@ GameObject:
   - component: {fileID: 290585606}
   - component: {fileID: 290585605}
   - component: {fileID: 290585604}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2361,7 +2073,7 @@ GameObject:
   - component: {fileID: 309070201}
   - component: {fileID: 309070200}
   - component: {fileID: 309070199}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2435,9 +2147,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309070197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &330878507
-=======
 --- !u!1 &314651196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,96 +2233,6 @@ MeshFilter:
   m_GameObject: {fileID: 314651196}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &355482571
->>>>>>> McKennaDev:Assets/Scenes/map.unity
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330878508}
-  - component: {fileID: 330878509}
-  m_Layer: 0
-  m_Name: trigger (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &330878508
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 330878507}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_LocalPosition: {x: 4.12, y: 0, z: 7.65}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
-  m_LocalPosition: {x: 13.36, y: 4, z: 43.9}
-  m_LocalScale: {x: 0.5, y: 8, z: 60}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &330878509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 330878507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 1
-  trigger_radius: 5.19
---- !u!1 &349071607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 349071608}
-  - component: {fileID: 349071609}
-  m_Layer: 0
-  m_Name: trigger (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &349071608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349071607}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.99, y: 0, z: -9.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &349071609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349071607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 2
-  trigger_radius: 4.89
---- !u!1 &355482571
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2624,7 +2243,7 @@ GameObject:
   - component: {fileID: 355482575}
   - component: {fileID: 355482574}
   - component: {fileID: 355482573}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2638,7 +2257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 355482571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.918743, y: 4, z: 43.9}
+  m_LocalPosition: {x: 13.36, y: 4, z: 43.9}
   m_LocalScale: {x: 0.5, y: 8, z: 60}
   m_Children: []
   m_Father: {fileID: 863859331}
@@ -2777,12 +2396,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356791798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.22, y: 1.9, z: 31.14}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367553640
 GameObject:
@@ -2795,7 +2414,7 @@ GameObject:
   - component: {fileID: 367553644}
   - component: {fileID: 367553643}
   - component: {fileID: 367553642}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2869,83 +2488,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367553640}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &371816792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 371816793}
-  - component: {fileID: 371816795}
-  - component: {fileID: 371816794}
-  m_Layer: 0
-  m_Name: RoomB (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &371816793
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 371816792}
-  m_LocalRotation: {x: 0.14315422, y: -0.16627768, z: 0.024405506, w: 0.97532713}
-  m_LocalPosition: {x: 7.65, y: 7.24, z: 24.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 16.7, y: -19.35, z: 0}
---- !u!81 &371816794
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 371816792}
-  m_Enabled: 1
---- !u!20 &371816795
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 371816792}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &383430423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,7 +2499,7 @@ GameObject:
   - component: {fileID: 383430427}
   - component: {fileID: 383430426}
   - component: {fileID: 383430425}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3031,52 +2573,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 383430423}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &392845217
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 24.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660019857639606, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_Name
-      value: DebugEnemyDog (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &404242553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,7 +2584,7 @@ GameObject:
   - component: {fileID: 404242557}
   - component: {fileID: 404242556}
   - component: {fileID: 404242555}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3254,21 +2750,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 439692919}
-  - component: {fileID: 439692922}
-  - component: {fileID: 439692921}
-  - component: {fileID: 439692920}
-  m_Layer: 9
-  m_Name: blue room (5)
-=======
   - component: {fileID: 434913286}
   - component: {fileID: 434913289}
   - component: {fileID: 434913288}
   - component: {fileID: 434913287}
   m_Layer: 0
   m_Name: Cube (6)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3426,9 +2913,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 439692918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &487613686
-=======
 --- !u!1 &450793859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3076,6 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457769383
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3847,69 +3330,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489940956}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &522492215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 522492216}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &522492216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 522492215}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1576238991}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &523970997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 523970998}
-  m_Layer: 0
-  m_Name: doors
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &523970998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 523970997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1193714510}
-  - {fileID: 737355289}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &528348777
-=======
 --- !u!1 &506873189
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3994,61 +3415,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506873189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &542738730
-=======
 --- !u!1 &522414778
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 542738731}
-  - component: {fileID: 542738732}
-  m_Layer: 0
-  m_Name: trigger (14)
-=======
   - component: {fileID: 522414779}
   - component: {fileID: 522414782}
   - component: {fileID: 522414781}
   - component: {fileID: 522414780}
   m_Layer: 0
   m_Name: staircase (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_IsActive: 1
---- !u!4 &542738731
-=======
   m_IsActive: 0
 --- !u!4 &522414779
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 542738730}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.58, y: 0, z: -9.35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &542738732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 542738730}
-=======
   m_GameObject: {fileID: 522414778}
   m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
   m_LocalPosition: {x: -9.13, y: 6.74, z: -1.48}
@@ -4063,53 +3452,6 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522414778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
->>>>>>> McKennaDev:Assets/Scenes/map.unity
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 2
-  trigger_radius: 2.24
---- !u!1 &551087465
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 551087466}
-  - component: {fileID: 551087469}
-  - component: {fileID: 551087468}
-  - component: {fileID: 551087467}
-  m_Layer: 0
-  m_Name: second floor (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &551087466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 551087465}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.8, y: 9.69, z: -31}
-  m_LocalScale: {x: 26, y: 1, z: 9}
-  m_Children: []
-  m_Father: {fileID: 1271866329}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &551087467
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 551087465}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -4243,60 +3585,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528348777}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &602050365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 602050366}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &602050366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 602050365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1271866329}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &622127435
-=======
 --- !u!1 &546020430
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 622127436}
-  - component: {fileID: 622127439}
-  - component: {fileID: 622127438}
-  - component: {fileID: 622127437}
-  m_Layer: 9
-  m_Name: blue room (18)
-=======
   - component: {fileID: 546020431}
   - component: {fileID: 546020434}
   - component: {fileID: 546020433}
   - component: {fileID: 546020432}
   m_Layer: 0
   m_Name: blue room (29)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4376,21 +3677,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 648369627}
-  - component: {fileID: 648369630}
-  - component: {fileID: 648369629}
-  - component: {fileID: 648369628}
-  m_Layer: 9
-  m_Name: blue room (16)
-=======
   - component: {fileID: 551087466}
   - component: {fileID: 551087469}
   - component: {fileID: 551087468}
   - component: {fileID: 551087467}
   m_Layer: 0
   m_Name: second floor (3)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4470,21 +3762,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 661315812}
-  - component: {fileID: 661315815}
-  - component: {fileID: 661315814}
-  - component: {fileID: 661315813}
-  m_Layer: 9
-  m_Name: mainhall (2)
-=======
   - component: {fileID: 592013241}
   - component: {fileID: 592013244}
   - component: {fileID: 592013243}
   - component: {fileID: 592013242}
   m_Layer: 0
   m_Name: second floor (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4564,21 +3847,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 677127024}
-  - component: {fileID: 677127027}
-  - component: {fileID: 677127026}
-  - component: {fileID: 677127025}
-  m_Layer: 9
-  m_Name: upperfloor
-=======
   - component: {fileID: 592735061}
   - component: {fileID: 592735064}
   - component: {fileID: 592735063}
   - component: {fileID: 592735062}
   m_Layer: 0
   m_Name: door (6)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4651,116 +3925,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592735060}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &689580981
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 689580982}
-  - component: {fileID: 689580983}
-  m_Layer: 0
-  m_Name: trigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &689580982
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 689580981}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.61, y: 0, z: 7.41}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &689580983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 689580981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 1
-  trigger_radius: 4.71
---- !u!1 &707418390
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 707418391}
-  - component: {fileID: 707418392}
-  m_Layer: 0
-  m_Name: trigger (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &707418391
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 707418390}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.04, y: 0, z: -3.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &707418392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 707418390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 0
-  trigger_radius: 2.83
---- !u!1 &709782086
-=======
 --- !u!1 &622127435
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 709782087}
-  - component: {fileID: 709782090}
-  - component: {fileID: 709782089}
-  - component: {fileID: 709782088}
-  m_Layer: 9
-  m_Name: second floor
-=======
   - component: {fileID: 622127436}
   - component: {fileID: 622127439}
   - component: {fileID: 622127438}
   - component: {fileID: 622127437}
   m_Layer: 0
   m_Name: blue room (18)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5030,92 +4207,9 @@ MeshFilter:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 719140263}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &737355288
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 523970998}
-    m_Modifications:
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 14.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458210320074644, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_Name
-      value: door_b
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-  m_IsPrefabAsset: 0
---- !u!4 &737355289 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b,
-    type: 2}
-  m_PrefabInternal: {fileID: 737355288}
---- !u!1 &737355290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1458210320074644, guid: 13b1a070935832541a9c7d5ac70db73b,
-    type: 2}
-  m_PrefabInternal: {fileID: 737355288}
---- !u!114 &737355291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 737355290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14a21911bc27a0a489ead75d810e74da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistent: 0
-  door_id: door_b
-  door_position: {x: 0, y: 1.3}
-  trans_scene_name: MansionPartA
-  trans_door_id: door_a
-  trans_door_type: 
---- !u!1 &743434588
-=======
   m_GameObject: {fileID: 636280489}
   m_Mesh: {fileID: 0}
 --- !u!1 &648369626
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5207,21 +4301,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 752317228}
-  - component: {fileID: 752317231}
-  - component: {fileID: 752317230}
-  - component: {fileID: 752317229}
-  m_Layer: 9
-  m_Name: upperfloor (3)
-=======
   - component: {fileID: 661315812}
   - component: {fileID: 661315815}
   - component: {fileID: 661315814}
   - component: {fileID: 661315813}
   m_Layer: 0
   m_Name: mainhall (2)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5294,151 +4379,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661315811}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &753174996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 753174997}
-  - component: {fileID: 753174999}
-  - component: {fileID: 753174998}
-  m_Layer: 0
-  m_Name: RoomA (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &753174997
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 753174996}
-  m_LocalRotation: {x: 0.23986831, y: -0.3555856, z: 0.09494637, w: 0.8983358}
-  m_LocalPosition: {x: 19.79, y: 12.02, z: -25.72}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 29.9, y: -43.19, z: 0}
---- !u!81 &753174998
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 753174996}
-  m_Enabled: 1
---- !u!20 &753174999
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 753174996}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &784763684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784763685}
-  - component: {fileID: 784763686}
-  m_Layer: 0
-  m_Name: trigger (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &784763685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 784763684}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 0, z: -7.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &784763686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 784763684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 2
-  trigger_radius: 10.26
---- !u!1 &805149993
-=======
 --- !u!1 &677127023
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 805149994}
-  - component: {fileID: 805149997}
-  - component: {fileID: 805149996}
-  - component: {fileID: 805149995}
-  m_Layer: 9
-  m_Name: upperfloor (1)
-=======
   - component: {fileID: 677127024}
   - component: {fileID: 677127027}
   - component: {fileID: 677127026}
   - component: {fileID: 677127025}
   m_Layer: 0
   m_Name: upperfloor
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5511,85 +4464,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 677127023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &805922493
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 805922494}
-  m_Layer: 9
-  m_Name: walls
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &805922494
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 805922493}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: -0.95, z: -31.14}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
-  m_Children:
-  - {fileID: 1364406336}
-  - {fileID: 1041222085}
-  - {fileID: 1481671836}
-  - {fileID: 1821374334}
-  - {fileID: 1096312964}
-  - {fileID: 1714148894}
-  - {fileID: 661315812}
-  - {fileID: 2069825333}
-  - {fileID: 863859331}
-  - {fileID: 195243794}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &808748262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 808748263}
-  m_Layer: 0
-  m_Name: Level
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &808748263
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 808748262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.22, y: 1.9, z: 31.14}
-  m_LocalScale: {x: 1, y: 2, z: 1}
-  m_Children:
-  - {fileID: 146556307}
-  - {fileID: 281714050}
-  - {fileID: 356791802}
-  - {fileID: 1576238991}
-  - {fileID: 805922494}
-  - {fileID: 1271866329}
-  - {fileID: 211469014}
-  - {fileID: 23924863}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &810319067
-=======
 --- !u!1 &701556697
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5674,104 +4549,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 701556697}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &819401809
-=======
 --- !u!1 &702659105
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 819401810}
-  - component: {fileID: 819401811}
-  m_Layer: 0
-  m_Name: trigger (12)
-=======
   - component: {fileID: 702659106}
   - component: {fileID: 702659109}
   - component: {fileID: 702659108}
   - component: {fileID: 702659107}
   m_Layer: 0
   m_Name: door (10)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &819401810
-=======
 --- !u!4 &702659106
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 819401809}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.94, y: 0, z: -28.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &819401811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 819401809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 3
-  trigger_radius: 6.1
---- !u!1 &855221905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 855221906}
-  - component: {fileID: 855221909}
-  - component: {fileID: 855221908}
-  - component: {fileID: 855221907}
-  m_Layer: 9
-  m_Name: blue room (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &855221906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 855221905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 4, z: 58.1}
-  m_LocalScale: {x: 0.5, y: 8, z: 16}
-  m_Children: []
-  m_Father: {fileID: 863859331}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &855221907
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 855221905}
-=======
   m_GameObject: {fileID: 702659105}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.95, y: 15.210372, z: -8.03}
@@ -5786,7 +4586,6 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702659105}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -5835,125 +4634,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702659105}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &857676313
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 857676314}
-  - component: {fileID: 857676315}
-  m_Layer: 0
-  m_Name: trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &857676314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857676313}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.2, y: 0, z: 5.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &857676315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857676313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 0
-  trigger_radius: 9.93
---- !u!1 &860917878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 860917879}
-  - component: {fileID: 860917881}
-  - component: {fileID: 860917880}
-  m_Layer: 0
-  m_Name: trigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &860917879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860917878}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.45, y: 0, z: 26.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 161633440}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &860917880
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860917878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.9, y: 1, z: 6.8}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &860917881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860917878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe9d1eb2e943c64fb683c2b93c5d306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 6
---- !u!1 &863859330
-=======
 --- !u!1 &709782086
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 863859331}
-  m_Layer: 9
-  m_Name: 1stFloorRight
-=======
   - component: {fileID: 709782087}
   - component: {fileID: 709782090}
   - component: {fileID: 709782089}
   - component: {fileID: 709782088}
   m_Layer: 0
   m_Name: second floor
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5964,67 +4657,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 863859330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1471578501}
-  - {fileID: 1396983667}
-  - {fileID: 355482572}
-  - {fileID: 1758800562}
-  - {fileID: 1537276206}
-  - {fileID: 1277204801}
-  - {fileID: 1695014544}
-  - {fileID: 439692919}
-  - {fileID: 228808328}
-  - {fileID: 891524523}
-  - {fileID: 855221906}
-  - {fileID: 864321710}
-  - {fileID: 47664613}
-  - {fileID: 1864173581}
-  - {fileID: 1738333201}
-  - {fileID: 1796955949}
-  - {fileID: 257707877}
-  - {fileID: 226537775}
-  - {fileID: 648369627}
-  - {fileID: 1509407378}
-  - {fileID: 622127436}
-  - {fileID: 1803030239}
-  - {fileID: 2061547949}
-  - {fileID: 173983793}
-  - {fileID: 1961314467}
-  m_Father: {fileID: 805922494}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &864321709
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 864321710}
-  - component: {fileID: 864321713}
-  - component: {fileID: 864321712}
-  - component: {fileID: 864321711}
-  m_Layer: 9
-  m_Name: blue room (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &864321710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 864321709}
-=======
   m_GameObject: {fileID: 709782086}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.5, y: 10.69, z: 39.2}
   m_LocalScale: {x: 70, y: 1, z: 70}
@@ -6093,21 +4726,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 891524523}
-  - component: {fileID: 891524526}
-  - component: {fileID: 891524525}
-  - component: {fileID: 891524524}
-  m_Layer: 9
-  m_Name: blue room (7)
-=======
   - component: {fileID: 711690002}
   - component: {fileID: 711690001}
   - component: {fileID: 711690000}
   - component: {fileID: 711689999}
   m_Layer: 0
   m_Name: door
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6350,74 +4974,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 743434588}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1001 &928847113
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.7399063
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.8402113
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1 &942062447
-=======
 --- !u!1 &752317227
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 942062448}
-  - component: {fileID: 942062451}
-  - component: {fileID: 942062450}
-  - component: {fileID: 942062449}
-  m_Layer: 9
-  m_Name: upperfloor (17)
-=======
   - component: {fileID: 752317228}
   - component: {fileID: 752317231}
   - component: {fileID: 752317230}
   - component: {fileID: 752317229}
   m_Layer: 0
   m_Name: upperfloor (3)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6575,95 +5144,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760238701}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &995114063
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 995114064}
-  - component: {fileID: 995114065}
-  m_Layer: 0
-  m_Name: trigger (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &995114064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 995114063}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.25, y: 0, z: -25.82}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &995114065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 995114063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 4
-  trigger_radius: 6.1
---- !u!1 &1002714209
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1002714210}
-  - component: {fileID: 1002714211}
-  m_Layer: 0
-  m_Name: trigger (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1002714210
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1002714209}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.08, y: 0, z: -24.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1002714211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1002714209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 3
-  trigger_radius: 10.26
---- !u!1 &1015864681
-=======
 --- !u!1 &795653182
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6735,55 +5216,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795653182}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1021370118
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1021370119}
-  - component: {fileID: 1021370120}
-  m_Layer: 0
-  m_Name: trigger (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1021370119
-=======
 --- !u!4 &795653186
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1021370118}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.98, y: 0, z: -27.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1021370120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1021370118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 3
-  trigger_radius: 10.26
---- !u!1 &1041222084
-=======
   m_GameObject: {fileID: 795653182}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.09, y: 1.124, z: 66.927}
@@ -6793,25 +5230,18 @@ MonoBehaviour:
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &805149993
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1041222085}
-  m_Layer: 9
-  m_Name: 2ndFloorRight
-=======
   - component: {fileID: 805149994}
   - component: {fileID: 805149997}
   - component: {fileID: 805149996}
   - component: {fileID: 805149995}
   m_Layer: 0
   m_Name: upperfloor (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10461,14 +8891,6 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1082593348}
-  - component: {fileID: 1082593351}
-  - component: {fileID: 1082593350}
-  - component: {fileID: 1082593349}
-  m_Layer: 9
-  m_Name: upperfloor (10)
-=======
   - component: {fileID: 1410371078}
   - component: {fileID: 1410371082}
   - component: {fileID: 1410371081}
@@ -10476,7 +8898,6 @@ GameObject:
   - component: {fileID: 1410371079}
   m_Layer: 0
   m_Name: TextMeshPro
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10669,21 +9090,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1096312964}
-  - component: {fileID: 1096312963}
-  - component: {fileID: 1096312962}
-  - component: {fileID: 1096312961}
-  m_Layer: 9
-  m_Name: mainhall
-=======
   - component: {fileID: 1427993073}
   - component: {fileID: 1427993076}
   - component: {fileID: 1427993075}
   - component: {fileID: 1427993074}
   m_Layer: 0
   m_Name: upperfloor (5)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10756,66 +9168,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1427993072}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &1096312964
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1096312960}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.9, y: 10, z: -8}
-  m_LocalScale: {x: 1, y: 20, z: 44}
-  m_Children: []
-  m_Father: {fileID: 805922494}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1100029692
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.453409
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.7568431
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375117870308894, guid: 4d892747b81878d46971785b93a902da, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d892747b81878d46971785b93a902da, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1 &1107816150
-=======
 --- !u!1 &1444257488
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10985,53 +9338,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1449027879}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1137328073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1137328074}
-  - component: {fileID: 1137328075}
-  m_Layer: 0
-  m_Name: trigger (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1137328074
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137328073}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.64, y: 0, z: -1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1137328075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137328073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 0
-  trigger_radius: 2.83
---- !u!1 &1141328737
-=======
 --- !u!1 &1459511402
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11116,53 +9423,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459511402}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1149538510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1149538511}
-  - component: {fileID: 1149538512}
-  m_Layer: 0
-  m_Name: trigger (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1149538511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149538510}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.13, y: 0, z: 15.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 161633440}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1149538512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149538510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 5
-  trigger_radius: 1.5
---- !u!1 &1154689649
-=======
 --- !u!1 &1471175487
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11247,146 +9508,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471175487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1167658678
-=======
 --- !u!1 &1471578500
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1167658679}
-  - component: {fileID: 1167658680}
-  m_Layer: 0
-  m_Name: trigger (13)
-=======
   - component: {fileID: 1471578501}
   - component: {fileID: 1471578504}
   - component: {fileID: 1471578503}
   - component: {fileID: 1471578502}
   m_Layer: 0
   m_Name: blue room
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &1167658679
-=======
 --- !u!4 &1471578501
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1167658678}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.64, y: 0, z: -9.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1167658680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1167658678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 2
-  trigger_radius: 3.83
---- !u!1 &1188468128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1188468129}
-  - component: {fileID: 1188468130}
-  m_Layer: 0
-  m_Name: trigger (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1188468129
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188468128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.18, y: 0, z: -2.71}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1188468130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188468128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 0
-  trigger_radius: 2.83
---- !u!1 &1189494594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1189494595}
-  - component: {fileID: 1189494598}
-  - component: {fileID: 1189494597}
-  - component: {fileID: 1189494596}
-  m_Layer: 0
-  m_Name: staircase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1189494595
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1189494594}
-  m_LocalRotation: {x: -0, y: -0, z: 0.5, w: 0.8660254}
-  m_LocalPosition: {x: -2.78, y: 1.24, z: -10.4}
-  m_LocalScale: {x: 1, y: 10, z: 7}
-  m_Children: []
-  m_Father: {fileID: 1271866329}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 60}
---- !u!65 &1189494596
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1189494594}
-=======
   m_GameObject: {fileID: 1471578500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.6, y: 4, z: 25.8}
@@ -11401,7 +9545,6 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471578500}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -11450,88 +9593,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471578500}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1001 &1193714509
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 523970998}
-    m_Modifications:
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 13.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458210320074644, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-      propertyPath: m_Name
-      value: door_a
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 13b1a070935832541a9c7d5ac70db73b, type: 2}
-  m_IsPrefabAsset: 0
---- !u!4 &1193714510 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4193514105456108, guid: 13b1a070935832541a9c7d5ac70db73b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1193714509}
---- !u!1 &1193714511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1458210320074644, guid: 13b1a070935832541a9c7d5ac70db73b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1193714509}
---- !u!114 &1193714512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1193714511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14a21911bc27a0a489ead75d810e74da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistent: 0
-  door_id: door_a
-  door_position: {x: 0, y: -1.36}
-  trans_scene_name: MansionPartA
-  trans_door_id: door_b
-  trans_door_type: 
---- !u!1 &1194237613
-=======
 --- !u!1 &1474499914
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11623,21 +9685,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1207969831}
-  - component: {fileID: 1207969834}
-  - component: {fileID: 1207969833}
-  - component: {fileID: 1207969832}
-  m_Layer: 9
-  m_Name: upperfloor (11)
-=======
   - component: {fileID: 1474611323}
   - component: {fileID: 1474611326}
   - component: {fileID: 1474611325}
   - component: {fileID: 1474611324}
   m_Layer: 0
   m_Name: door (4)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11710,153 +9763,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1474611322}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1230624016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1230624017}
-  - component: {fileID: 1230624018}
-  m_Layer: 0
-  m_Name: trigger (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1230624017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1230624016}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.88, y: 0, z: -22.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1230624018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1230624016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 3
-  trigger_radius: 6.1
---- !u!1 &1270341490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1270341491}
-  - component: {fileID: 1270341492}
-  m_Layer: 0
-  m_Name: trigger (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1270341491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1270341490}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.59, y: 0, z: 0.91}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1270341492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1270341490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 0
-  trigger_radius: 2.83
---- !u!1 &1271866328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1271866329}
-  m_Layer: 0
-  m_Name: floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1271866329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1271866328}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22000003, y: -0.45, z: -30.14}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
-  m_Children:
-  - {fileID: 1189494595}
-  - {fileID: 522414779}
-  - {fileID: 1684325382}
-  - {fileID: 743434589}
-  - {fileID: 592013241}
-  - {fileID: 1459511403}
-  - {fileID: 551087466}
-  - {fileID: 1141328738}
-  - {fileID: 1777384254}
-  - {fileID: 1814000858}
-  - {fileID: 58263996}
-  - {fileID: 1595379945}
-  - {fileID: 994396576}
-  - {fileID: 528348778}
-  - {fileID: 894001624}
-  - {fileID: 602050366}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1277204800
-=======
 --- !u!1 &1474690033
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1277204801}
-  - component: {fileID: 1277204804}
-  - component: {fileID: 1277204803}
-  - component: {fileID: 1277204802}
-  m_Layer: 9
-  m_Name: blue room (3)
-=======
   - component: {fileID: 1474690034}
   - component: {fileID: 1474690038}
   - component: {fileID: 1474690037}
@@ -11864,7 +9777,6 @@ GameObject:
   - component: {fileID: 1474690035}
   m_Layer: 0
   m_Name: TextMeshPro
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12057,21 +9969,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1285242430}
-  - component: {fileID: 1285242433}
-  - component: {fileID: 1285242432}
-  - component: {fileID: 1285242431}
-  m_Layer: 9
-  m_Name: upperfloor (8)
-=======
   - component: {fileID: 1475201577}
   - component: {fileID: 1475201580}
   - component: {fileID: 1475201579}
   - component: {fileID: 1475201578}
   m_Layer: 0
   m_Name: blue room (32)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12151,19 +10054,11 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1364406336}
-  - component: {fileID: 1364406335}
-  - component: {fileID: 1364406334}
-  - component: {fileID: 1364406333}
-  m_Layer: 9
-=======
   - component: {fileID: 1481671836}
   - component: {fileID: 1481671835}
   - component: {fileID: 1481671834}
   - component: {fileID: 1481671833}
   m_Layer: 0
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Name: mainhall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12237,52 +10132,7 @@ Transform:
   m_Father: {fileID: 805922494}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1373131183
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1373131185}
-  - component: {fileID: 1373131184}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1373131184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1373131183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91aadeb03e31a4f409a131d55ad6f00c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pixelate_effect: 0
---- !u!4 &1373131185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1373131183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -120.162155, y: -107.56186, z: 217.36227}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1377019474
-=======
 --- !u!1 &1509407377
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12395,208 +10245,27 @@ Transform:
   m_LocalPosition: {x: -14.079, y: 4, z: 63.13}
   m_LocalScale: {x: 17.51896, y: 8, z: 0.5}
   m_Children: []
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_Father: {fileID: 1777384254}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1384013874
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1384013872}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1384013875
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1384013872}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 1d841e7039383ac4c8ce810b76cdca50, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1384013876
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1384013872}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1392175530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392175531}
-  - component: {fileID: 1392175533}
-  - component: {fileID: 1392175532}
-  m_Layer: 0
-  m_Name: RoomA (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1392175531
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392175530}
-  m_LocalRotation: {x: 0.069219925, y: -0.91680527, z: 0.18203127, w: 0.34862795}
-  m_LocalPosition: {x: 19.34, y: 7.32, z: 12.49}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 22.46, y: -138.36, z: 0}
---- !u!81 &1392175532
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392175530}
-  m_Enabled: 1
---- !u!20 &1392175533
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392175530}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &1396983666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1396983667}
-  - component: {fileID: 1396983670}
-  - component: {fileID: 1396983669}
-  - component: {fileID: 1396983668}
-  m_Layer: 9
-  m_Name: blue room
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1396983667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1396983666}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.6, y: 4, z: 38}
-  m_LocalScale: {x: 12, y: 8, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 863859331}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1396983668
-=======
   m_Father: {fileID: 863859331}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1532402506
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1396983666}
-=======
   m_GameObject: {fileID: 1532402504}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!23 &1396983669
-=======
 --- !u!23 &1532402507
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1396983666}
-=======
   m_GameObject: {fileID: 1532402504}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -12606,11 +10275,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - {fileID: 2100000, guid: 4f33342f98d63fe458b266581673267b, type: 2}
-=======
   - {fileID: 2100000, guid: a927367476b664531ae0903fae3b0380, type: 2}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12630,116 +10295,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!33 &1396983670
-=======
 --- !u!33 &1532402508
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1396983666}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1425102173
-=======
   m_GameObject: {fileID: 1532402504}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1536380525
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1425102174}
-  m_Layer: 0
-  m_Name: RoomA
-=======
   - component: {fileID: 1536380526}
   - component: {fileID: 1536380529}
   - component: {fileID: 1536380528}
   - component: {fileID: 1536380527}
   m_Layer: 0
   m_Name: Cube (3)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!4 &1425102174
-=======
 --- !u!4 &1536380526
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1425102173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 857676314}
-  - {fileID: 689580982}
-  - {fileID: 330878508}
-  - {fileID: 349071608}
-  - {fileID: 784763685}
-  - {fileID: 1021370119}
-  - {fileID: 1230624017}
-  - {fileID: 995114064}
-  - {fileID: 1137328074}
-  - {fileID: 1270341491}
-  - {fileID: 1188468129}
-  - {fileID: 707418391}
-  - {fileID: 819401810}
-  - {fileID: 1167658679}
-  - {fileID: 542738731}
-  - {fileID: 1002714210}
-  - {fileID: 1471431166}
-  - {fileID: 1624288946}
-  m_Father: {fileID: 23924863}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1427993072
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1427993073}
-  - component: {fileID: 1427993076}
-  - component: {fileID: 1427993075}
-  - component: {fileID: 1427993074}
-  m_Layer: 9
-  m_Name: upperfloor (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1427993073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427993072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.2, y: 14.77, z: 38.88}
-  m_LocalScale: {x: 15, y: 8, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 1041222085}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1427993074
-=======
   m_GameObject: {fileID: 1536380525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3, y: 1.8, z: 0}
@@ -12749,36 +10334,23 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1536380527
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1427993072}
-=======
   m_GameObject: {fileID: 1536380525}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!23 &1427993075
-=======
 --- !u!23 &1536380528
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1427993072}
-=======
   m_GameObject: {fileID: 1536380525}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -12788,11 +10360,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - {fileID: 2100000, guid: cf3d3cf7d0e048849ab368c1fdff4e95, type: 2}
-=======
   - {fileID: 2100000, guid: 1d841e7039383ac4c8ce810b76cdca50, type: 2}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12812,67 +10380,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!33 &1427993076
-=======
 --- !u!33 &1536380529
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1427993072}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1443906337
-=======
   m_GameObject: {fileID: 1536380525}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1537276205
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1443906341}
-  - component: {fileID: 1443906340}
-  - component: {fileID: 1443906339}
-  - component: {fileID: 1443906338}
-  m_Layer: 0
-  m_Name: Cube
-=======
   - component: {fileID: 1537276206}
   - component: {fileID: 1537276209}
   - component: {fileID: 1537276208}
   - component: {fileID: 1537276207}
   m_Layer: 0
   m_Name: blue room (2)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!114 &1443906338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1443906337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444e951dde7cb9c43a6ff4362793182b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistent: 0
-  item_id: 9
-  item_stock: 5
---- !u!23 &1443906339
-=======
 --- !u!4 &1537276206
 Transform:
   m_ObjectHideFlags: 0
@@ -12899,16 +10431,11 @@ BoxCollider:
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1537276208
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1443906337}
-=======
   m_GameObject: {fileID: 1537276205}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -12918,11 +10445,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - {fileID: 2100000, guid: 4cabc125f5b68b64b9d6564440adf94f, type: 2}
-=======
   - {fileID: 2100000, guid: a927367476b664531ae0903fae3b0380, type: 2}
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12942,37 +10465,14 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!33 &1443906340
-=======
 --- !u!33 &1537276209
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1443906337}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1443906341
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1443906337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.77, y: 0.566, z: 7.43}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1444257488
-=======
   m_GameObject: {fileID: 1537276205}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1576238990
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13335,88 +10835,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684325381}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1461584186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1461584187}
-  - component: {fileID: 1461584189}
-  - component: {fileID: 1461584188}
-  m_Layer: 0
-  m_Name: RoomB (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1461584187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1461584186}
-  m_LocalRotation: {x: 0, y: 0.102011256, z: 0, w: 0.9947832}
-  m_LocalPosition: {x: 1.82, y: 1.17, z: 13.25}
-  m_LocalScale: {x: 1, y: 1, z: 0.9999999}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 11.71, z: 0}
---- !u!81 &1461584188
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1461584186}
-  m_Enabled: 1
---- !u!20 &1461584189
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1461584186}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &1471175487
-=======
 --- !u!1 &1695014543
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13501,74 +10920,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695014543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1471431165
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1471431166}
-  - component: {fileID: 1471431167}
-  m_Layer: 0
-  m_Name: trigger (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1471431166
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1471431165}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.52, y: 0, z: -13.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1471431167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1471431165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 3
-  trigger_radius: 2.08
---- !u!1 &1471578500
-=======
 --- !u!1 &1714148893
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1471578501}
-  - component: {fileID: 1471578504}
-  - component: {fileID: 1471578503}
-  - component: {fileID: 1471578502}
-  m_Layer: 9
-  m_Name: blue room
-=======
   - component: {fileID: 1714148894}
   - component: {fileID: 1714148897}
   - component: {fileID: 1714148896}
   - component: {fileID: 1714148895}
   m_Layer: 0
   m_Name: mainhall (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13648,21 +11012,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1481671836}
-  - component: {fileID: 1481671835}
-  - component: {fileID: 1481671834}
-  - component: {fileID: 1481671833}
-  m_Layer: 9
-  m_Name: mainhall
-=======
   - component: {fileID: 1720187980}
   - component: {fileID: 1720187983}
   - component: {fileID: 1720187982}
   - component: {fileID: 1720187981}
   m_Layer: 0
   m_Name: Cube (3)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13742,21 +11097,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1509407378}
-  - component: {fileID: 1509407381}
-  - component: {fileID: 1509407380}
-  - component: {fileID: 1509407379}
-  m_Layer: 9
-  m_Name: blue room (17)
-=======
   - component: {fileID: 1721909265}
   - component: {fileID: 1721909264}
   - component: {fileID: 1721909263}
   - component: {fileID: 1721909262}
   m_Layer: 0
   m_Name: hallway dresser (3)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13921,21 +11267,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1537276206}
-  - component: {fileID: 1537276209}
-  - component: {fileID: 1537276208}
-  - component: {fileID: 1537276207}
-  m_Layer: 9
-  m_Name: blue room (2)
-=======
   - component: {fileID: 1732109916}
   - component: {fileID: 1732109919}
   - component: {fileID: 1732109918}
   - component: {fileID: 1732109917}
   m_Layer: 0
   m_Name: upperfloor (14)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14008,62 +11345,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732109915}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1576238990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1576238991}
-  m_Layer: 0
-  m_Name: doors
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1576238991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1576238990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.22, y: -0.95, z: -31.14}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
-  m_Children:
-  - {fileID: 719140264}
-  - {fileID: 522492216}
-  m_Father: {fileID: 808748263}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1581989284
-=======
 --- !u!1 &1737224467
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1581989285}
-  - component: {fileID: 1581989288}
-  - component: {fileID: 1581989287}
-  - component: {fileID: 1581989286}
-  m_Layer: 9
-  m_Name: upperfloor (4)
-=======
   - component: {fileID: 1737224468}
   - component: {fileID: 1737224471}
   - component: {fileID: 1737224470}
   - component: {fileID: 1737224469}
   m_Layer: 0
   m_Name: door (12)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14136,91 +11430,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737224467}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1595379944
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1595379945}
-  m_Layer: 0
-  m_Name: staircasenew (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1595379945
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1595379944}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -9.28, y: 4.02, z: -13.799999}
-  m_LocalScale: {x: 0.97000045, y: 1, z: 0.5300002}
-  m_Children:
-  - {fileID: 506873190}
-  - {fileID: 1824684925}
-  - {fileID: 290346718}
-  - {fileID: 1536380526}
-  - {fileID: 246383909}
-  - {fileID: 1107816151}
-  - {fileID: 1731572807}
-  - {fileID: 1471175488}
-  - {fileID: 93929382}
-  - {fileID: 1449027880}
-  m_Father: {fileID: 1271866329}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!1 &1624288945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1624288946}
-  - component: {fileID: 1624288947}
-  m_Layer: 0
-  m_Name: trigger (17)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1624288946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1624288945}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.05, y: 0, z: 10.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425102174}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1624288947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1624288945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f3196ffcdd15499db792f1e20e3ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 1
-  trigger_radius: 1.92
---- !u!1 &1652678411
-=======
 --- !u!1 &1738333200
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14397,18 +11607,9 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1695014544}
-  - component: {fileID: 1695014547}
-  - component: {fileID: 1695014546}
-  - component: {fileID: 1695014545}
-  m_Layer: 9
-  m_Name: blue room (4)
-=======
   - component: {fileID: 1777384254}
   m_Layer: 0
   m_Name: staircasenew
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14528,21 +11729,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1714148894}
-  - component: {fileID: 1714148897}
-  - component: {fileID: 1714148896}
-  - component: {fileID: 1714148895}
-  m_Layer: 9
-  m_Name: mainhall (1)
-=======
   - component: {fileID: 1784048404}
   - component: {fileID: 1784048403}
   - component: {fileID: 1784048402}
   - component: {fileID: 1784048401}
   m_Layer: 0
   m_Name: door (2)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14700,39 +11892,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796955948}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1727312171
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1727312172}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1727312172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1727312171}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 281714050}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1731572806
-=======
 --- !u!1 &1800941634
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14824,21 +11984,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1732109916}
-  - component: {fileID: 1732109919}
-  - component: {fileID: 1732109918}
-  - component: {fileID: 1732109917}
-  m_Layer: 9
-  m_Name: upperfloor (14)
-=======
   - component: {fileID: 1803030239}
   - component: {fileID: 1803030242}
   - component: {fileID: 1803030241}
   - component: {fileID: 1803030240}
   m_Layer: 0
   m_Name: blue room (19)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14918,21 +12069,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1738333201}
-  - component: {fileID: 1738333204}
-  - component: {fileID: 1738333203}
-  - component: {fileID: 1738333202}
-  m_Layer: 9
-  m_Name: blue room (12)
-=======
   - component: {fileID: 1814000858}
   - component: {fileID: 1814000861}
   - component: {fileID: 1814000860}
   - component: {fileID: 1814000859}
   m_Layer: 0
   m_Name: mainhall (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15012,21 +12154,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1758800562}
-  - component: {fileID: 1758800565}
-  - component: {fileID: 1758800564}
-  - component: {fileID: 1758800563}
-  m_Layer: 9
-  m_Name: blue room (1)
-=======
   - component: {fileID: 1821374334}
   - component: {fileID: 1821374333}
   - component: {fileID: 1821374332}
   - component: {fileID: 1821374331}
   m_Layer: 0
   m_Name: mainhall
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15086,80 +12219,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1821374330}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1774234505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1774234506}
-  - component: {fileID: 1774234508}
-  - component: {fileID: 1774234507}
-  m_Layer: 0
-  m_Name: trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1774234506
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774234505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.34, y: 0, z: 18.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 161633440}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1774234507
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774234505}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.9, y: 1, z: 6.9}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1774234508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774234505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe9d1eb2e943c64fb683c2b93c5d306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera_id: 5
---- !u!1 &1777384253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1777384254}
-  m_Layer: 0
-  m_Name: staircasenew
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1777384254
-=======
 --- !u!4 &1821374334
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15179,21 +12239,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1796955949}
-  - component: {fileID: 1796955952}
-  - component: {fileID: 1796955951}
-  - component: {fileID: 1796955950}
-  m_Layer: 9
-  m_Name: blue room (13)
-=======
   - component: {fileID: 1824684925}
   - component: {fileID: 1824684928}
   - component: {fileID: 1824684927}
   - component: {fileID: 1824684926}
   m_Layer: 0
   m_Name: Cube (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15358,21 +12409,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1803030239}
-  - component: {fileID: 1803030242}
-  - component: {fileID: 1803030241}
-  - component: {fileID: 1803030240}
-  m_Layer: 9
-  m_Name: blue room (19)
-=======
   - component: {fileID: 1855441904}
   - component: {fileID: 1855441907}
   - component: {fileID: 1855441906}
   - component: {fileID: 1855441905}
   m_Layer: 0
   m_Name: upperfloor (16)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15537,21 +12579,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1821374334}
-  - component: {fileID: 1821374333}
-  - component: {fileID: 1821374332}
-  - component: {fileID: 1821374331}
-  m_Layer: 9
-  m_Name: mainhall
-=======
   - component: {fileID: 1868247163}
   - component: {fileID: 1868247166}
   - component: {fileID: 1868247165}
   - component: {fileID: 1868247164}
   m_Layer: 0
   m_Name: Cube (7)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15716,21 +12749,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1855441904}
-  - component: {fileID: 1855441907}
-  - component: {fileID: 1855441906}
-  - component: {fileID: 1855441905}
-  m_Layer: 9
-  m_Name: upperfloor (16)
-=======
   - component: {fileID: 1961314467}
   - component: {fileID: 1961314470}
   - component: {fileID: 1961314469}
   - component: {fileID: 1961314468}
   m_Layer: 0
   m_Name: blue room (22)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15810,21 +12834,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1864173581}
-  - component: {fileID: 1864173584}
-  - component: {fileID: 1864173583}
-  - component: {fileID: 1864173582}
-  m_Layer: 9
-  m_Name: blue room (11)
-=======
   - component: {fileID: 1987049502}
   - component: {fileID: 1987049501}
   - component: {fileID: 1987049500}
   - component: {fileID: 1987049499}
   m_Layer: 0
   m_Name: hallway dresser
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15969,90 +12984,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1991991058}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1901776158
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1901776159}
-  - component: {fileID: 1901776161}
-  - component: {fileID: 1901776160}
-  m_Layer: 0
-  m_Name: RoomA (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1901776159
-=======
 --- !u!4 &1991991062
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1901776158}
-  m_LocalRotation: {x: 0.15769497, y: -0.8072757, z: 0.24896741, w: 0.5113252}
-  m_LocalPosition: {x: 2.29, y: 8.82, z: -21.65}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.9999999}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 34.28, y: -115.3, z: 0}
---- !u!81 &1901776160
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1901776158}
-  m_Enabled: 1
---- !u!20 &1901776161
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1901776158}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &1908457170
-=======
   m_GameObject: {fileID: 1991991058}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -10.89, y: 1.124, z: 66.992}
@@ -16062,7 +12998,6 @@ Camera:
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2008747952
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16147,80 +13082,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008747952}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1924040819
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1924040821}
-  - component: {fileID: 1924040820}
-  m_Layer: 0
-  m_Name: CameraManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1924040820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1924040819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2114784da4d7894b851742de80ea3e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1924040821
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1924040819}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1392175531}
-  - {fileID: 1978656821}
-  - {fileID: 190077604}
-  - {fileID: 753174997}
-  - {fileID: 1901776159}
-  - {fileID: 2008100492}
-  - {fileID: 1461584187}
-  - {fileID: 371816793}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1961314466
-=======
 --- !u!1 &2016814648
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  - component: {fileID: 1961314467}
-  - component: {fileID: 1961314470}
-  - component: {fileID: 1961314469}
-  - component: {fileID: 1961314468}
-  m_Layer: 9
-  m_Name: blue room (22)
-=======
   - component: {fileID: 2016814652}
   - component: {fileID: 2016814651}
   - component: {fileID: 2016814650}
   - component: {fileID: 2016814649}
   m_Layer: 0
   m_Name: door (1)
->>>>>>> McKennaDev:Assets/Scenes/map.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16280,167 +13154,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016814648}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
---- !u!1 &1978656820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1978656821}
-  - component: {fileID: 1978656823}
-  - component: {fileID: 1978656822}
-  m_Layer: 0
-  m_Name: RoomA (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1978656821
-=======
 --- !u!4 &2016814652
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Scenes/MansionPartA_inno.unity
-  m_GameObject: {fileID: 1978656820}
-  m_LocalRotation: {x: 0, y: -0.8236316, z: 0, w: 0.5671253}
-  m_LocalPosition: {x: 12.68, y: 2.49, z: 11.72}
-  m_LocalScale: {x: 1.0000005, y: 0.9999999, z: 1.0000007}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -110.9, z: 0}
---- !u!81 &1978656822
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1978656820}
-  m_Enabled: 1
---- !u!20 &1978656823
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1978656820}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &2008100491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2008100492}
-  - component: {fileID: 2008100494}
-  - component: {fileID: 2008100493}
-  m_Layer: 0
-  m_Name: RoomB (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2008100492
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2008100491}
-  m_LocalRotation: {x: -0.016127592, y: -0.93214065, z: 0.3593093, w: -0.041839123}
-  m_LocalPosition: {x: 7.413, y: 10.628, z: 25.855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1924040821}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 42.16, y: -185.14, z: 0}
---- !u!81 &2008100493
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2008100491}
-  m_Enabled: 1
---- !u!20 &2008100494
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2008100491}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!1 &2008747952
-=======
   m_GameObject: {fileID: 2016814648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 41.140133, y: 16.210373, z: 11.783707}
@@ -16450,7 +13168,6 @@ Camera:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020118384
->>>>>>> McKennaDev:Assets/Scenes/map.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16670,7 +13387,7 @@ GameObject:
   - component: {fileID: 2061547952}
   - component: {fileID: 2061547951}
   - component: {fileID: 2061547950}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blue room (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16755,7 +13472,7 @@ GameObject:
   - component: {fileID: 2069825336}
   - component: {fileID: 2069825335}
   - component: {fileID: 2069825334}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: mainhall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16840,7 +13557,7 @@ GameObject:
   - component: {fileID: 2104386413}
   - component: {fileID: 2104386412}
   - component: {fileID: 2104386411}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: upperfloor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
