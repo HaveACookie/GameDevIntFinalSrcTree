@@ -74,9 +74,9 @@ public class EventManager : MonoBehaviour {
 		//Clean Items
 		for (int i = 0; i < items.Count; i++)
 		{
-			if (getItem(i) && items[i].GetComponent<InteractScript>().index)
+			if (items[i] != null)
 			{
-				if (items[i] != null)
+				if (getItem(i) && items[i].GetComponent<InteractScript>().index)
 				{
 					GameObject temp = items[i];
 					items[i] = null;
@@ -88,9 +88,9 @@ public class EventManager : MonoBehaviour {
 		//Clean Enemies
 		for (int i = 0; i < enemies.Count; i++)
 		{
-			if (getEnemy(i))
+			if (enemies[i] != null)
 			{
-				if (enemies[i] != null)
+				if (getEnemy(i))
 				{
 					GameObject temp = enemies[i];
 					enemies[i] = null;
@@ -102,9 +102,9 @@ public class EventManager : MonoBehaviour {
 		//Clean Puzzles
 		for (int i = 0; i < puzzles.Count; i++)
 		{
-			if (getPuzzle(i) && puzzles[i].GetComponent<InteractScript>().index)
+			if (puzzles[i] != null)
 			{
-				if (puzzles[i] != null)
+				if (getPuzzle(i) && puzzles[i].GetComponent<InteractScript>().index)
 				{
 					GameObject temp = puzzles[i];
 					puzzles[i] = null;

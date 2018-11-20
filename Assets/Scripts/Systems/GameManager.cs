@@ -130,9 +130,9 @@ public class GameManager : MonoBehaviour {
 			{
 				if (door.id == door_index)
 				{
-					float door_angle = -((Mathf.Atan2(player.transform.position.z - door.position.z, player.transform.position.x - door.position.x) * 180) / Mathf.PI) + 90;
 					player.transform.position = door.position;
-					player.transform.eulerAngles = new Vector3(0, -door_angle, 0);
+					float door_angle = -((Mathf.Atan2(player.transform.position.z - door.transform.position.z, player.transform.position.x - door.transform.position.x) * 180) / Mathf.PI) + 90;
+					player.transform.eulerAngles = new Vector3(0, door_angle, 0);
 					break;
 				}
 			}

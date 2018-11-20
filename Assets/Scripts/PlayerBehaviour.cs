@@ -225,7 +225,7 @@ public class PlayerBehaviour : MonoBehaviour {
 				hit_enemy = hitEnemy(30);
 				if (hit_enemy != null)
 				{
-					hit_enemy.GetComponent<HealthScript>().damage(3);
+					hit_enemy.GetComponent<HealthScript>().damage(2);
 					if (Random.Range(0, 100) < 5)
 					{
 						hit_enemy.GetComponent<HealthScript>().headshot();
@@ -236,7 +236,7 @@ public class PlayerBehaviour : MonoBehaviour {
 				hit_enemy = hitEnemy(45);
 				if (hit_enemy != null)
 				{
-					hit_enemy.GetComponent<HealthScript>().damage(3);
+					hit_enemy.GetComponent<HealthScript>().damage(2);
 					if (Random.Range(0, 100) < 5)
 					{
 						hit_enemy.GetComponent<HealthScript>().headshot();

@@ -11,11 +11,20 @@ public class HealthScript : MonoBehaviour {
 	public void damage(int dmg)
 	{
 		health -= dmg;
+
+		//Debug Kill Enemy
+		//Debug.Log(health);
+		if (health <= 0)
+		{
+			GameManager.instance.events.saveEnemy(gameObject, true);
+			gameObject.SetActive(false);
+		}
 	}
 
 	public void headshot()
 	{
 		health = 0;
+		damage(-1);
 	}
 	
 }

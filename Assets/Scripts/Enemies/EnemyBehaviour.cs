@@ -6,7 +6,6 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour {
 
 	//Components
-	[SerializeField] private GameObject grid;
 	private Rigidbody rb;
 	private Pathfinding path;
 	private PlayerBehaviour player;
@@ -34,9 +33,13 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	
 	//Init Enemy
+	void Awake()
+	{
+		gameObject.tag = "Enemy";
+	}
+	
 	void Start () {
 		//Components
-		gameObject.tag = "Enemy";
 		rb = gameObject.GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		path = gameObject.AddComponent<Pathfinding>();
