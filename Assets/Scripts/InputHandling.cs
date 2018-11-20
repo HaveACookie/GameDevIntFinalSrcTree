@@ -17,6 +17,8 @@ public class InputHandling : MonoBehaviour {
     public bool shootingPistol = false;
     public bool isKnifing = false;
     public bool isShotGunning = false;
+    public bool knifingSomeone = false;e
+    
 
     public bool shootStance = true;
     //Ray/LineCast Bools and Transform Holders
@@ -28,6 +30,7 @@ public class InputHandling : MonoBehaviour {
     public Transform  shootLeftMidEnd;
     public Transform  shootRightMidEnd;
     public Transform  shootDownMidEnd;
+    
 
 
     // Use this for initialization
@@ -73,6 +76,16 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
+        if(shootStance == true && PlayerBehaviour.equip == 1 && Input.GetKeyDown(KeyCode.R))
+        {
+            knifingSomeone= true;
+        }
+
+        if(knifingSomeone == true && isKnifing == true)
+        {
+            //Damage here
+        }
+
          //Checks what weapon is being used by the inventory and shoots if its the pistol
         if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R))
         {
@@ -143,7 +156,7 @@ public class InputHandling : MonoBehaviour {
         Physics.SphereCast(ray, 1.5f, out sphereHit, 2);
         if (sphereHit.collider.tag.Equals("Enemy"))
         {
-
+            isKnifing = true;
         }
     }
 
