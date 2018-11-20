@@ -20,6 +20,12 @@ public class TransitionDoor : MonoBehaviour {
 	 * Intent: Create the Door and set all the variables for the animation
 	 */
 	void Start () {
+		//Pixilate
+		if (GameManager.instance.pixel_effect)
+		{
+			gameObject.AddComponent<InnoPixelCamera>();
+		}
+		
 		//Creates the Door
 		if (door_type == "")
 		{

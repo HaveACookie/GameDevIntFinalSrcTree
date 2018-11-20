@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -20,6 +21,8 @@ public class PlayerBehaviour : MonoBehaviour {
 	
 	//Variables
 	private Vector2 velocity;  //Player Physics movement in the x and z axis
+	private float aim;
+	private float aim_stance;
 	
 	//Init Player
 	void Awake()
@@ -39,6 +42,8 @@ public class PlayerBehaviour : MonoBehaviour {
 
 		//Variables
 		velocity = Vector2.zero;
+		aim = 0f;
+		aim_stance = 0f;
 	}
 	
 	//Update Event
@@ -48,22 +53,56 @@ public class PlayerBehaviour : MonoBehaviour {
 		if (can_move)
 		{
 			//Debug (This block of code will be deleted later)
-			if (Input.GetKeyDown(KeyCode.K))
-			{
-				//pickupItem(30, 0, new GameObject("This is a test"));
-				gm.switchScene("MansionPartA", "door_b");
-			}
+			gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = Color.Lerp(Color.blue, Color.red, aim);
+			float aim_stance_direction = (aim_stance * Mathf.PI) / 6;
+			gameObject.transform.GetChild(0).transform.localPosition = new Vector3(0f, Mathf.Sin(aim_stance_direction), Mathf.Cos(aim_stance_direction)) * 1.25f;
 
 			//Player Input
 			if (gm.getKey("aim"))
 			{
 				//Attacking and Aiming Stances
+				aim = Mathf.Lerp(aim, 1, Time.deltaTime * 5f);
+
+				if (gm.getKey("up"))
+				{
+					aim_stance = Mathf.Lerp(aim_stance, 1, Time.deltaTime * 5f);
+				}
+				else if (gm.getKey("down"))
+				{
+					aim_stance = Mathf.Lerp(aim_stance, -1, Time.deltaTime * 5f);
+				}
+				else
+				{
+					aim_stance = Mathf.Lerp(aim_stance, 0, Time.deltaTime * 5f);
+				}
+				
+				//Turning left and right
+				float angle_spd = 0f; 
+				
+				if (gm.getKey("left"))
+				{
+					angle_spd = -turn_spd;  //Turn Left
+				}
+				else if (gm.getKey("right"))
+				{
+					angle_spd = turn_spd;  //Turn Right
+				}
+				
+				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + angle_spd, transform.eulerAngles.z);
+				
+				//Shooting
+				if (gm.getKeyDown("attack"))
+				{
+					weaponAction();
+				}
 			}
 			else
 			{
 				//Variables
 				float angle_spd = 0f;  //Change in angle that is applied to player's transform.eulerAngles.y
 				float move_spd = 0f;  //Movement Speed in the player's forward direction (If negative player moves backwards)
+				aim = Mathf.Lerp(aim, 0, Time.deltaTime * 5f);
+				aim_stance = Mathf.Lerp(aim_stance, 0, Time.deltaTime * 5f);
 
 				//Move forwards and backwards
 				float walk_run_spd = spd;
@@ -154,6 +193,114 @@ public class PlayerBehaviour : MonoBehaviour {
 				return;
 			}
 		}
+		
+		//Check Ground for objects tagged with "Interact"
+		hits = Physics.OverlapBox(transform.position - new Vector3(0, 0.8f, 0), new Vector3(1f, 0.4f, 1f), transform.rotation);
+		
+		foreach (Collider hit in hits)
+		{
+			//Perform inherited InteractInterface method action()
+			if (hit.gameObject.CompareTag("Interact"))
+			{
+				hit.GetComponent<InteractInterface>().action();
+				return;
+			}
+		}
+	}
+	
+	//Weapons
+	private void weaponAction()
+	{
+		GameObject hit_enemy;
+		switch (equip)
+		{
+			case 1 :
+				hit_enemy = hitEnemy(40);
+				if (hit_enemy != null)
+				{
+					hit_enemy.GetComponent<HealthScript>().damage(1);
+				}
+				return;
+			case 2 :
+				hit_enemy = hitEnemy(30);
+				if (hit_enemy != null)
+				{
+					hit_enemy.GetComponent<HealthScript>().damage(2);
+					if (Random.Range(0, 100) < 5)
+					{
+						hit_enemy.GetComponent<HealthScript>().headshot();
+					}
+				}
+				return;
+			case 3 :
+				hit_enemy = hitEnemy(45);
+				if (hit_enemy != null)
+				{
+					hit_enemy.GetComponent<HealthScript>().damage(2);
+					if (Random.Range(0, 100) < 5)
+					{
+						hit_enemy.GetComponent<HealthScript>().headshot();
+					}
+				}
+				return;
+			default :
+				return;
+		}
+	}
+
+	private GameObject hitEnemy(float range)
+	{
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+		if (enemies.Length < 1)
+		{
+			return null;
+		}
+		
+		GameObject enemy_hit = null;
+		for (int i = 0; i < enemies.Length; i++)
+		{
+			if (canHitRay(enemies[i].transform.position) && canHitAngle(enemies[i].transform.position, range))
+			{
+				if (enemy_hit == null)
+				{
+					enemy_hit = enemies[i];
+				}
+				else if (Vector3.Distance(transform.position, enemies[i].transform.position) < Vector3.Distance(transform.position, enemy_hit.transform.position))
+				{
+					enemy_hit = enemies[i];
+				}
+			}
+		}
+
+		return enemy_hit;
+	}
+
+	private bool canHitAngle(Vector3 target, float range)
+	{
+		float target_angle = pointAngle(new Vector2(transform.position.x, transform.position.z), new Vector2(target.x, target.z));
+		float facing_angle = transform.eulerAngles.y;
+		if (Mathf.Abs(Mathf.DeltaAngle(facing_angle, target_angle)) < range)
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	private bool canHitRay(Vector3 target)
+	{
+		Vector3 direction = target - transform.position;
+		RaycastHit[] hit = Physics.RaycastAll(transform.position, direction, Vector3.Distance(transform.position, target), GridBehaviour.instance.solids_layer);
+		if (hit.Length > 0)
+		{
+			return false;
+		}
+		return true;
+	}
+	
+	private float pointAngle(Vector2 pointA, Vector2 pointB)
+	{
+		return -((Mathf.Atan2(pointB.y - pointA.y, pointB.x - pointA.x) * 180) / Mathf.PI) + 90;
 	}
 	
 	//Methods
@@ -212,6 +359,6 @@ public class PlayerBehaviour : MonoBehaviour {
 		//Remove after done testing interact hit boxes
 		//Testing with hitboxes
 		Gizmos.color = Color.green;
-		Gizmos.DrawCube(transform.position - new Vector3(0, 0.8f, 0), new Vector3(2, 0.4f, 2));
+		Gizmos.DrawCube(transform.position - new Vector3(0, 0.8f, 0), new Vector3(1, 0.4f, 1));
 	}
 }

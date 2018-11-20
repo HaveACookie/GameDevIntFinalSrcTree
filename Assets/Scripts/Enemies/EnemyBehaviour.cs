@@ -6,12 +6,14 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour {
 
 	//Components
-	[SerializeField] private GameObject grid;
 	private Rigidbody rb;
 	private Pathfinding path;
 	private PlayerBehaviour player;
+	private HealthScript hs;
 	
 	//Settings
+	[SerializeField] private int health;
+	
 	[SerializeField] private float spd;
 	[SerializeField] private float turn_spd;
 	[SerializeField] private bool alert;
@@ -31,13 +33,25 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	
 	//Init Enemy
+	void Awake()
+	{
+		gameObject.tag = "Enemy";
+	}
+	
 	void Start () {
 		//Components
-		gameObject.tag = "Enemy";
 		rb = gameObject.GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		path = gameObject.AddComponent<Pathfinding>();
 		player = GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>();
+
+		if (!canFindPathPlayer())
+		{
+			Destroy(gameObject);
+		}
+
+		hs = gameObject.AddComponent<HealthScript>();
+		hs.damage(-health);
 		
 		//Settings
 		
@@ -165,6 +179,19 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	//Methods
+	private bool canFindPathPlayer()
+	{
+		Vector3 target_pos = player.transform.position;
+		target_position = new Vector2(target_pos.x, target_pos.z);
+		path_array = path.findPathArray(transform.position, target_pos);
+
+		if (path_array == null)
+		{
+			return false;
+		}
+		return true;
+	}
+	
 	private void setPath(Vector3 target_pos)
 	{
 		moving = true;
@@ -176,17 +203,9 @@ public class EnemyBehaviour : MonoBehaviour {
 		{
 			if (Vector2.Distance(path_array[0], new Vector2(transform.position.x, transform.position.z)) < 2.5f)
 			{
-				//path_index = 1;
+				path_index = 1;
 			}
 		}
-
-		//Debug Path Points
-		/*
-		for (int i = 0; i < path_array.Length; i++)
-		{
-			Debug.Log("Point " + i + ") X: " + path_array[i].x + " Y: " + path_array[i].y);
-		}
-		*/
 	}
 	
 	private float pointAngle(Vector2 pointA, Vector2 pointB)

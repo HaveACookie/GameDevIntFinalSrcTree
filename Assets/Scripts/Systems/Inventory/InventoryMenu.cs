@@ -521,7 +521,7 @@ public class InventoryMenu : MonoBehaviour {
 						else
 						{
 							gm.inventory.addItem(pick_up_item, pick_up_stock);
-							Destroy(destroy_pickup);
+							destroy_pickup.GetComponent<ItemScript>().pickupObject();
 							
 							setText("You took the " + InventoryData.itemName(pick_up_item) + ".");
 							picked = true;

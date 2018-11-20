@@ -119,6 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d4bb592b2d60a488b4aecdd9ae91c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health_icons:
+  - {fileID: 21300000, guid: 827b87f9f00557847b9ce17df801c092, type: 3}
+  - {fileID: 21300000, guid: 1d805f43358b89440bcdba99c9bf129f, type: 3}
+  - {fileID: 21300000, guid: a277ebc83eb681f42ab3288361a96ea1, type: 3}
+  - {fileID: 21300000, guid: 6a8af5f78681f3e4ab729f2e52159d07, type: 3}
 --- !u!114 &114809233483770268
 MonoBehaviour:
   m_ObjectHideFlags: 1

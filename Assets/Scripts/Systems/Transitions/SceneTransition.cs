@@ -131,7 +131,10 @@ public class SceneTransition : MonoBehaviour {
 	{
 		foreach (GameObject enemy in inactive_enemies)
 		{
-			enemy.GetComponent<EnemyBehaviour>().enabled = true;
+			if (enemy != null)
+			{
+				enemy.GetComponent<EnemyBehaviour>().enabled = true;
+			}
 		}
 	}
 	

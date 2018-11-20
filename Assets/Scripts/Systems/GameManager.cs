@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	
 	public string save_slot { get; private set; }
 	public InventoryManager inventory { get; private set; }
-	//public EventManager events { get; private set; }
+	public EventManager events { get; private set; }
 	
 	//Settings
 	[SerializeField] private bool pixelate_effect;
@@ -34,8 +34,12 @@ public class GameManager : MonoBehaviour {
 			gameObject.tag = "GameController";
 			DontDestroyOnLoad(gameObject);
 			inventory = gameObject.AddComponent<InventoryManager>();
+			events = gameObject.AddComponent<EventManager>();
 			instance = this;
 		}
+		
+		//Debug
+		pixelate_effect = true;
 	}
 	
 	//Update
@@ -114,7 +118,7 @@ public class GameManager : MonoBehaviour {
 			GameObject[] interact = GameObject.FindGameObjectsWithTag("Interact");
 			foreach (GameObject act in interact)
 			{
-				if (act.GetComponent<InteractScript>().compareTag("Door"))
+				if (act.GetComponent<InteractScript>().compareInteractTag("Door"))
 				{
 					doors.Add(act.GetComponent<DoorScript>());
 				}
@@ -127,10 +131,16 @@ public class GameManager : MonoBehaviour {
 				if (door.id == door_index)
 				{
 					player.transform.position = door.position;
+					float door_angle = -((Mathf.Atan2(player.transform.position.z - door.transform.position.z, player.transform.position.x - door.transform.position.x) * 180) / Mathf.PI) + 90;
+					player.transform.eulerAngles = new Vector3(0, door_angle, 0);
 					break;
 				}
 			}
 		}
+		
+		//Index Content and Clean
+		events.indexContent();
+		events.cleanIndexedContent();
 	}
 	
 	//Getter & Setters
