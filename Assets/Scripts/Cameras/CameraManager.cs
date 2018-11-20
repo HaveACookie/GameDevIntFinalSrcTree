@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraManager : MonoBehaviour {
 
@@ -35,12 +36,15 @@ public class CameraManager : MonoBehaviour {
 	
 	//Update Event
 	void FixedUpdate () {
-		if (set_pixilate)
+		if (GameManager.instance.pixel_effect)
 		{
-			cameras[cam_active].AddComponent<InnoPixelCamera>();
-			cameras[cam_active].GetComponent<InnoPixelCamera>().referenceHeight = 270;
-			cameras[cam_active].GetComponent<InnoPixelCamera>().pixelsPerUnit = 32;
-			set_pixilate = false;
+			if (set_pixilate)
+			{
+				cameras[cam_active].AddComponent<InnoPixelCamera>();
+				cameras[cam_active].GetComponent<InnoPixelCamera>().referenceHeight = 270;
+				cameras[cam_active].GetComponent<InnoPixelCamera>().pixelsPerUnit = 32;
+				set_pixilate = false;
+			}
 		}
 	}
 	
@@ -61,6 +65,37 @@ public class CameraManager : MonoBehaviour {
 		cameras[camera_id].tag = "MainCamera";
 		cameras[camera_id].SetActive(true);
 		set_pixilate = true;
+	}
+
+	public void createInventoryCanvas()
+	{
+		GameObject inventory_canvas = new GameObject("Inventory", typeof(Canvas));
+		inventory_canvas.transform.SetParent(cameras[cam_active].transform);
+		inventory_canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+		inventory_canvas.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+		inventory_canvas.GetComponent<CanvasScaler>().referenceResolution = new Vector2(1920, 1080);
+		inventory_canvas.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+		inventory_canvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 1;
+		inventory_canvas.GetComponent<RectTransform>().transform.localPosition = new Vector3(0, 0, 0);
+		inventory_canvas.AddComponent<InventoryTransition>();
+	}
+
+	public void setInventoryPickUp(int item, int stock, GameObject item_obj)
+	{
+		InventoryTransition menu = cameras[cam_active].transform.GetChild(0).GetComponent<InventoryTransition>();
+		menu.setPickUp(item, stock, item_obj);
+	}
+
+	public int getCameraNum(GameObject camera)
+	{
+		for (int i = 0; i < cameras.Length; i++)
+		{
+			if (camera == cameras[i])
+			{
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 }
