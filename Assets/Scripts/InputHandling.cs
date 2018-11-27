@@ -7,6 +7,18 @@ using UnityEngine;
 public class InputHandling : MonoBehaviour {
 
     private RaycastHit hit;
+    public AudioSource shotGunSource;
+    public AudioSource shotGunHitSource;
+    public AudioSource pistolSource;
+    public AudioSource pistolHitSource;
+    public AudioSource knifeSource;
+    public AudioSource knifeHitSource;
+    public AudioClip knifeSwipe;
+    public AudioClip knifeHit;
+    public AudioClip pistolShot;
+    public AudioClip pistolHit;
+    public AudioClip shotgunShot;
+    public AudioClip shotgunHit;
 
     //Surface Hit Bools
     public bool doorHit = false;
@@ -17,7 +29,7 @@ public class InputHandling : MonoBehaviour {
     public bool shootingPistol = false;
     public bool isKnifing = false;
     public bool isShotGunning = false;
-    public bool knifingSomeone = false;e
+    public bool knifingSomeone = false;
     
 
     public bool shootStance = true;
@@ -76,48 +88,63 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
-        if(shootStance == true && PlayerBehaviour.equip == 1 && Input.GetKeyDown(KeyCode.R))
+        if(shootStance == true && PlayerBehaviour.equip == 1 && Input.GetKeyDown(KeyCode.R) )
         {
             knifingSomeone= true;
+            knifeSource.PlayOneShot(knifeSwipe);
         }
 
         if(knifingSomeone == true && isKnifing == true)
         {
             //Damage here
+
         }
 
          //Checks what weapon is being used by the inventory and shoots if its the pistol
-        if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R))
+        if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R) && /*  */))
         {
             shootingPistol = true;
+            pistolSource.PlayOneShot(pistolShot);
             //we can put the animations and sound effects around here later
         }
         if (shootingPistol == true && shotHit.Equals(true))
         {
             //Deal Damage here
+            pistolSource.PlayOneShot(pistolShot);
+            pistolHitSource.PlayOneShot(pistolHit);
         }
         //Checks what weapon is being used by the inventory and shoots if its the shotgun 
         if (shootStance == true && PlayerBehaviour.equip == 3 && Input.GetKeyDown(KeyCode.R ))
         {
-            isShotGunning = true; 
+            isShotGunning = true;
+            shotGunSource.PlayOneShot(shotgunShot);
+           
             //we can put the animations and sound effects around here later
         }
         //Hit Checkers for each bullet in the spread
         if(isShotGunning == true && shotgunShot1 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot2 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot3 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot4 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
        
 
