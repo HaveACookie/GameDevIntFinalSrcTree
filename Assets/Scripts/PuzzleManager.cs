@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private int progression_num; 
 	
 	// Update is called once per frame
 	void Update () {
