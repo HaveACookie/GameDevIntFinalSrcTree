@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class Pathfinding : MonoBehaviour
@@ -8,9 +7,9 @@ public class Pathfinding : MonoBehaviour
 	private GridBehaviour grid;
 	
 	//Initialize Singleton Grid
-	void Start()
+	void Awake()
 	{
-		grid = GridBehaviour.instance;;
+		grid = GridBehaviour.instance;
 	}
 	
 	//Path Finding Methods
@@ -54,7 +53,7 @@ public class Pathfinding : MonoBehaviour
 					if (!open_set.Contains(neighbour))
 						open_set.Add(neighbour);
 					else {
-						//open_set.UpdateItem(neighbour);
+						open_set.UpdateItem(neighbour);
 					}
 				}
 			}
