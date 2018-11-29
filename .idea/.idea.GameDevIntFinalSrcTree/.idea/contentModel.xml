@@ -26,11 +26,18 @@
             <e p="CameraManager.cs" t="Include" />
             <e p="CameraProximityTrigger.cs" t="Include" />
             <e p="CameraTrigger.cs" t="Include" />
+            <e p="CameraTriggerEZ.cs" t="Include" />
           </e>
-          <e p="EnemyBehaviour.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
-          <e p="InputHandling.cs" t="Include" />
-          <e p="KnifeHitBox.cs" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="EnemyBehaviour.cs" t="Include" />
+            <e p="HealthScript.cs" t="Include" />
+          </e>
+          <e p="Interact" t="Include">
+            <e p="DoorScript.cs" t="Include" />
+            <e p="InteractInterface.cs" t="Include" />
+            <e p="InteractScript.cs" t="Include" />
+            <e p="ItemScript.cs" t="Include" />
+          </e>
           <e p="Pathfinding" t="Include">
             <e p="GridBehaviour.cs" t="Include" />
             <e p="Heap.cs" t="Include" />
@@ -38,6 +45,25 @@
             <e p="Pathfinding.cs" t="Include" />
           </e>
           <e p="PlayerBehaviour.cs" t="Include" />
+          <e p="Systems" t="Include">
+            <e p="Debug" t="Include">
+              <e p="InputHandling.cs" t="Include" />
+              <e p="KnifeHitBox.cs" t="Include" />
+            </e>
+            <e p="EventManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="Inventory" t="Include">
+              <e p="InventoryData.cs" t="Include" />
+              <e p="InventoryHealth.cs" t="Include" />
+              <e p="InventoryManager.cs" t="Include" />
+              <e p="InventoryMenu.cs" t="Include" />
+              <e p="InventorySlotScript.cs" t="Include" />
+            </e>
+            <e p="Transitions" t="Include">
+              <e p="SceneTransition.cs" t="Include" />
+              <e p="TransitionDoor.cs" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="GameDevIntFinalSrcTree.sln" t="IncludeFlat" />
