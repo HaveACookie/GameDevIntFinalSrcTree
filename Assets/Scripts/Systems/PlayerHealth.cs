@@ -25,7 +25,8 @@ public class PlayerHealth : MonoBehaviour {
     {
         if (playerHealth_val == 0)
         {
-            playerIsDead = true; 
+            playerIsDead = true;
+            SceneManager.LoadScene("renameplaytest");
             //player death scene goes here
             //also load the start scene
         }
