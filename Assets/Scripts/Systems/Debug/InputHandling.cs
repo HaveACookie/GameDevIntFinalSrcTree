@@ -4,10 +4,22 @@ using UnityEngine;
 //This is a script that is added to the player object to allow shooting to take place
 
 
-public class InputHandling : MonoBehaviour {
+public class InputHandling : MonoBehaviour
+{
 
     private RaycastHit hit;
-    private PlayerBehaviour player;
+    public AudioSource shotGunSource;
+    public AudioSource shotGunHitSource;
+    public AudioSource pistolSource;
+    public AudioSource pistolHitSource;
+    public AudioSource knifeSource;
+    public AudioSource knifeHitSource;
+    public AudioClip knifeSwipe;
+    public AudioClip knifeHit;
+    public AudioClip pistolShot;
+    public AudioClip pistolHit;
+    public AudioClip shotgunShot;
+    public AudioClip shotgunHit;
 
     //Surface Hit Bools
     public bool doorHit = false;
@@ -18,25 +30,25 @@ public class InputHandling : MonoBehaviour {
     public bool shootingPistol = false;
     public bool isKnifing = false;
     public bool isShotGunning = false;
+    public bool knifingSomeone = false;
+
 
     public bool shootStance = true;
     //Ray/LineCast Bools and Transform Holders
     public bool shotgunShot1 = false;
     public bool shotgunShot2 = false;
     public bool shotgunShot3 = false;
-    public bool shotgunShot4 = false; 
+    public bool shotgunShot4 = false;
     public Transform shootMidTopStart, shootMidTopEnd;
-    public Transform  shootLeftMidEnd;
-    public Transform  shootRightMidEnd;
-    public Transform  shootDownMidEnd;
+    public Transform shootLeftMidEnd;
+    public Transform shootRightMidEnd;
+    public Transform shootDownMidEnd;
+    
+
 
 
     // Use this for initialization
-    void Start()
-    {
-        player = GetComponent<PlayerBehaviour>();
-    }
-
+    //TODO: Check with robert if there is something similar for linecasts (LineCast Raycast hit?)
     void shotgunCasting()
     {
         //LineCasting for shotgun, Debug line for visibility 
@@ -64,12 +76,12 @@ public class InputHandling : MonoBehaviour {
             //Scene Management Stuff Involving Doors goes here
         }
 
-        if(Input.GetKey(KeyCode.E) && itemSurfaceHit.Equals(true))
+        if (Input.GetKey(KeyCode.E) && itemSurfaceHit.Equals(true))
         {
             //Stuff involving adding items to your inventory
         }
 
-
+        //Puts Player in Shootstance 
         if (Input.GetKey(KeyCode.LeftShift))
         {
             shootStance = true;
@@ -78,40 +90,65 @@ public class InputHandling : MonoBehaviour {
         {
             shootStance = false;
         }
-        //Puts Player in Shootstance   
-        if (shootStance == true && player.equip == 2 && Input.GetKeyDown(KeyCode.R))
+        if (shootStance == true /*&& PlayerBehaviour.equip == 1 */ && Input.GetKeyDown(KeyCode.R))
+        {
+            knifingSomeone = true;
+            knifeSource.PlayOneShot(knifeSwipe);
+        }
+
+        if (knifingSomeone == true && isKnifing == true)
+        {
+            //Damage here
+
+        }
+
+        //Checks what weapon is being used by the inventory and shoots if its the pistol
+        if (shootStance == true /*&& PlayerBehaviour.equip == 2 */ && Input.GetKeyDown(KeyCode.R))
         {
             shootingPistol = true;
+            pistolSource.PlayOneShot(pistolShot);
             //we can put the animations and sound effects around here later
         }
         if (shootingPistol == true && shotHit.Equals(true))
         {
             //Deal Damage here
+            pistolSource.PlayOneShot(pistolShot);
+            pistolHitSource.PlayOneShot(pistolHit);
         }
-
-        if(shootStance == true && player.equip == 2 && Input.GetKeyDown(KeyCode.R ))
+        //Checks what weapon is being used by the inventory and shoots if its the shotgun 
+        if (shootStance == true /* && PlayerBehaviour.equip == 3 */ && Input.GetKeyDown(KeyCode.R))
         {
-            isShotGunning = true; 
+            isShotGunning = true;
+            shotGunSource.PlayOneShot(shotgunShot);
+
             //we can put the animations and sound effects around here later
         }
         //Hit Checkers for each bullet in the spread
-        if(isShotGunning == true && shotgunShot1 == true)
+        if (isShotGunning == true && shotgunShot1 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot2 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot3 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
         if (isShotGunning == true && shotgunShot4 == true)
         {
             //Should Deal Damage Here
+            shotGunSource.PlayOneShot(shotgunShot);
+            shotGunHitSource.PlayOneShot(shotgunHit);
         }
-       
+
 
 
     }
@@ -135,20 +172,36 @@ public class InputHandling : MonoBehaviour {
         {
             shotHit = true;
         }
+        if (myRayShotHit.collider.tag.Equals("EnemyHead"))
+        {
+            myRayShotHit.collider.GetComponent<EnemyHealth>().eHealth = myRayShotHit.collider.GetComponent<EnemyHealth>().eHealth - 2;
+        }
+        if (myRayShotHit.collider.tag.Equals("EnemyBody"))
+        {
+            myRayShotHit.collider.GetComponent<EnemyHealth>().eHealth = myRayShotHit.collider.GetComponent<EnemyHealth>().eHealth - 1;
+        }
 
 
     }
 
     void knifeCasting()
-    {   
+    {
         //Ask About spherecasting
         //DefineSphere
         RaycastHit sphereHit;
-       Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(transform.position, transform.forward);
         Physics.SphereCast(ray, 1.5f, out sphereHit, 2);
         if (sphereHit.collider.tag.Equals("Enemy"))
         {
-
+            isKnifing = true;
+        }
+        if (sphereHit.collider.tag.Equals("EnemyHead"))
+        {
+            sphereHit.collider.GetComponent<EnemyHealth>().eHealth = sphereHit.collider.GetComponent<EnemyHealth>().eHealth - 2;
+        }
+        if (sphereHit.collider.tag.Equals("EnemyBody"))
+        {
+            sphereHit.collider.GetComponent<EnemyHealth>().eHealth = sphereHit.collider.GetComponent<EnemyHealth>().eHealth - 1;
         }
     }
 
@@ -209,9 +262,9 @@ public class InputHandling : MonoBehaviour {
     }
 
 
-	
-	
 
 
-    
+
+
+
 }
