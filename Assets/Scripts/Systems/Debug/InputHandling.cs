@@ -43,11 +43,12 @@ public class InputHandling : MonoBehaviour
     public Transform shootLeftMidEnd;
     public Transform shootRightMidEnd;
     public Transform shootDownMidEnd;
+    
 
 
 
     // Use this for initialization
-
+    //TODO: Check with robert if there is something similar for linecasts (LineCast Raycast hit?)
     void shotgunCasting()
     {
         //LineCasting for shotgun, Debug line for visibility 
@@ -89,7 +90,7 @@ public class InputHandling : MonoBehaviour
         {
             shootStance = false;
         }
-        if (shootStance == true && PlayerBehaviour.equip == 1 && Input.GetKeyDown(KeyCode.R))
+        if (shootStance == true /*&& PlayerBehaviour.equip == 1 */ && Input.GetKeyDown(KeyCode.R))
         {
             knifingSomeone = true;
             knifeSource.PlayOneShot(knifeSwipe);
@@ -102,7 +103,7 @@ public class InputHandling : MonoBehaviour
         }
 
         //Checks what weapon is being used by the inventory and shoots if its the pistol
-        if (shootStance == true && PlayerBehaviour.equip == 2 && Input.GetKeyDown(KeyCode.R) && /*  */))
+        if (shootStance == true /*&& PlayerBehaviour.equip == 2 */ && Input.GetKeyDown(KeyCode.R))
         {
             shootingPistol = true;
             pistolSource.PlayOneShot(pistolShot);
@@ -115,7 +116,7 @@ public class InputHandling : MonoBehaviour
             pistolHitSource.PlayOneShot(pistolHit);
         }
         //Checks what weapon is being used by the inventory and shoots if its the shotgun 
-        if (shootStance == true && PlayerBehaviour.equip == 3 && Input.GetKeyDown(KeyCode.R))
+        if (shootStance == true /* && PlayerBehaviour.equip == 3 */ && Input.GetKeyDown(KeyCode.R))
         {
             isShotGunning = true;
             shotGunSource.PlayOneShot(shotgunShot);
