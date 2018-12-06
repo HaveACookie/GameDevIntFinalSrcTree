@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DebugMansion.unity
     guid: 93cc1575b91002b47bbad7086e6781aa
   - enabled: 1
-    path: Assets/Scenes/MansionPartA.unity
+    path: Assets/Scenes/map_old.unity
     guid: e8a844b9d00b45a44854b460159b87ce
+  - enabled: 1
+    path: Assets/Scenes/RenamePlayTest.unity
+    guid: 79b7a6f65d2954842b0ba15d616451ce
   m_configObjects: {}
