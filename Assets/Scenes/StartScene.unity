@@ -273,7 +273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "PRESS ANY BUTTON\n<size=20> \xA9 Inno, Christian, McKenna, and Elziabeth
+  m_Text: "PRESS ANY BUTTON\n<size=20> \xA9 Inno, Christian, McKenna, and Elizabeth
     </size>"
 --- !u!222 &670291708
 CanvasRenderer:
