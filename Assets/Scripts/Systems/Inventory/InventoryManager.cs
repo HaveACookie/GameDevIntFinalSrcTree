@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour {
 	void Awake()
 	{
 		//Health
-		health = 2;
+		health = 4;
 		poison = false;
 		
 		//Inventory
@@ -90,6 +90,7 @@ public class InventoryManager : MonoBehaviour {
 	{
 		health = heal_amount;
 		health = Mathf.Clamp(health, 0, 4);
+		Debug.Log(health);
 	}
 	
 	public void cure()

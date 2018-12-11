@@ -28,10 +28,12 @@
             <e p="CameraTrigger.cs" t="Include" />
             <e p="CameraTriggerEZ.cs" t="Include" />
           </e>
+          <e p="DogSpawner.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HealthScript.cs" t="Include" />
           </e>
+          <e p="EnemyHealth.cs" t="Include" />
           <e p="Interact" t="Include">
             <e p="DoorScript.cs" t="Include" />
             <e p="InteractInterface.cs" t="Include" />
@@ -49,6 +51,7 @@
             <e p="Debug" t="Include">
               <e p="InputHandling.cs" t="Include" />
               <e p="KnifeHitBox.cs" t="Include" />
+              <e p="PuzzleManager.cs" t="Include" />
             </e>
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
