@@ -100,7 +100,7 @@ Transform:
   m_GameObject: {fileID: 1660019857639606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.77, y: 1.5, z: 8.19}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4333183762519246}
   - {fileID: 4268529693281154}
@@ -276,6 +276,7 @@ MonoBehaviour:
   turn_spd: 1.2
   alert: 1
   aware_radius: 5.69
+  attack_delay: 5
 --- !u!136 &136054866256849926
 CapsuleCollider:
   m_ObjectHideFlags: 1

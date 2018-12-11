@@ -203,6 +203,7 @@ MonoBehaviour:
   turn_spd: 1.2
   alert: 1
   aware_radius: 5.69
+  attack_delay: 0
 --- !u!136 &136360236617520090
 CapsuleCollider:
   m_ObjectHideFlags: 1
