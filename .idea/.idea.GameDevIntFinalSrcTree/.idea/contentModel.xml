@@ -30,6 +30,7 @@
           </e>
           <e p="DogSpawner.cs" t="Include" />
           <e p="Enemies" t="Include">
+            <e p="EnemyAnimationScript.cs" t="Include" />
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HealthScript.cs" t="Include" />
           </e>
