@@ -18,6 +18,8 @@ public class EnemyBehaviour : MonoBehaviour {
 	[SerializeField] private float turn_spd;
 	[SerializeField] private bool alert;
 	[SerializeField] private float aware_radius;
+
+	[SerializeField] private float attack_delay;
 	
 	//Variables
 	private bool can_move;
@@ -29,8 +31,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	private int path_index;
 	private Vector2[] path_array;
 	private Vector2 target_position;
-	
-	
+
+	private bool attacking;
+	private float attack_time;
 	
 	//Init Enemy
 	void Awake()
@@ -85,13 +88,39 @@ public class EnemyBehaviour : MonoBehaviour {
 				//Set path for player
 				if (!moving)
 				{
-					setPath(player.transform.position);
+					if (attacking)
+					{
+						attack_time -= Time.deltaTime;
+						if (attack_time <= 0)
+						{
+							if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) <= 5f)
+							{
+								GameManager.instance.inventory.heal(GameManager.instance.inventory.health - 1);
+							}
+
+							attacking = false;
+							setPath(player.transform.position);
+						}
+					}
+					else
+					{
+						setPath(player.transform.position);
+					}
 				}
 				else
 				{
-					if (Vector2.Distance(target_position, new Vector2(player.transform.position.x, player.transform.position.z)) > 1f)
+					if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) > 3f)
 					{
-						setPath(player.transform.position);
+						if (Vector2.Distance(target_position, new Vector2(player.transform.position.x, player.transform.position.z)) > 1f)
+						{
+							setPath(player.transform.position);
+						}
+					}
+					else
+					{
+						moving = false;
+						attacking = true;
+						attack_time = attack_delay;
 					}
 				}
 			}
@@ -155,7 +184,7 @@ public class EnemyBehaviour : MonoBehaviour {
 						{
 							path_index++;
 							FixedUpdate();
-							Update();	
+							Update();
 						}
 					}
 					else
