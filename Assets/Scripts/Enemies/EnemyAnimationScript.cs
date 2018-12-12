@@ -74,6 +74,20 @@ public class EnemyAnimationScript : MonoBehaviour {
 
 	public void Play(string animation_name)
 	{
+		if (animations[3].activeSelf)
+		{
+			float dis_to_ground = GetComponent<Collider>().bounds.extents.y;
+			bool grounded = Physics.Raycast(transform.position, -Vector3.up, dis_to_ground + 0.1f);
+			if (grounded)
+			{
+				animations[3].SetActive(false);
+			}
+			else
+			{
+				return;
+			}
+		}
+		
 		for (int i = 0; i < animations.Length; i++)
 		{
 			if (animations[i] != null)
