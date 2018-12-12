@@ -17,6 +17,7 @@ public class HealthScript : MonoBehaviour {
 		if (health <= 0)
 		{
 			GameManager.instance.events.saveEnemy(gameObject, true);
+			gameObject.GetComponent<EnemyAnimationScript>().Play("death");
 			gameObject.SetActive(false);
 		}
 	}

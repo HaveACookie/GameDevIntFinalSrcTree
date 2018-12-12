@@ -10,6 +10,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	private Pathfinding path;
 	private PlayerBehaviour player;
 	private HealthScript hs;
+	private EnemyAnimationScript anim;
 	
 	//Settings
 	[SerializeField] private int health;
@@ -21,7 +22,10 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	[SerializeField] private float attack_delay;
 	
+	[SerializeField] private bool is_a_dog;
+	
 	//Variables
+	public bool dead { private get; set; }
 	private bool can_move;
 	private bool lock_on;
 
@@ -47,6 +51,8 @@ public class EnemyBehaviour : MonoBehaviour {
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		path = gameObject.AddComponent<Pathfinding>();
 		player = GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>();
+		anim = gameObject.GetComponent<EnemyAnimationScript>();
+		anim.Play("idle");
 
 		if (!canFindPathPlayer())
 		{
@@ -59,6 +65,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		//Settings
 		
 		//Variables
+		dead = false;
 		can_move = true;
 		lock_on = false;
 
@@ -71,6 +78,13 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	//Update Event
 	void Update () {
+		//Dead
+		if (dead)
+		{
+			anim.Play("dead");
+			return;
+		}
+		
 		//Movement & Path Finding
 		if (can_move)
 		{
@@ -88,6 +102,7 @@ public class EnemyBehaviour : MonoBehaviour {
 				//Set path for player
 				if (!moving)
 				{
+					anim.Play("idle");
 					if (attacking)
 					{
 						attack_time -= Time.deltaTime;
@@ -109,6 +124,7 @@ public class EnemyBehaviour : MonoBehaviour {
 				}
 				else
 				{
+					anim.Play("walk");
 					if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) > 3f)
 					{
 						if (Vector2.Distance(target_position, new Vector2(player.transform.position.x, player.transform.position.z)) > 1f)
@@ -194,6 +210,10 @@ public class EnemyBehaviour : MonoBehaviour {
 					}
 				}
 			}
+			
+		}
+		else
+		{
 			
 		}
 	}

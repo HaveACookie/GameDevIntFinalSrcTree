@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 23264507740246784}
   - component: {fileID: 136054866256849926}
   - component: {fileID: 114026718334046816}
+  - component: {fileID: 114119393435563332}
   - component: {fileID: 54794310171882342}
   m_Layer: 11
   m_Name: DebugEnemyDog
@@ -277,6 +278,27 @@ MonoBehaviour:
   alert: 1
   aware_radius: 5.69
   attack_delay: 5
+  is_a_dog: 0
+--- !u!114 &114119393435563332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1660019857639606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01b6e7755ba79344ace33bc98564381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walk_time: 0.25
+  y_offset: 0.25
+  anim_idle: {fileID: 1295310480862206, guid: 82b8c4f6079c7464a8b5c400a67bcad3, type: 2}
+  anim_walk_1: {fileID: 1515205671991510, guid: e9e5127d8175e5942af0a61c6a44be54,
+    type: 2}
+  anim_walk_2: {fileID: 1720604480290666, guid: 832f1aafede245c4ea2e2b547442b24a,
+    type: 2}
+  anim_leap: {fileID: 1006015763695770, guid: c12c1d286ff575b448164b78a6b25e27, type: 2}
+  anim_death: {fileID: 1031331612894906, guid: a3e0987f7960c5147af23abef22e2a98, type: 2}
 --- !u!136 &136054866256849926
 CapsuleCollider:
   m_ObjectHideFlags: 1
