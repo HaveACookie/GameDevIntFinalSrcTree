@@ -23,24 +23,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="88" />
+          <entry key="cs" value="89" />
           <entry key="shader" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="88" />
+          <entry key="C#" value="89" />
           <entry key="ShaderLab" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="38795" />
+          <entry key="cs" value="38818" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="38795" />
+          <entry key="C#" value="38818" />
         </counts>
       </usages-collector>
     </session>
@@ -142,7 +142,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationScript.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-80">
@@ -183,6 +183,29 @@
                 <marker date="1544649713557" expanded="true" signature="4739:4834" ph="{...}" />
                 <marker date="1544649713557" expanded="true" signature="4872:4967" ph="{...}" />
                 <marker date="1544649713557" expanded="true" signature="4974:5097" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/MainMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
+              <folding>
+                <marker date="1544701961705" expanded="false" signature="6:113" ph="..." />
+                <marker date="1544701961705" expanded="true" signature="154:1643" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
+                <marker date="1544701961705" expanded="true" signature="329:378" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="513:568" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="594:650" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="682:748" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="818:1291" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="1310:1424" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="1331:1421" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="1449:1641" ph="{...}" />
+                <marker date="1544701961705" expanded="true" signature="1529:1634" ph="/* when we figure out what the first play scene is, open it here. ... */" />
               </folding>
             </state>
           </provider>
@@ -389,9 +412,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/GridBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAnimationScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/Heap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Inventory/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Transitions/SceneTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Transitions/TransitionDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Inventory/InventoryMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
@@ -444,6 +467,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAnimationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -541,12 +565,12 @@
       <workItem from="1544123688086" duration="541000" />
       <workItem from="1544125284012" duration="2416000" />
       <workItem from="1544556639332" duration="6878000" />
-      <workItem from="1544639172703" duration="5065000" />
+      <workItem from="1544639172703" duration="5116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156245000" />
+    <option name="totallyTimeSpent" value="156296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1150,24 +1174,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1544650579606" expanded="false" signature="6:113" ph="..." />
-            <marker date="1544650579606" expanded="true" signature="154:1610" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
-            <marker date="1544650579606" expanded="true" signature="329:378" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="513:568" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="594:650" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="682:748" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="818:1291" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1310:1391" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1331:1388" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1416:1608" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1496:1601" ph="/* when we figure out what the first play scene is, open it here. ... */" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationScript.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -1209,6 +1216,27 @@
             <marker date="1544649713557" expanded="true" signature="4739:4834" ph="{...}" />
             <marker date="1544649713557" expanded="true" signature="4872:4967" ph="{...}" />
             <marker date="1544649713557" expanded="true" signature="4974:5097" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/MainMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
+          <folding>
+            <marker date="1544701961705" expanded="false" signature="6:113" ph="..." />
+            <marker date="1544701961705" expanded="true" signature="154:1643" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
+            <marker date="1544701961705" expanded="true" signature="329:378" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="513:568" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="594:650" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="682:748" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="818:1291" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="1310:1424" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="1331:1421" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="1449:1641" ph="{...}" />
+            <marker date="1544701961705" expanded="true" signature="1529:1634" ph="/* when we figure out what the first play scene is, open it here. ... */" />
           </folding>
         </state>
       </provider>

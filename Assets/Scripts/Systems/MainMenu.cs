@@ -60,7 +60,7 @@ public class MainMenu : MonoBehaviour {
 	void Update () {
 		if (Input.anyKey)
         {
-            StartCoroutine(start());
+            SceneManager.LoadScene("MainHall", LoadSceneMode.Single);
         }
 	}
 
