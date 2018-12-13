@@ -273,11 +273,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  spd: 0.035
-  turn_spd: 1.2
+  spd: 0.12
+  turn_spd: 1.6
   alert: 1
-  aware_radius: 5.69
-  attack_delay: 5
+  aware_radius: 1.93
+  attack_delay: 1
   is_a_dog: 0
 --- !u!114 &114119393435563332
 MonoBehaviour:
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01b6e7755ba79344ace33bc98564381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walk_time: 0.25
+  walk_time: 0.2
   y_offset: 0.25
   anim_idle: {fileID: 1295310480862206, guid: 82b8c4f6079c7464a8b5c400a67bcad3, type: 2}
   anim_walk_1: {fileID: 1515205671991510, guid: e9e5127d8175e5942af0a61c6a44be54,

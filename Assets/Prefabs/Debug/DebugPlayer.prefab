@@ -173,7 +173,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65471303149763902
 BoxCollider:
@@ -202,6 +202,7 @@ MonoBehaviour:
   run_spd: 0.085
   turn_spd: 2.5
   back_spd: 0.045
+  attack_delay: 1
 --- !u!136 &136720229044940362
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: c748c108727c76f41a03bd24568e2b9c,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -245,6 +246,11 @@ Transform:
   m_Father: {fileID: 504782216}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &69419480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1660019857639606, guid: 4d9b1fffe3035364b91076edef7aedda,
+    type: 2}
+  m_PrefabInternal: {fileID: 1707461096}
 --- !u!1 &94008190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +1962,52 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &605480735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605480737}
+  - component: {fileID: 605480736}
+  m_Layer: 0
+  m_Name: DogSpawn (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &605480736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605480735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493367b337c3fd14ab61be31b470c952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  window: {fileID: 1142504980}
+  window_broken: {fileID: 21300000, guid: 022c7519611344845bc19188aef0296f, type: 3}
+  dog_enemy: {fileID: 69419480}
+  dog_leap: {fileID: 1066015140952854, guid: da45e875e8e3bff40b6540cf0950dfb6, type: 2}
+  trigger_radius: 4.49
+  trigger_position: {x: 0, y: 0}
+--- !u!4 &605480737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605480735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42, y: 0, z: 70.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &613106348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,6 +6763,56 @@ Transform:
   m_Father: {fileID: 2092871714}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1707461096
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.672
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 73.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506878674955478, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660019857639606, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+      propertyPath: m_Name
+      value: DebugEnemyDog (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d9b1fffe3035364b91076edef7aedda, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1722304224
 GameObject:
   m_ObjectHideFlags: 0

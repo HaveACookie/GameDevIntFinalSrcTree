@@ -84,6 +84,13 @@ public class EnemyBehaviour : MonoBehaviour {
 			anim.Play("dead");
 			return;
 		}
+
+		if (!player.canattack)
+		{
+			anim.Play("idle");
+			velocity = Vector2.zero;
+			return;
+		}
 		
 		//Movement & Path Finding
 		if (can_move)
@@ -111,6 +118,7 @@ public class EnemyBehaviour : MonoBehaviour {
 							if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) <= 5f)
 							{
 								GameManager.instance.inventory.heal(GameManager.instance.inventory.health - 1);
+								player.hurt();
 							}
 
 							attacking = false;
