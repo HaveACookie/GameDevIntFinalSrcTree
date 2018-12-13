@@ -142,7 +142,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationScript.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-80">
@@ -183,28 +183,6 @@
                 <marker date="1544649713557" expanded="true" signature="4739:4834" ph="{...}" />
                 <marker date="1544649713557" expanded="true" signature="4872:4967" ph="{...}" />
                 <marker date="1544649713557" expanded="true" signature="4974:5097" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1544650579606" expanded="false" signature="6:113" ph="..." />
-                <marker date="1544650579606" expanded="true" signature="154:1610" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
-                <marker date="1544650579606" expanded="true" signature="329:378" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="513:568" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="594:650" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="682:748" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="818:1291" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="1310:1391" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="1331:1388" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="1416:1608" ph="{...}" />
-                <marker date="1544650579606" expanded="true" signature="1496:1601" ph="/* when we figure out what the first play scene is, open it here. ... */" />
               </folding>
             </state>
           </provider>
@@ -563,12 +541,12 @@
       <workItem from="1544123688086" duration="541000" />
       <workItem from="1544125284012" duration="2416000" />
       <workItem from="1544556639332" duration="6878000" />
-      <workItem from="1544639172703" duration="4466000" />
+      <workItem from="1544639172703" duration="5065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155646000" />
+    <option name="totallyTimeSpent" value="156245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,7 +558,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1433902" />
@@ -1171,6 +1149,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1544650579606" expanded="false" signature="6:113" ph="..." />
+            <marker date="1544650579606" expanded="true" signature="154:1610" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
+            <marker date="1544650579606" expanded="true" signature="329:378" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="513:568" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="594:650" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="682:748" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="818:1291" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="1310:1391" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="1331:1388" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="1416:1608" ph="{...}" />
+            <marker date="1544650579606" expanded="true" signature="1496:1601" ph="/* when we figure out what the first play scene is, open it here. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimationScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-80">
@@ -1211,26 +1209,6 @@
             <marker date="1544649713557" expanded="true" signature="4739:4834" ph="{...}" />
             <marker date="1544649713557" expanded="true" signature="4872:4967" ph="{...}" />
             <marker date="1544649713557" expanded="true" signature="4974:5097" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1544650579606" expanded="false" signature="6:113" ph="..." />
-            <marker date="1544650579606" expanded="true" signature="154:1610" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="161:309" ph="/* usage: put this on an empty gameobject in the start scene ... */" />
-            <marker date="1544650579606" expanded="true" signature="329:378" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="513:568" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="594:650" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="682:748" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="818:1291" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1310:1391" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1331:1388" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1416:1608" ph="{...}" />
-            <marker date="1544650579606" expanded="true" signature="1496:1601" ph="/* when we figure out what the first play scene is, open it here. ... */" />
           </folding>
         </state>
       </provider>
