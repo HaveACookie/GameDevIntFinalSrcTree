@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33298876329527358}
   - component: {fileID: 23207573907145404}
   m_Layer: 0
-  m_Name: pCube2
+  m_Name: pGlass10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 511f685fc7a4ca641a699a9318324c5a, type: 3}
+  - {fileID: 2100000, guid: 93519afa55e8f0c4787cf7271b09f9a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

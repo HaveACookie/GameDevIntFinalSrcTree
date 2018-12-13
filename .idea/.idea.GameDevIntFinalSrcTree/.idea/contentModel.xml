@@ -40,6 +40,7 @@
             <e p="InteractScript.cs" t="Include" />
             <e p="ItemScript.cs" t="Include" />
           </e>
+          <e p="MainMenu.cs" t="Include" />
           <e p="Pathfinding" t="Include">
             <e p="GridBehaviour.cs" t="Include" />
             <e p="Heap.cs" t="Include" />
@@ -65,6 +66,7 @@
               <e p="InventoryMenu.cs" t="Include" />
               <e p="InventorySlotScript.cs" t="Include" />
             </e>
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="Transitions" t="Include">
               <e p="SceneTransition.cs" t="Include" />
               <e p="TransitionDoor.cs" t="Include" />
