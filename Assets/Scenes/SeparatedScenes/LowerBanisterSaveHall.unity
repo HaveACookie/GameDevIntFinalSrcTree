@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 23966058}
   - component: {fileID: 23966057}
   - component: {fileID: 23966056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49695260}
   - component: {fileID: 49695261}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 82229454}
   - component: {fileID: 82229453}
   - component: {fileID: 82229452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121354200}
   - component: {fileID: 121354201}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 143796406}
   - component: {fileID: 143796405}
   - component: {fileID: 143796404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door (15) (locked, fake door, just for show)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 147804562}
   - component: {fileID: 147804561}
   - component: {fileID: 147804560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201496574}
   - component: {fileID: 201496575}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 278967524}
   - component: {fileID: 278967523}
   - component: {fileID: 278967522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320149579}
   - component: {fileID: 320149580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 329260329}
   - component: {fileID: 329260328}
   - component: {fileID: 329260327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347331164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1117,7 @@ GameObject:
   - component: {fileID: 360984245}
   - component: {fileID: 360984244}
   - component: {fileID: 360984243}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378810257}
   - component: {fileID: 378810258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 388596862}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   - component: {fileID: 396164761}
   - component: {fileID: 396164760}
   - component: {fileID: 396164759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 435027980}
   - component: {fileID: 435027979}
   - component: {fileID: 435027978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1475,7 +1475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439943440}
   - component: {fileID: 439943441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1627,7 +1627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466698640}
   - component: {fileID: 466698641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 471781111}
   - component: {fileID: 471781110}
   - component: {fileID: 471781109}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1778,6 +1778,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471781107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &475814637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475814639}
+  - component: {fileID: 475814638}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &475814638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475814637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277b60600007c8844afed658b89ef9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show_debug: 1
+  solids_mask:
+    serializedVersion: 2
+    m_Bits: 512
+  grid_size: {x: 38.78, y: 35}
+  node_radius: 0.25
+  node_outline: 1
+--- !u!4 &475814639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475814637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.3, y: 0, z: -69.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &501080417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1836,7 @@ GameObject:
   - component: {fileID: 501080421}
   - component: {fileID: 501080420}
   - component: {fileID: 501080419}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1921,7 @@ GameObject:
   - component: {fileID: 516044831}
   - component: {fileID: 516044830}
   - component: {fileID: 516044829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1957,7 +2004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 520249546}
   - component: {fileID: 520249547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2034,7 +2081,7 @@ GameObject:
   - component: {fileID: 522414782}
   - component: {fileID: 522414781}
   - component: {fileID: 522414780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: staircase (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585226091}
   - component: {fileID: 585226092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2241,7 @@ GameObject:
   - component: {fileID: 599741740}
   - component: {fileID: 599741739}
   - component: {fileID: 599741738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2279,7 +2326,7 @@ GameObject:
   - component: {fileID: 623643018}
   - component: {fileID: 623643017}
   - component: {fileID: 623643016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631768397}
   - component: {fileID: 631768398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2486,7 @@ GameObject:
   - component: {fileID: 632099893}
   - component: {fileID: 632099892}
   - component: {fileID: 632099891}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2524,7 +2571,7 @@ GameObject:
   - component: {fileID: 636764455}
   - component: {fileID: 636764454}
   - component: {fileID: 636764453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 647189132}
   - component: {fileID: 647189133}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2684,7 +2731,7 @@ GameObject:
   - component: {fileID: 666977220}
   - component: {fileID: 666977219}
   - component: {fileID: 666977218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2766,7 +2813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 683323627}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blockout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2799,7 +2846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707735748}
   - component: {fileID: 707735749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2876,7 +2923,7 @@ GameObject:
   - component: {fileID: 709187742}
   - component: {fileID: 709187741}
   - component: {fileID: 709187740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +3008,7 @@ GameObject:
   - component: {fileID: 786022969}
   - component: {fileID: 786022968}
   - component: {fileID: 786022967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,7 +3090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805922494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3073,7 +3120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898596768}
   - component: {fileID: 898596769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3148,7 +3195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900624253}
   - component: {fileID: 900624254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3223,7 +3270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951142114}
   - component: {fileID: 951142115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3300,7 +3347,7 @@ GameObject:
   - component: {fileID: 970957178}
   - component: {fileID: 970957177}
   - component: {fileID: 970957176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3383,7 +3430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 977539745}
   - component: {fileID: 977539746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3457,7 +3504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 981543221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WoodBlockTextureSprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3513,7 +3560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1004392771}
   - component: {fileID: 1004392772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3588,7 +3635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1063506508}
   - component: {fileID: 1063506509}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3665,7 +3712,7 @@ GameObject:
   - component: {fileID: 1075911477}
   - component: {fileID: 1075911476}
   - component: {fileID: 1075911475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3750,7 +3797,7 @@ GameObject:
   - component: {fileID: 1124340390}
   - component: {fileID: 1124340389}
   - component: {fileID: 1124340388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3835,7 +3882,7 @@ GameObject:
   - component: {fileID: 1180668712}
   - component: {fileID: 1180668711}
   - component: {fileID: 1180668710}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3920,7 +3967,7 @@ GameObject:
   - component: {fileID: 1189494598}
   - component: {fileID: 1189494597}
   - component: {fileID: 1189494596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: staircase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4005,7 +4052,7 @@ GameObject:
   - component: {fileID: 1203692216}
   - component: {fileID: 1203692215}
   - component: {fileID: 1203692214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4090,7 +4137,7 @@ GameObject:
   - component: {fileID: 1244984592}
   - component: {fileID: 1244984591}
   - component: {fileID: 1244984590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4175,7 +4222,7 @@ GameObject:
   - component: {fileID: 1247503638}
   - component: {fileID: 1247503637}
   - component: {fileID: 1247503636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4258,7 +4305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248537730}
   - component: {fileID: 1248537731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4332,7 +4379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271866329}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4367,7 +4414,7 @@ GameObject:
   - component: {fileID: 1305602580}
   - component: {fileID: 1305602579}
   - component: {fileID: 1305602578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4452,7 +4499,7 @@ GameObject:
   - component: {fileID: 1312352009}
   - component: {fileID: 1312352008}
   - component: {fileID: 1312352007}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4537,7 +4584,7 @@ GameObject:
   - component: {fileID: 1320625549}
   - component: {fileID: 1320625548}
   - component: {fileID: 1320625547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4622,7 +4669,7 @@ GameObject:
   - component: {fileID: 1368273908}
   - component: {fileID: 1368273907}
   - component: {fileID: 1368273906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4707,7 +4754,7 @@ GameObject:
   - component: {fileID: 1369141399}
   - component: {fileID: 1369141398}
   - component: {fileID: 1369141397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4792,7 +4839,7 @@ GameObject:
   - component: {fileID: 1412345816}
   - component: {fileID: 1412345815}
   - component: {fileID: 1412345814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4877,7 +4924,7 @@ GameObject:
   - component: {fileID: 1426454531}
   - component: {fileID: 1426454530}
   - component: {fileID: 1426454529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +5009,7 @@ GameObject:
   - component: {fileID: 1458696302}
   - component: {fileID: 1458696301}
   - component: {fileID: 1458696300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5045,7 +5092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487519902}
   - component: {fileID: 1487519903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5119,7 +5166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505046795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1stFloorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5159,7 +5206,7 @@ GameObject:
   - component: {fileID: 1536661747}
   - component: {fileID: 1536661746}
   - component: {fileID: 1536661745}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5244,7 +5291,7 @@ GameObject:
   - component: {fileID: 1548283172}
   - component: {fileID: 1548283171}
   - component: {fileID: 1548283170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5329,7 +5376,7 @@ GameObject:
   - component: {fileID: 1566647901}
   - component: {fileID: 1566647900}
   - component: {fileID: 1566647899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5411,7 +5458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576238991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5439,7 +5486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625090457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5474,7 +5521,7 @@ GameObject:
   - component: {fileID: 1684325385}
   - component: {fileID: 1684325384}
   - component: {fileID: 1684325383}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: staircase (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5559,7 +5606,7 @@ GameObject:
   - component: {fileID: 1738360934}
   - component: {fileID: 1738360933}
   - component: {fileID: 1738360932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5642,7 +5689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747408851}
   - component: {fileID: 1747408852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5719,7 +5766,7 @@ GameObject:
   - component: {fileID: 1751958052}
   - component: {fileID: 1751958051}
   - component: {fileID: 1751958050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5802,7 +5849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768531232}
   - component: {fileID: 1768531233}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5879,7 +5926,7 @@ GameObject:
   - component: {fileID: 1786336995}
   - component: {fileID: 1786336994}
   - component: {fileID: 1786336993}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +6011,7 @@ GameObject:
   - component: {fileID: 1791779698}
   - component: {fileID: 1791779697}
   - component: {fileID: 1791779696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6047,7 +6094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923756403}
   - component: {fileID: 1923756404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6124,7 +6171,7 @@ GameObject:
   - component: {fileID: 1924369426}
   - component: {fileID: 1924369425}
   - component: {fileID: 1924369424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6206,7 +6253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972990777}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: staircasenew (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6256,7 +6303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002994614}
   - component: {fileID: 2002994615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6331,7 +6378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2017545508}
   - component: {fileID: 2017545509}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6405,7 +6452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039784638}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WoodBlocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6445,7 +6492,7 @@ GameObject:
   - component: {fileID: 2084580798}
   - component: {fileID: 2084580797}
   - component: {fileID: 2084580796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lowerfloor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6528,7 +6575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124551111}
   - component: {fileID: 2124551112}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6603,7 +6650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125900145}
   - component: {fileID: 2125900146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sWoodLowerWallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

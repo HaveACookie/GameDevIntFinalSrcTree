@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 13069362}
   - component: {fileID: 13069361}
   - component: {fileID: 13069360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 90332887}
   - component: {fileID: 90332889}
   - component: {fileID: 90332888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 105457901}
   - component: {fileID: 105457900}
   - component: {fileID: 105457899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 211990559}
   - component: {fileID: 211990560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collumn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 230747557}
   - component: {fileID: 230747556}
   - component: {fileID: 230747555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 266317908}
   - component: {fileID: 266317907}
   - component: {fileID: 266317906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dresser (movable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 266317905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.35, y: 1.321, z: 33.26}
+  m_LocalPosition: {x: 4.35, y: 1.05, z: 33.26}
   m_LocalScale: {x: 4.0850906, y: 2.081, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 285737333}
   - component: {fileID: 285737332}
   - component: {fileID: 285737331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 321838972}
   - component: {fileID: 321838974}
   - component: {fileID: 321838973}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 334480445}
   - component: {fileID: 334480447}
   - component: {fileID: 334480446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 355482575}
   - component: {fileID: 355482574}
   - component: {fileID: 355482573}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 421578359}
   - component: {fileID: 421578361}
   - component: {fileID: 421578360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1463,7 +1463,7 @@ GameObject:
   - component: {fileID: 422410565}
   - component: {fileID: 422410564}
   - component: {fileID: 422410563}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 439410133}
   - component: {fileID: 439410132}
   - component: {fileID: 439410131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1637,7 +1637,7 @@ GameObject:
   - component: {fileID: 439692922}
   - component: {fileID: 439692921}
   - component: {fileID: 439692920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 450793862}
   - component: {fileID: 450793861}
   - component: {fileID: 450793860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ladder (movable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 450793859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.46, y: 1.31, z: 28.24}
+  m_LocalPosition: {x: 11.46, y: 1.31, z: 29.37}
   m_LocalScale: {x: 1.6641, y: 2.338986, z: 3.408}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1884,7 +1884,7 @@ GameObject:
   - component: {fileID: 491502271}
   - component: {fileID: 491502270}
   - component: {fileID: 491502269}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1971,7 +1971,7 @@ GameObject:
   - component: {fileID: 520025462}
   - component: {fileID: 520025461}
   - component: {fileID: 520025460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533590100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blockout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2089,7 @@ GameObject:
   - component: {fileID: 599772244}
   - component: {fileID: 599772243}
   - component: {fileID: 599772242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2176,7 +2176,7 @@ GameObject:
   - component: {fileID: 620356979}
   - component: {fileID: 620356978}
   - component: {fileID: 620356977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VelvetRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2263,7 +2263,7 @@ GameObject:
   - component: {fileID: 712738065}
   - component: {fileID: 712738064}
   - component: {fileID: 712738063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2350,7 +2350,7 @@ GameObject:
   - component: {fileID: 719140267}
   - component: {fileID: 719140266}
   - component: {fileID: 719140265}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2531,7 +2531,7 @@ GameObject:
   - component: {fileID: 746482754}
   - component: {fileID: 746482753}
   - component: {fileID: 746482752}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746636311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2649,7 +2649,7 @@ GameObject:
   - component: {fileID: 751712916}
   - component: {fileID: 751712915}
   - component: {fileID: 751712914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2731,7 +2731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805922494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2761,7 +2761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 810688274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueRoomLowerWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2806,7 +2806,7 @@ GameObject:
   - component: {fileID: 817325737}
   - component: {fileID: 817325736}
   - component: {fileID: 817325735}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2890,7 +2890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 863859331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1stFloorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2932,7 +2932,7 @@ GameObject:
   - component: {fileID: 900101005}
   - component: {fileID: 900101004}
   - component: {fileID: 900101003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3531,6 +3531,86 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2f9460a555893f4b81a1884ae210360, type: 3}
   m_IsPrefabAsset: 0
@@ -3545,7 +3625,7 @@ GameObject:
   - component: {fileID: 955974494}
   - component: {fileID: 955974493}
   - component: {fileID: 955974492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3686,7 +3766,7 @@ GameObject:
   - component: {fileID: 1034509707}
   - component: {fileID: 1034509706}
   - component: {fileID: 1034509705}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3773,7 +3853,7 @@ GameObject:
   - component: {fileID: 1036669760}
   - component: {fileID: 1036669759}
   - component: {fileID: 1036669758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3912,7 +3992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056428869}
   - component: {fileID: 1056428870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sCurtains (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4031,7 +4111,7 @@ GameObject:
   - component: {fileID: 1112190350}
   - component: {fileID: 1112190349}
   - component: {fileID: 1112190348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4172,7 +4252,7 @@ GameObject:
   - component: {fileID: 1132356620}
   - component: {fileID: 1132356619}
   - component: {fileID: 1132356618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4413,7 +4493,7 @@ GameObject:
   - component: {fileID: 1159814057}
   - component: {fileID: 1159814056}
   - component: {fileID: 1159814055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4500,7 +4580,7 @@ GameObject:
   - component: {fileID: 1162092727}
   - component: {fileID: 1162092726}
   - component: {fileID: 1162092725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4587,7 +4667,7 @@ GameObject:
   - component: {fileID: 1192671033}
   - component: {fileID: 1192671032}
   - component: {fileID: 1192671031}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4745,7 +4825,7 @@ GameObject:
   - component: {fileID: 1228448117}
   - component: {fileID: 1228448116}
   - component: {fileID: 1228448115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4949,7 @@ GameObject:
   - component: {fileID: 1243389824}
   - component: {fileID: 1243389823}
   - component: {fileID: 1243389822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4956,7 +5036,7 @@ GameObject:
   - component: {fileID: 1248756345}
   - component: {fileID: 1248756344}
   - component: {fileID: 1248756343}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5090,7 +5170,7 @@ GameObject:
   - component: {fileID: 1277204804}
   - component: {fileID: 1277204803}
   - component: {fileID: 1277204802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5306,7 +5386,7 @@ GameObject:
   - component: {fileID: 1325794144}
   - component: {fileID: 1325794143}
   - component: {fileID: 1325794142}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5391,7 +5471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325833152}
   - component: {fileID: 1325833153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sCurtains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5468,7 +5548,7 @@ GameObject:
   - component: {fileID: 1329277399}
   - component: {fileID: 1329277398}
   - component: {fileID: 1329277397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5555,7 +5635,7 @@ GameObject:
   - component: {fileID: 1332802496}
   - component: {fileID: 1332802495}
   - component: {fileID: 1332802494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5642,7 +5722,7 @@ GameObject:
   - component: {fileID: 1379539965}
   - component: {fileID: 1379539964}
   - component: {fileID: 1379539963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Celing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5729,7 +5809,7 @@ GameObject:
   - component: {fileID: 1385504825}
   - component: {fileID: 1385504827}
   - component: {fileID: 1385504826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5805,7 +5885,7 @@ GameObject:
   - component: {fileID: 1396983670}
   - component: {fileID: 1396983669}
   - component: {fileID: 1396983668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5890,7 +5970,7 @@ GameObject:
   - component: {fileID: 1418899847}
   - component: {fileID: 1418899846}
   - component: {fileID: 1418899845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6031,7 +6111,7 @@ GameObject:
   - component: {fileID: 1433817628}
   - component: {fileID: 1433817627}
   - component: {fileID: 1433817626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6190,7 +6270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1459817703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6229,7 +6309,7 @@ GameObject:
   - component: {fileID: 1471578504}
   - component: {fileID: 1471578503}
   - component: {fileID: 1471578502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6314,7 +6394,7 @@ GameObject:
   - component: {fileID: 1475250357}
   - component: {fileID: 1475250356}
   - component: {fileID: 1475250355}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6396,7 +6476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505046795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1stFloorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6427,7 +6507,7 @@ GameObject:
   - component: {fileID: 1537276209}
   - component: {fileID: 1537276208}
   - component: {fileID: 1537276207}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6512,7 +6592,7 @@ GameObject:
   - component: {fileID: 1540574471}
   - component: {fileID: 1540574470}
   - component: {fileID: 1540574469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6656,7 +6736,7 @@ GameObject:
   - component: {fileID: 1558889958}
   - component: {fileID: 1558889957}
   - component: {fileID: 1558889956}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6743,7 +6823,7 @@ GameObject:
   - component: {fileID: 1565120053}
   - component: {fileID: 1565120052}
   - component: {fileID: 1565120051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6827,7 +6907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576238991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6859,7 +6939,7 @@ GameObject:
   - component: {fileID: 1579674123}
   - component: {fileID: 1579674122}
   - component: {fileID: 1579674121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Celing (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6948,7 +7028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625090457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7045,7 +7125,7 @@ GameObject:
   - component: {fileID: 1685903670}
   - component: {fileID: 1685903669}
   - component: {fileID: 1685903668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7132,7 +7212,7 @@ GameObject:
   - component: {fileID: 1695014547}
   - component: {fileID: 1695014546}
   - component: {fileID: 1695014545}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7206,6 +7286,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695014543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1745433933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745433935}
+  - component: {fileID: 1745433934}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1745433934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745433933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277b60600007c8844afed658b89ef9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show_debug: 1
+  solids_mask:
+    serializedVersion: 2
+    m_Bits: 512
+  grid_size: {x: 28.1, y: 43.4}
+  node_radius: 0.25
+  node_outline: 1
+--- !u!4 &1745433935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745433933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7, y: 0, z: 33.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758800561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7217,7 +7344,7 @@ GameObject:
   - component: {fileID: 1758800565}
   - component: {fileID: 1758800564}
   - component: {fileID: 1758800563}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blue room (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7302,7 +7429,7 @@ GameObject:
   - component: {fileID: 1788655982}
   - component: {fileID: 1788655981}
   - component: {fileID: 1788655980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7386,7 +7513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789232930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VelvetRoomWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7484,7 +7611,7 @@ GameObject:
   - component: {fileID: 1822473561}
   - component: {fileID: 1822473560}
   - component: {fileID: 1822473559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7571,7 +7698,7 @@ GameObject:
   - component: {fileID: 1871239764}
   - component: {fileID: 1871239763}
   - component: {fileID: 1871239762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7658,7 +7785,7 @@ GameObject:
   - component: {fileID: 1914356745}
   - component: {fileID: 1914356744}
   - component: {fileID: 1914356743}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7745,7 +7872,7 @@ GameObject:
   - component: {fileID: 1989253871}
   - component: {fileID: 1989253870}
   - component: {fileID: 1989253869}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7832,7 +7959,7 @@ GameObject:
   - component: {fileID: 2044135420}
   - component: {fileID: 2044135419}
   - component: {fileID: 2044135418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7919,7 +8046,7 @@ GameObject:
   - component: {fileID: 2046388373}
   - component: {fileID: 2046388372}
   - component: {fileID: 2046388371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarbleWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8083,7 +8210,7 @@ GameObject:
   - component: {fileID: 2086888375}
   - component: {fileID: 2086888374}
   - component: {fileID: 2086888373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8170,7 +8297,7 @@ GameObject:
   - component: {fileID: 2097109096}
   - component: {fileID: 2097109095}
   - component: {fileID: 2097109094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerWall (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8254,7 +8381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106181430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Curtains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8287,7 +8414,7 @@ GameObject:
   - component: {fileID: 2114792099}
   - component: {fileID: 2114792101}
   - component: {fileID: 2114792100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
