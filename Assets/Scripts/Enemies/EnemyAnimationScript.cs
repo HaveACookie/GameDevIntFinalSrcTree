@@ -92,6 +92,7 @@ public class EnemyAnimationScript : MonoBehaviour {
 		{
 			if (animations[i] != null)
 			{
+				animations[i].transform.eulerAngles = new Vector3(animations[i].transform.eulerAngles.x, transform.eulerAngles.y, animations[i].transform.eulerAngles.z);
 				animations[i].SetActive(false);
 			}
 		}

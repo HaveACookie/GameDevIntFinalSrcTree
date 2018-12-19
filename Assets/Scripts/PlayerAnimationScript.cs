@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerAnimationScript : MonoBehaviour {
 
+	//Components
+	private PlayerBehaviour player;
+	
 	//Settings
 	[Header("Settings")] 
 	[SerializeField] private float walk_time;
@@ -44,14 +47,19 @@ public class PlayerAnimationScript : MonoBehaviour {
 	private float animation_timer;
 	private int animation_index;
 	private GameObject[] animations;
+
+	private float invincibility_timer;
 	
 	//Init
 	void Awake()
 	{
+		player = GetComponent<PlayerBehaviour>();
 		animation_state = "idle";
 		animation_timer = 0;
 		animation_index = 0;
 		animations = new GameObject[22];
+
+		invincibility_timer = 0;
 	}
 
 	//Public Method
@@ -202,6 +210,23 @@ public class PlayerAnimationScript : MonoBehaviour {
 			animation_index = 0;
 			
 			animations[0].SetActive(true);
+		}
+
+		if (!player.canattack)
+		{
+			invincibility_timer -= Time.deltaTime;
+			if (invincibility_timer < -2)
+			{
+				invincibility_timer = 2;
+			}
+
+			if (invincibility_timer < 0)
+			{
+				for (int i = 0; i < animations.Length; i++)
+				{
+					animations[i].SetActive(false);
+				}
+			}
 		}
 	}
 }
