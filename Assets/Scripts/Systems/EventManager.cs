@@ -94,7 +94,7 @@ public class EventManager : MonoBehaviour {
 				{
 					GameObject temp = enemies[i];
 					enemies[i] = null;
-					Destroy(temp);
+					DestroyImmediate(temp);
 				}
 			}
 		}

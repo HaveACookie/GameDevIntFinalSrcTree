@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InventoryManager : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class InventoryManager : MonoBehaviour {
 	void Awake()
 	{
 		//Health
-		health = 2;
+		health = 4;
 		poison = false;
 		
 		//Inventory
@@ -90,6 +91,12 @@ public class InventoryManager : MonoBehaviour {
 	{
 		health = heal_amount;
 		health = Mathf.Clamp(health, 0, 4);
+		Debug.Log(health);
+		if (health <= 0)
+		{
+			Destroy(GameManager.instance.gameObject);
+			SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
+		}
 	}
 	
 	public void cure()
@@ -175,6 +182,17 @@ public class InventoryManager : MonoBehaviour {
 		}
 
 		return false;
+	}
+	
+	public void removeItem(int item_index, int stock)
+	{
+		for (int i = 0; i < inventory.Length; i++)
+		{
+			if (inventory[i] == item_index)
+			{
+				inventory_stock[i] -= stock;
+			}
+		}
 	}
 	
 	public void removeItemAtIndex(int item_index)

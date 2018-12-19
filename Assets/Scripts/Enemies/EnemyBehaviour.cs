@@ -10,6 +10,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	private Pathfinding path;
 	private PlayerBehaviour player;
 	private HealthScript hs;
+	private EnemyAnimationScript anim;
 	
 	//Settings
 	[SerializeField] private int health;
@@ -18,8 +19,13 @@ public class EnemyBehaviour : MonoBehaviour {
 	[SerializeField] private float turn_spd;
 	[SerializeField] private bool alert;
 	[SerializeField] private float aware_radius;
+
+	[SerializeField] private float attack_delay;
+	
+	[SerializeField] private bool is_a_dog;
 	
 	//Variables
+	public bool dead { private get; set; }
 	private bool can_move;
 	private bool lock_on;
 
@@ -29,8 +35,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	private int path_index;
 	private Vector2[] path_array;
 	private Vector2 target_position;
-	
-	
+
+	private bool attacking;
+	private float attack_time;
 	
 	//Init Enemy
 	void Awake()
@@ -44,6 +51,8 @@ public class EnemyBehaviour : MonoBehaviour {
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		path = gameObject.AddComponent<Pathfinding>();
 		player = GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>();
+		anim = gameObject.GetComponent<EnemyAnimationScript>();
+		anim.Play("idle");
 
 		if (!canFindPathPlayer())
 		{
@@ -56,6 +65,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		//Settings
 		
 		//Variables
+		dead = false;
 		can_move = true;
 		lock_on = false;
 
@@ -68,6 +78,20 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	//Update Event
 	void Update () {
+		//Dead
+		if (dead)
+		{
+			anim.Play("dead");
+			return;
+		}
+
+		if (!player.canattack)
+		{
+			anim.Play("idle");
+			velocity = Vector2.zero;
+			return;
+		}
+		
 		//Movement & Path Finding
 		if (can_move)
 		{
@@ -85,13 +109,42 @@ public class EnemyBehaviour : MonoBehaviour {
 				//Set path for player
 				if (!moving)
 				{
-					setPath(player.transform.position);
+					anim.Play("idle");
+					if (attacking)
+					{
+						attack_time -= Time.deltaTime;
+						if (attack_time <= 0)
+						{
+							if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) <= 5f)
+							{
+								GameManager.instance.inventory.heal(GameManager.instance.inventory.health - 1);
+								player.hurt();
+							}
+
+							attacking = false;
+							setPath(player.transform.position);
+						}
+					}
+					else
+					{
+						setPath(player.transform.position);
+					}
 				}
 				else
 				{
-					if (Vector2.Distance(target_position, new Vector2(player.transform.position.x, player.transform.position.z)) > 1f)
+					anim.Play("walk");
+					if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) > 3f)
 					{
-						setPath(player.transform.position);
+						if (Vector2.Distance(target_position, new Vector2(player.transform.position.x, player.transform.position.z)) > 1f)
+						{
+							setPath(player.transform.position);
+						}
+					}
+					else
+					{
+						moving = false;
+						attacking = true;
+						attack_time = attack_delay;
 					}
 				}
 			}
@@ -155,7 +208,7 @@ public class EnemyBehaviour : MonoBehaviour {
 						{
 							path_index++;
 							FixedUpdate();
-							Update();	
+							Update();
 						}
 					}
 					else
@@ -165,6 +218,10 @@ public class EnemyBehaviour : MonoBehaviour {
 					}
 				}
 			}
+			
+		}
+		else
+		{
 			
 		}
 	}

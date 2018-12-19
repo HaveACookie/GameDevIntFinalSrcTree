@@ -16,6 +16,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	[SerializeField] private float run_spd; //Player Running Speed
 	[SerializeField] private float turn_spd; //Player Turning Speed
 	[SerializeField] private float back_spd; //Player Moving Backwards Speed
+	[SerializeField] private float attack_delay;
 
 	private bool can_move;  //Turn Player Input on and off
 	
@@ -23,6 +24,8 @@ public class PlayerBehaviour : MonoBehaviour {
 	private Vector2 velocity;  //Player Physics movement in the x and z axis
 	private float aim;
 	private float aim_stance;
+	private float attack_time;
+	private float invincibility;
 	
 	//Init Player
 	void Awake()
@@ -52,10 +55,22 @@ public class PlayerBehaviour : MonoBehaviour {
 		velocity = Vector2.zero;  //Reset the player velocity to zero
 		if (can_move)
 		{
+			//Invincibility
+			if (invincibility > 0)
+			{
+				invincibility -= Time.deltaTime;
+				Debug.Log(invincibility);
+			}
+			
+			if (attack_time > 0)
+			{
+				attack_time -= Time.deltaTime;
+			}
+			
 			//Debug (This block of code will be deleted later)
 			gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = Color.Lerp(Color.blue, Color.red, aim);
 			float aim_stance_direction = (aim_stance * Mathf.PI) / 6;
-			gameObject.transform.GetChild(0).transform.localPosition = new Vector3(0f, Mathf.Sin(aim_stance_direction), Mathf.Cos(aim_stance_direction)) * 1.25f;
+			gameObject.transform.GetChild(0).transform.localPosition = (new Vector3(0f, Mathf.Sin(aim_stance_direction), Mathf.Cos(aim_stance_direction)) * 1.25f) + new Vector3(0, 3f, 0);
 
 			//Player Input
 			if (gm.getKey("aim"))
@@ -93,7 +108,10 @@ public class PlayerBehaviour : MonoBehaviour {
 				//Shooting
 				if (gm.getKeyDown("attack"))
 				{
-					weaponAction();
+					if (attack_time <= 0)
+					{
+						weaponAction();
+					}
 				}
 			}
 			else
@@ -211,6 +229,12 @@ public class PlayerBehaviour : MonoBehaviour {
 	//Weapons
 	private void weaponAction()
 	{
+		if (ammo < 1)
+		{
+			return;
+		}
+		
+		attack_time = attack_delay;
 		GameObject hit_enemy;
 		switch (equip)
 		{
@@ -231,6 +255,7 @@ public class PlayerBehaviour : MonoBehaviour {
 						hit_enemy.GetComponent<HealthScript>().headshot();
 					}
 				}
+				gm.inventory.removeItem(equip, 1);
 				return;
 			case 3 :
 				hit_enemy = hitEnemy(45);
@@ -242,6 +267,7 @@ public class PlayerBehaviour : MonoBehaviour {
 						hit_enemy.GetComponent<HealthScript>().headshot();
 					}
 				}
+				gm.inventory.removeItem(equip, 1);
 				return;
 			default :
 				return;
@@ -351,6 +377,23 @@ public class PlayerBehaviour : MonoBehaviour {
 		{
 			can_move = value;
 		}
+	}
+
+	public bool canattack
+	{
+		get
+		{
+			if (invincibility > 0)
+			{
+				return false;
+			}
+			return true;
+		}
+	}
+
+	public void hurt()
+	{
+		invincibility = 1.8f;
 	}
 	
 	//Debug

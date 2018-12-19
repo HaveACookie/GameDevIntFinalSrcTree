@@ -28,7 +28,9 @@
             <e p="CameraTrigger.cs" t="Include" />
             <e p="CameraTriggerEZ.cs" t="Include" />
           </e>
+          <e p="DogSpawnScript.cs" t="Include" />
           <e p="Enemies" t="Include">
+            <e p="EnemyAnimationScript.cs" t="Include" />
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="HealthScript.cs" t="Include" />
           </e>
@@ -44,11 +46,15 @@
             <e p="Node.cs" t="Include" />
             <e p="Pathfinding.cs" t="Include" />
           </e>
+          <e p="PlayerAnimationScript.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="Systems" t="Include">
             <e p="Debug" t="Include">
+              <e p="DogSpawner.cs" t="Include" />
+              <e p="EnemyHealth.cs" t="Include" />
               <e p="InputHandling.cs" t="Include" />
               <e p="KnifeHitBox.cs" t="Include" />
+              <e p="PuzzleManager.cs" t="Include" />
             </e>
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
@@ -59,6 +65,8 @@
               <e p="InventoryMenu.cs" t="Include" />
               <e p="InventorySlotScript.cs" t="Include" />
             </e>
+            <e p="MainMenu.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="Transitions" t="Include">
               <e p="SceneTransition.cs" t="Include" />
               <e p="TransitionDoor.cs" t="Include" />

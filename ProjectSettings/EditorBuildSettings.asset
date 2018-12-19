@@ -6,21 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/StartScene.unity
+    guid: 7d24901bdae0e8443bc91362b6316eee
   - enabled: 1
-    path: Assets/Scenes/CamerasTest.unity
-    guid: 5800806e8e797684db1e41bcb6e6f468
+    path: Assets/Scenes/SeparatedScenes/MainHall.unity
+    guid: 3f6c7e0056e7f42e381dc9839f54dc28
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/BlueRoom.unity
+    guid: 9a2287426e0324110b5926a1dca55528
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/DiningHall.unity
+    guid: 02b795d30e9ce469ebdf8b973df5d82b
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/DogHallWay.unity
+    guid: 217702bbb0749474db7ddc6e0a1251a0
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/DogHallWay2.unity
+    guid: c435c293bea7d52408bc65bbcab5431a
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/LowerBanisterSaveHall.unity
+    guid: 7723e6f2a005e44d283a4ff1632a6175
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/LowerBanisterSaveRoom.unity
+    guid: 9d7594f800571234c948636f65590bad
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/SandwichRoom.unity
+    guid: 030c2ea39a9ea41ee8af98a76cf01cf0
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/ShotgunRoom.unity
+    guid: 2801506e98bd04f3fa480d8e45c3867c
+  - enabled: 1
+    path: Assets/Scenes/SeparatedScenes/UpperLeftBanisterHall.unity
+    guid: 1833925a4396644a99c259db7b52a0b2
   - enabled: 1
     path: Assets/Scenes/Transition.unity
     guid: f565268729284e443bfe18080615fa81
-  - enabled: 1
-    path: Assets/Scenes/DebugMansion.unity
-    guid: 93cc1575b91002b47bbad7086e6781aa
-  - enabled: 1
-    path: Assets/Scenes/map_old.unity
-    guid: e8a844b9d00b45a44854b460159b87ce
-  - enabled: 1
-    path: Assets/Scenes/RenamePlayTest.unity
-    guid: 79b7a6f65d2954842b0ba15d616451ce
   m_configObjects: {}

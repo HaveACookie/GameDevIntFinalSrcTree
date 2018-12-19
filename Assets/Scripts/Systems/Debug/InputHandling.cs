@@ -247,15 +247,6 @@ public class InputHandling : MonoBehaviour
                         itemSurfaceHit = false;
                         break;
                     }
-
-
-
-                    //additional space for more cases
-
-
-                    break;
-
-
             }
         }
 
