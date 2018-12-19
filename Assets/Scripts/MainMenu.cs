@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour {
         yield return new WaitForSeconds(1f);
 
         //when we figure out what the first play scene is, open it here.
-        //SceneManager.LoadScene("um");s
+        //SceneManager.LoadScene("");
 
     }
 }
