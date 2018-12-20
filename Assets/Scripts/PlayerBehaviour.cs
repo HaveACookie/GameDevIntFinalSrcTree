@@ -9,8 +9,11 @@ public class PlayerBehaviour : MonoBehaviour {
 	//Components
 	private GameManager gm;  //Game Manager Singleton
 	private Rigidbody rb;  //Player Physics Rigidbody
-	//private HealthPoints hp;
-	
+                           //private HealthPoints hp;
+    public AudioSource playerAudio;
+    public AudioClip gunShot;
+    public AudioClip knifeSwing;
+       
 	//Settings
 	[SerializeField] private float spd;  //Player Speed
 	[SerializeField] private float run_spd; //Player Running Speed
@@ -239,6 +242,7 @@ public class PlayerBehaviour : MonoBehaviour {
 		switch (equip)
 		{
 			case 1 :
+                playerAudio.PlayOneShot(knifeSwing);
 				hit_enemy = hitEnemy(40);
 				if (hit_enemy != null)
 				{
@@ -246,7 +250,8 @@ public class PlayerBehaviour : MonoBehaviour {
 				}
 				return;
 			case 2 :
-				hit_enemy = hitEnemy(30);
+                playerAudio.PlayOneShot(gunShot);
+                hit_enemy = hitEnemy(30);
 				if (hit_enemy != null)
 				{
 					hit_enemy.GetComponent<HealthScript>().damage(2);
@@ -258,7 +263,8 @@ public class PlayerBehaviour : MonoBehaviour {
 				gm.inventory.removeItem(equip, 1);
 				return;
 			case 3 :
-				hit_enemy = hitEnemy(45);
+                playerAudio.PlayOneShot(gunShot);
+                hit_enemy = hitEnemy(45);
 				if (hit_enemy != null)
 				{
 					hit_enemy.GetComponent<HealthScript>().damage(2);
