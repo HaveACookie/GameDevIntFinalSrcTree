@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33408310670699802}
   - component: {fileID: 23358238696157958}
   m_Layer: 0
-  m_Name: pCube2 1
+  m_Name: pGlass7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
