@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 4529869}
   - component: {fileID: 4529868}
   - component: {fileID: 4529867}
+  - component: {fileID: 4529870}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -207,6 +208,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &4529870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4529865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118751144d3a854468da5c7bd5669c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6406725
 GameObject:
   m_ObjectHideFlags: 0
@@ -11447,7 +11459,7 @@ GameObject:
   - component: {fileID: 1108441834}
   - component: {fileID: 1108441837}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextInGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11485,11 +11497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hey
-
-    Hey
-
-'
+  m_Text: 
 --- !u!114 &1108441834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12539,31 +12547,6 @@ Prefab:
       propertyPath: GUIAnimator
       value: 
       objectReference: {fileID: 1108441837}
-    - target: {fileID: 136579282148986990, guid: 4d892747b81878d46971785b93a902da,
-        type: 2}
-      propertyPath: m_Height
-      value: 4.3198547
-      objectReference: {fileID: 0}
-    - target: {fileID: 136579282148986990, guid: 4d892747b81878d46971785b93a902da,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.1599274
-      objectReference: {fileID: 0}
-    - target: {fileID: 136579282148986990, guid: 4d892747b81878d46971785b93a902da,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0.47789901
-      objectReference: {fileID: 0}
-    - target: {fileID: 136579282148986990, guid: 4d892747b81878d46971785b93a902da,
-        type: 2}
-      propertyPath: m_Center.x
-      value: 0.000002294437
-      objectReference: {fileID: 0}
-    - target: {fileID: 136579282148986990, guid: 4d892747b81878d46971785b93a902da,
-        type: 2}
-      propertyPath: m_Center.z
-      value: -0.022100747
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d892747b81878d46971785b93a902da, type: 2}
   m_IsPrefabAsset: 0

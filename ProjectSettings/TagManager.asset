@@ -9,6 +9,7 @@ TagManager:
   - GUI
   - LockedDoor
   - Stairs
+  - Statue
   layers:
   - Default
   - TransparentFX
