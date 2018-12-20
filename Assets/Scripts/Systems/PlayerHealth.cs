@@ -12,10 +12,9 @@ public class PlayerHealth : MonoBehaviour {
     public bool playerIsPoisoned = false;
     public bool playerIsDead = false;
 
-    private void OnCollisionEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-
-        if (other.gameObject.tag == "Enemy")
+        if (other.collider.gameObject.CompareTag("Enemy"))
         {
             playerHealth_val -= 1; 
         }
@@ -31,7 +30,4 @@ public class PlayerHealth : MonoBehaviour {
             //also load the start scene
         }
     }
- 
-
-
 }

@@ -65,6 +65,8 @@
               <e p="InventoryMenu.cs" t="Include" />
               <e p="InventorySlotScript.cs" t="Include" />
             </e>
+            <e p="MainMenu.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="Transitions" t="Include">
               <e p="SceneTransition.cs" t="Include" />
               <e p="TransitionDoor.cs" t="Include" />
