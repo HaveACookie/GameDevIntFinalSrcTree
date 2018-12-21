@@ -36,10 +36,12 @@
           </e>
           <e p="Interact" t="Include">
             <e p="DoorScript.cs" t="Include" />
+            <e p="InteractGUI.cs" t="Include" />
             <e p="InteractInterface.cs" t="Include" />
             <e p="InteractScript.cs" t="Include" />
             <e p="ItemScript.cs" t="Include" />
           </e>
+          <e p="noDestroy.cs" t="Include" />
           <e p="Pathfinding" t="Include">
             <e p="GridBehaviour.cs" t="Include" />
             <e p="Heap.cs" t="Include" />

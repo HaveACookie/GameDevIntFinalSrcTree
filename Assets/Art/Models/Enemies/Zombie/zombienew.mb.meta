@@ -3,120 +3,74 @@ guid: 4118db75165fe2a48b8dc2734147f32e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pCylinder1
-    100002: pCylinder2
-    100004: pCylinder3
-    100006: //RootNode
-    100008: pCube10
-    100010: pCube11
-    100012: pCube12
-    100014: pCube3
-    100016: pCube5
-    100018: pCube6
-    100020: pCube7
-    100022: pCube8
-    100024: pCube9
-    100026: pCylinder10
-    100028: pCylinder11
-    100030: pCylinder12
-    100032: pCylinder13
-    100034: pCylinder5
-    100036: pCylinder6
-    100038: pCylinder8
-    100040: pCylinder9
-    100042: pSphere2
-    100044: pSphere3
-    100046: pSphere4
-    100048: transform1
-    100050: transform2
-    100052: transform3
-    100054: transform4
-    100056: transform5
-    100058: transform6
-    100060: transform7
-    400000: pCylinder1
-    400002: pCylinder2
-    400004: pCylinder3
-    400006: //RootNode
-    400008: pCube10
-    400010: pCube11
-    400012: pCube12
-    400014: pCube3
-    400016: pCube5
-    400018: pCube6
-    400020: pCube7
-    400022: pCube8
-    400024: pCube9
-    400026: pCylinder10
-    400028: pCylinder11
-    400030: pCylinder12
-    400032: pCylinder13
-    400034: pCylinder5
-    400036: pCylinder6
-    400038: pCylinder8
-    400040: pCylinder9
-    400042: pSphere2
-    400044: pSphere3
-    400046: pSphere4
-    400048: transform1
-    400050: transform2
-    400052: transform3
-    400054: transform4
-    400056: transform5
-    400058: transform6
-    400060: transform7
+    100000: pCube3
+    100002: pCube4
+    100004: pCube5
+    100006: pCube6
+    100008: pCube7
+    100010: pCube8
+    100012: pCylinder3
+    100014: pCylinder5
+    100016: pCylinder6
+    100018: pCylinder7
+    100020: pCylinder8
+    100022: pCylinder9
+    100024: pSphere1
+    100026: //RootNode
+    400000: pCube3
+    400002: pCube4
+    400004: pCube5
+    400006: pCube6
+    400008: pCube7
+    400010: pCube8
+    400012: pCylinder3
+    400014: pCylinder5
+    400016: pCylinder6
+    400018: pCylinder7
+    400020: pCylinder8
+    400022: pCylinder9
+    400024: pSphere1
+    400026: //RootNode
     2100000: lambert1
-    2300000: pCylinder1
-    2300002: pCylinder2
-    2300004: pCylinder3
-    2300006: pCube10
-    2300008: pCube11
-    2300010: pCube12
-    2300012: pCube3
-    2300014: pCube5
-    2300016: pCube7
-    2300018: pCylinder10
-    2300020: pCylinder12
-    2300022: pCylinder13
-    2300024: pCylinder5
-    2300026: pCylinder6
-    2300028: pCylinder8
-    2300030: pCylinder9
-    2300032: pSphere4
-    3300000: pCylinder1
-    3300002: pCylinder2
-    3300004: pCylinder3
-    3300006: pCube10
-    3300008: pCube11
-    3300010: pCube12
-    3300012: pCube3
-    3300014: pCube5
-    3300016: pCube7
-    3300018: pCylinder10
-    3300020: pCylinder12
-    3300022: pCylinder13
-    3300024: pCylinder5
-    3300026: pCylinder6
-    3300028: pCylinder8
-    3300030: pCylinder9
-    3300032: pSphere4
-    4300000: pCylinder1
-    4300002: pCylinder2
-    4300004: pCylinder3
-    4300006: pCube3
-    4300008: pCylinder5
+    2300000: pCube3
+    2300002: pCube4
+    2300004: pCube5
+    2300006: pCube6
+    2300008: pCube7
+    2300010: pCube8
+    2300012: pCylinder3
+    2300014: pCylinder5
+    2300016: pCylinder6
+    2300018: pCylinder7
+    2300020: pCylinder8
+    2300022: pCylinder9
+    2300024: pSphere1
+    3300000: pCube3
+    3300002: pCube4
+    3300004: pCube5
+    3300006: pCube6
+    3300008: pCube7
+    3300010: pCube8
+    3300012: pCylinder3
+    3300014: pCylinder5
+    3300016: pCylinder6
+    3300018: pCylinder7
+    3300020: pCylinder8
+    3300022: pCylinder9
+    3300024: pSphere1
+    4300000: pCylinder3
+    4300002: pCube3
+    4300004: pCube4
+    4300006: pCylinder5
+    4300008: pSphere1
     4300010: pCube5
-    4300012: pCube7
-    4300014: pCylinder6
-    4300016: pCylinder8
-    4300018: pCylinder9
-    4300020: pSphere4
-    4300022: pCube10
-    4300024: pCube11
-    4300026: pCube12
-    4300028: pCylinder10
-    4300030: pCylinder12
-    4300032: pCylinder13
+    4300012: pCube6
+    4300014: pCube7
+    4300016: pCylinder6
+    4300018: pCylinder7
+    4300020: pCylinder8
+    4300022: pCylinder9
+    4300024: pCube8
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -168,7 +122,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
@@ -190,6 +144,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
