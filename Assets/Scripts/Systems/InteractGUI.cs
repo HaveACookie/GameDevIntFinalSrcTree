@@ -16,8 +16,11 @@ public class InteractGUI : MonoBehaviour
         GameObject[] objs = GameObject.FindGameObjectsWithTag("GUI");
         if (objs.Length > 1)
             Destroy(this.gameObject);
-
-        DontDestroyOnLoad(this.gameObject);
+        
+        //Instantiate
+        gm = GameManager.instance;
+        GameUI = gm.gameObject.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Text>();
+        GUIAnimator = GameUI.gameObject.GetComponent<Animator>();
 
         //display nothing first
         GameUI.text = " ";

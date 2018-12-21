@@ -38,6 +38,7 @@ public class PlayerBehaviour : MonoBehaviour {
 		gm = GameManager.instance;
 		rb = gameObject.GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		gameObject.AddComponent<InteractGUI>();
 		//hp = gameObject.GetComponent<HealthPoints>();
 		
 		//Settings
