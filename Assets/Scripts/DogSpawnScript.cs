@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DogSpawnScript : MonoBehaviour {
+    //AudioIntegration(Christian)
+    public AudioSource mainSource;
+    public AudioClip noDogs;
+    public AudioClip Dogs;
+
 
 	//Settings
 	[Header("Window")]
