@@ -1280,6 +1280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301433a220838694989f1ef826875419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAudio: {fileID: 82012639336035158}
+  gunShot: {fileID: 8300000, guid: fd03e8f513fa61249b823685b0f71047, type: 3}
+  knifeSwing: {fileID: 8300000, guid: fd03e8f513fa61249b823685b0f71047, type: 3}
   spd: 0.05
   run_spd: 0.085
   turn_spd: 2.5

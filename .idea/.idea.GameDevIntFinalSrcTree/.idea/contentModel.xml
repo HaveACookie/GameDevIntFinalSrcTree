@@ -60,6 +60,7 @@
             </e>
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="InteractGUI.cs" t="Include" />
             <e p="Inventory" t="Include">
               <e p="InventoryData.cs" t="Include" />
               <e p="InventoryHealth.cs" t="Include" />
