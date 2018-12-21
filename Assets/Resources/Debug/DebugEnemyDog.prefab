@@ -278,7 +278,8 @@ MonoBehaviour:
   alert: 1
   aware_radius: 1.93
   attack_delay: 1
-  is_a_dog: 0
+  is_a_dog: 1
+  dog_sfx: {fileID: 8300000, guid: 80e585d95389e3048bf02c2624c49d37, type: 3}
 --- !u!114 &114119393435563332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -292,6 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk_time: 0.2
   y_offset: 0.25
+  size: 1
   anim_idle: {fileID: 1295310480862206, guid: 82b8c4f6079c7464a8b5c400a67bcad3, type: 2}
   anim_walk_1: {fileID: 1515205671991510, guid: e9e5127d8175e5942af0a61c6a44be54,
     type: 2}

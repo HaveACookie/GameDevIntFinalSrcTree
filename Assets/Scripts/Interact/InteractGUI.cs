@@ -18,7 +18,6 @@ public class InteractGUI : MonoBehaviour
         //supposed to find the component throughout all scenes, not working for some reason!!! 
         Text GameUI = GameObject.Find("TextInGame").GetComponent<Text>(); //Text in the Canvas 
         Animator GUIAnimator = GameObject.Find("TextInGame").GetComponent<Animator>(); //Animator for fade out 
-
     }
 
 

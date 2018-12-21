@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e79301214961d54da14872cedcd1a6d
+guid: ff616ec0918b0204dab1aa29fa7076e1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -16,33 +16,22 @@ ModelImporter:
     100020: pCylinder11
     100022: pCylinder12
     100024: pCylinder13
-    100026: pCylinder14
-    100028: pCylinder3
-    100030: pCylinder5
-    100032: pCylinder6
-    100034: pCylinder8
-    100036: pCylinder9
-    100038: pSphere2
-    100040: pSphere3
-    100042: pSphere4
-    100044: transform1
-    100046: transform10
-    100048: transform11
-    100050: transform12
-    100052: transform13
-    100054: transform14
-    100056: transform15
-    100058: transform16
-    100060: transform17
-    100062: transform2
-    100064: transform3
-    100066: transform4
-    100068: transform5
-    100070: transform6
-    100072: transform7
-    100074: transform8
-    100076: transform9
-    100078: //RootNode
+    100026: pCylinder3
+    100028: pCylinder5
+    100030: pCylinder6
+    100032: pCylinder8
+    100034: pCylinder9
+    100036: pSphere2
+    100038: pSphere3
+    100040: pSphere4
+    100042: transform1
+    100044: transform2
+    100046: transform3
+    100048: transform4
+    100050: transform5
+    100052: transform6
+    100054: transform7
+    100056: //RootNode
     400000: pCube10
     400002: pCube11
     400004: pCube12
@@ -56,49 +45,65 @@ ModelImporter:
     400020: pCylinder11
     400022: pCylinder12
     400024: pCylinder13
-    400026: pCylinder14
-    400028: pCylinder3
-    400030: pCylinder5
-    400032: pCylinder6
-    400034: pCylinder8
-    400036: pCylinder9
-    400038: pSphere2
-    400040: pSphere3
-    400042: pSphere4
-    400044: transform1
-    400046: transform10
-    400048: transform11
-    400050: transform12
-    400052: transform13
-    400054: transform14
-    400056: transform15
-    400058: transform16
-    400060: transform17
-    400062: transform2
-    400064: transform3
-    400066: transform4
-    400068: transform5
-    400070: transform6
-    400072: transform7
-    400074: transform8
-    400076: transform9
-    400078: //RootNode
+    400026: pCylinder3
+    400028: pCylinder5
+    400030: pCylinder6
+    400032: pCylinder8
+    400034: pCylinder9
+    400036: pSphere2
+    400038: pSphere3
+    400040: pSphere4
+    400042: transform1
+    400044: transform2
+    400046: transform3
+    400048: transform4
+    400050: transform5
+    400052: transform6
+    400054: transform7
+    400056: //RootNode
     2100000: lambert1
     2300000: pCube10
     2300002: pCube11
-    2300004: pCube3
-    2300006: pCube5
-    2300008: pCylinder14
+    2300004: pCube12
+    2300006: pCube3
+    2300008: pCube5
+    2300010: pCube7
+    2300012: pCylinder10
+    2300014: pCylinder12
+    2300016: pCylinder13
+    2300018: pCylinder5
+    2300020: pCylinder6
+    2300022: pCylinder8
+    2300024: pCylinder9
+    2300026: pSphere4
     3300000: pCube10
     3300002: pCube11
-    3300004: pCube3
-    3300006: pCube5
-    3300008: pCylinder14
+    3300004: pCube12
+    3300006: pCube3
+    3300008: pCube5
+    3300010: pCube7
+    3300012: pCylinder10
+    3300014: pCylinder12
+    3300016: pCylinder13
+    3300018: pCylinder5
+    3300020: pCylinder6
+    3300022: pCylinder8
+    3300024: pCylinder9
+    3300026: pSphere4
     4300000: pCube3
-    4300002: pCube5
-    4300004: pCube10
-    4300006: pCube11
-    4300008: pCylinder14
+    4300002: pCylinder5
+    4300004: pCube5
+    4300006: pCube7
+    4300008: pCylinder6
+    4300010: pCylinder8
+    4300012: pCylinder9
+    4300014: pSphere4
+    4300016: pCube10
+    4300018: pCube11
+    4300020: pCube12
+    4300022: pCylinder10
+    4300024: pCylinder12
+    4300026: pCylinder13
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -150,7 +155,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
@@ -172,6 +177,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

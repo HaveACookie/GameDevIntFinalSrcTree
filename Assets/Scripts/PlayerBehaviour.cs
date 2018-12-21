@@ -17,6 +17,11 @@ public class PlayerBehaviour : MonoBehaviour {
 	[SerializeField] private float turn_spd; //Player Turning Speed
 	[SerializeField] private float back_spd; //Player Moving Backwards Speed
 	[SerializeField] private float attack_delay;
+	
+	//Sound
+	private AudioSource playerAudio;
+	[SerializeField] private AudioClip gunShot;
+	[SerializeField] private AudioClip knifeSwing;
 
 	private bool can_move;  //Turn Player Input on and off
 	
@@ -38,6 +43,7 @@ public class PlayerBehaviour : MonoBehaviour {
 		gm = GameManager.instance;
 		rb = gameObject.GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		playerAudio = GetComponent<AudioSource>();
 		//hp = gameObject.GetComponent<HealthPoints>();
 		
 		//Settings
@@ -244,6 +250,7 @@ public class PlayerBehaviour : MonoBehaviour {
 				{
 					hit_enemy.GetComponent<HealthScript>().damage(1);
 				}
+				playerAudio.PlayOneShot(knifeSwing);
 				return;
 			case 2 :
 				hit_enemy = hitEnemy(30);
@@ -255,6 +262,7 @@ public class PlayerBehaviour : MonoBehaviour {
 						hit_enemy.GetComponent<HealthScript>().headshot();
 					}
 				}
+				playerAudio.PlayOneShot(gunShot);
 				gm.inventory.removeItem(equip, 1);
 				return;
 			case 3 :
@@ -267,6 +275,7 @@ public class PlayerBehaviour : MonoBehaviour {
 						hit_enemy.GetComponent<HealthScript>().headshot();
 					}
 				}
+				playerAudio.PlayOneShot(gunShot);
 				gm.inventory.removeItem(equip, 1);
 				return;
 			default :

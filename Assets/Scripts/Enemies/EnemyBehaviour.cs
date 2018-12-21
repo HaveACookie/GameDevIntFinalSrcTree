@@ -23,6 +23,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	[SerializeField] private float attack_delay;
 	
 	[SerializeField] private bool is_a_dog;
+	[SerializeField] private AudioClip dog_sfx;
 	
 	//Variables
 	public bool dead { private get; set; }
@@ -38,6 +39,8 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	private bool attacking;
 	private float attack_time;
+
+	private bool play_sound;
 	
 	//Init Enemy
 	void Awake()
@@ -74,6 +77,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		path_index = 0;
 		path_array = null;
 		target_position = new Vector2(transform.position.x, transform.position.z);
+		play_sound = false;
 	}
 	
 	//Update Event
@@ -83,6 +87,21 @@ public class EnemyBehaviour : MonoBehaviour {
 		{
 			anim.Play("dead");
 			return;
+		}
+
+		if (!play_sound)
+		{
+			play_sound = true;
+			if (is_a_dog)
+			{
+				AudioSource compo = gameObject.AddComponent<AudioSource>();
+				compo.loop = true;
+				compo.clip = dog_sfx;
+				if (alert)
+				{
+					compo.Play();
+				}
+			}
 		}
 
 		if (!player.canattack)
@@ -102,6 +121,11 @@ public class EnemyBehaviour : MonoBehaviour {
 				if (Vector3.Distance(transform.position, player.gameObject.transform.position) < aware_radius)
 				{
 					alert = true;
+					if (is_a_dog)
+					{
+						AudioSource compo = GetComponent<AudioSource>();
+						compo.Play();
+					}
 				}
 			}
 			else
@@ -132,6 +156,7 @@ public class EnemyBehaviour : MonoBehaviour {
 				}
 				else
 				{
+					
 					anim.Play("walk");
 					if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(player.transform.position.x, player.transform.position.z)) > 3f)
 					{
